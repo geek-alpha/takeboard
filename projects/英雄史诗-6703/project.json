@@ -1,0 +1,573 @@
+{
+  "id": "英雄史诗-6703",
+  "name": "英雄史诗",
+  "rev": 86,
+  "createdAt": 1791010500219,
+  "updatedAt": 1791019536025,
+  "nodes": [
+    {
+      "id": "n_422a517c6c",
+      "kind": "text",
+      "title": "山巅独行",
+      "x": 0,
+      "y": 0,
+      "takes": [
+        {
+          "id": "take_ccc7d761f2",
+          "nodeId": "n_422a517c6c",
+          "createdAt": 1791010689651,
+          "status": "done",
+          "source": "text",
+          "kind": "image",
+          "text": "sky style,guangyu,white hair,black skin,cape, 一个无脸少年站在山巅，风掀起斗篷，冷光",
+          "params": {
+            "prompt": "sky style,guangyu,white hair,black skin,cape, 一个无脸少年站在山巅，风掀起斗篷，冷光"
+          },
+          "inputs": {}
+        }
+      ],
+      "activeTake": "take_ccc7d761f2"
+    },
+    {
+      "id": "n_6436ce85b0",
+      "kind": "image",
+      "title": "首帧",
+      "x": 327,
+      "y": -36,
+      "takes": [
+        {
+          "id": "take_3b5ec4c506",
+          "nodeId": "n_6436ce85b0",
+          "createdAt": 1791010709259,
+          "finishedAt": 1791010709259,
+          "status": "done",
+          "source": "import",
+          "kind": "image",
+          "file": "n_6436ce85b0/take_3b5ec4c506.png",
+          "probe": {
+            "width": 1024,
+            "height": 576,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 750232
+          },
+          "params": {},
+          "inputs": {},
+          "label": "shot-01.png"
+        }
+      ],
+      "activeTake": "take_3b5ec4c506"
+    },
+    {
+      "id": "n_a88bc1cc32",
+      "kind": "video",
+      "title": "出片",
+      "x": 680,
+      "y": 0,
+      "takes": [
+        {
+          "id": "take_b3a2b45623",
+          "nodeId": "n_a88bc1cc32",
+          "createdAt": 1791010718727,
+          "status": "failed",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "seconds": 2,
+            "prompt": "",
+            "workflow": "minimax-h3-i2v"
+          },
+          "inputs": {
+            "n_6436ce85b0": "take_3b5ec4c506"
+          },
+          "jobId": "job_32469c7c63",
+          "error": "服务重启，作业中断（没有记下 prompt_id，无法接回）",
+          "finishedAt": 1791010906671
+        },
+        {
+          "id": "take_c45999a49a",
+          "nodeId": "n_a88bc1cc32",
+          "createdAt": 1791010926016,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "seconds": 2,
+            "prompt": "",
+            "workflow": "minimax-h3-i2v"
+          },
+          "inputs": {
+            "n_6436ce85b0": "take_3b5ec4c506"
+          },
+          "jobId": "job_a895470893",
+          "promptId": "9db972f1-9412-42b9-8437-3090aea7f64a",
+          "file": "n_a88bc1cc32/take_c45999a49a.mp4",
+          "poster": "n_a88bc1cc32/take_c45999a49a.jpg",
+          "finishedAt": 1791010934681,
+          "probe": {
+            "duration": 2.333,
+            "width": 864,
+            "height": 480,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 294512
+          }
+        },
+        {
+          "id": "take_a735495d29",
+          "nodeId": "n_a88bc1cc32",
+          "createdAt": 1791011050396,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "seconds": 2,
+            "prompt": "",
+            "workflow": "minimax-h3-i2v"
+          },
+          "inputs": {
+            "n_6436ce85b0": "take_3b5ec4c506"
+          },
+          "jobId": "job_13b86172ea",
+          "promptId": "9c06c91b-5837-44a4-82d0-08cc97e60e75",
+          "file": "n_a88bc1cc32/take_a735495d29.mp4",
+          "poster": "n_a88bc1cc32/take_a735495d29.jpg",
+          "finishedAt": 1791011058911,
+          "probe": {
+            "duration": 2.333,
+            "width": 864,
+            "height": 480,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 294512
+          }
+        },
+        {
+          "id": "take_5e39b03e8a",
+          "nodeId": "n_a88bc1cc32",
+          "createdAt": 1791017396215,
+          "status": "failed",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "seconds": 2,
+            "prompt": "The dancer explodes into motion from this frame — a single powerful spin that starts slow and builds, arms sweeping wide as the body coils and unwinds, coat and hair trailing a half-beat behind. The camera does not sit still: it arcs around her in a fast, low, rising half-circle, swinging from a low angle up toward eye level as she turns, then snaps into a tight tracking push that follows her torso through the second half of the spin. Dust lifts off the ground in the wake of the movement, wind pulls at loose fabric, and a shaft of hard light sweeps across the space as the camera swings, flashing across her face and darkening again. The spin decelerates into a settle — she lands the final turn facing camera, chest rising, one arm extended, dust still hanging in the air.",
+            "workflow": "minimax-h3-i2v",
+            "aspect": "16:9 (Widescreen)",
+            "aspectFrom": "首帧 1024x576"
+          },
+          "inputs": {
+            "n_6436ce85b0": "take_3b5ec4c506"
+          },
+          "jobId": "job_ec433e0703",
+          "promptId": "812ecc36-492b-413e-a9f6-89fc410906d2",
+          "error": "执行失败: {\"prompt_id\":\"812ecc36-492b-413e-a9f6-89fc410906d2\",\"node_id\":\"131\",\"node_type\":\"MiniMaxH3ImageToVideo\",\"executed\":[\"115\",\"133\",\"132\",\"174\"],\"exception_message\":\"Allocation on device \\nThis error means you ran out of memory on your GPU.\\n\\nTIPS: If the workflow worked before you might have accidentally set the batch_size to a large number.\",\"exception_type\":\"torch.OutOfMemoryError\",\"traceback\":[\"  File \\\"D:\\\\AI\\\\ComfyUI\\\\execution.py\\\", line 545, in execute\\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_",
+          "finishedAt": 1791017412509
+        },
+        {
+          "id": "take_bc20719d2e",
+          "nodeId": "n_a88bc1cc32",
+          "createdAt": 1791017422440,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "seconds": 2,
+            "prompt": "The dancer explodes into motion from this frame — a single powerful spin that starts slow and builds, arms sweeping wide as the body coils and unwinds, coat and hair trailing a half-beat behind. The camera does not sit still: it arcs around her in a fast, low, rising half-circle, swinging from a low angle up toward eye level as she turns, then snaps into a tight tracking push that follows her torso through the second half of the spin. Dust lifts off the ground in the wake of the movement, wind pulls at loose fabric, and a shaft of hard light sweeps across the space as the camera swings, flashing across her face and darkening again. The spin decelerates into a settle — she lands the final turn facing camera, chest rising, one arm extended, dust still hanging in the air.",
+            "workflow": "minimax-h3-i2v",
+            "aspect": "16:9 (Widescreen)",
+            "aspectFrom": "面板指定"
+          },
+          "inputs": {
+            "n_6436ce85b0": "take_3b5ec4c506"
+          },
+          "jobId": "job_2d555ae745",
+          "promptId": "dde4d47b-13fb-4eb8-9d80-85fad9849276",
+          "file": "n_a88bc1cc32/take_bc20719d2e.mp4",
+          "poster": "n_a88bc1cc32/take_bc20719d2e.jpg",
+          "finishedAt": 1791017603526,
+          "probe": {
+            "duration": 2.333,
+            "width": 864,
+            "height": 480,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 713527
+          }
+        },
+        {
+          "id": "take_db18bc2d3a",
+          "nodeId": "n_a88bc1cc32",
+          "createdAt": 1791018863768,
+          "status": "failed",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "seconds": 2,
+            "prompt": "Locked-off camera, no movement for the whole shot. From this frame the figure leans into the wind and starts walking uphill, away from camera, taking two slow, heavy strides up the ridge; the wind gusts harder with every step, whipping the cape sideways and snapping its torn lower edge back and forth, while dust and drifting embers stream past the legs from the right side of frame to the left. The cold light stays steady on the hair and shoulders as the figure climbs, the ground shadow stretching longer behind the heels. Ends with the figure a step and a half higher on the ridge, back still to camera, cape stretched straight out in the wind.",
+            "workflow": "minimax-h3-i2v",
+            "aspect": "16:9 (Widescreen)",
+            "aspectFrom": "首帧 1024x576"
+          },
+          "inputs": {
+            "n_6436ce85b0": "take_3b5ec4c506",
+            "n_442517b633": "take_e42c918ad4"
+          },
+          "jobId": "job_e4907ef8f5",
+          "promptId": "52ff56bc-7877-45ff-9245-dbe8053ac17d",
+          "error": "执行失败: {\"prompt_id\":\"52ff56bc-7877-45ff-9245-dbe8053ac17d\",\"node_id\":\"131\",\"node_type\":\"MiniMaxH3ImageToVideo\",\"executed\":[\"115\",\"133\",\"132\",\"174\"],\"exception_message\":\"Allocation on device \\nThis error means you ran out of memory on your GPU.\\n\\nTIPS: If the workflow worked before you might have accidentally set the batch_size to a large number.\",\"exception_type\":\"torch.OutOfMemoryError\",\"traceback\":[\"  File \\\"D:\\\\AI\\\\ComfyUI\\\\execution.py\\\", line 545, in execute\\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_",
+          "finishedAt": 1791018872047
+        },
+        {
+          "id": "take_f59190d6ea",
+          "nodeId": "n_a88bc1cc32",
+          "createdAt": 1791018881673,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "seconds": 2,
+            "prompt": "Locked-off camera, no movement for the whole shot. From this frame the figure leans into the wind and starts walking uphill, away from camera, taking two slow, heavy strides up the ridge; the wind gusts harder with every step, whipping the cape sideways and snapping its torn lower edge back and forth, while dust and drifting embers stream past the legs from the right side of frame to the left. The cold light stays steady on the hair and shoulders as the figure climbs, the ground shadow stretching longer behind the heels. Ends with the figure a step and a half higher on the ridge, back still to camera, cape stretched straight out in the wind.",
+            "workflow": "minimax-h3-i2v",
+            "aspect": "16:9 (Widescreen)",
+            "aspectFrom": "首帧 1024x576"
+          },
+          "inputs": {
+            "n_6436ce85b0": "take_3b5ec4c506",
+            "n_442517b633": "take_e42c918ad4"
+          },
+          "jobId": "job_b094fb99cb",
+          "promptId": "ca564a5a-85f7-4efa-b1d2-f35a7ad0fbf6",
+          "file": "n_a88bc1cc32/take_f59190d6ea.mp4",
+          "poster": "n_a88bc1cc32/take_f59190d6ea.jpg",
+          "finishedAt": 1791019042448,
+          "probe": {
+            "duration": 2.333,
+            "width": 864,
+            "height": 480,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 278791
+          }
+        }
+      ],
+      "activeTake": "take_f59190d6ea"
+    },
+    {
+      "id": "n_14f5c86492",
+      "kind": "op",
+      "title": "拼接",
+      "x": 1334,
+      "y": 15,
+      "takes": [
+        {
+          "id": "take_5f1701c063",
+          "nodeId": "n_14f5c86492",
+          "createdAt": 1791010999041,
+          "status": "done",
+          "source": "op",
+          "kind": "video",
+          "params": {},
+          "inputs": {
+            "n_a88bc1cc32": "take_c45999a49a",
+            "n_f6d460857e": "take_70d8e4e628",
+            "n_a68226d092": "take_412181dacb"
+          },
+          "op": "concat",
+          "file": "n_14f5c86492/take_5f1701c063.mp4",
+          "poster": "n_14f5c86492/take_5f1701c063.jpg",
+          "probe": {
+            "duration": 18.374,
+            "width": 864,
+            "height": 480,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 3373696
+          },
+          "finishedAt": 1791011000542
+        },
+        {
+          "id": "take_7910f00b63",
+          "nodeId": "n_14f5c86492",
+          "createdAt": 1791019340915,
+          "status": "failed",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "Locked-off camera, no movement for the whole shot. From this frame the figure leans into the wind and starts walking uphill, away from camera, taking two slow, heavy strides up the ridge; the wind gusts harder with every step, whipping the cape sideways and snapping its torn lower edge back and forth, while dust and drifting embers stream past the legs from the right side of frame to the left. The cold light stays steady on the hair and shoulders as the figure climbs, the ground shadow stretching longer behind the heels. Ends with the figure a step and a half higher on the ridge, back still to camera, cape stretched straight out in the wind."
+          },
+          "inputs": {
+            "n_a88bc1cc32": "take_f59190d6ea",
+            "n_f6d460857e": "take_70d8e4e628",
+            "n_a68226d092": "take_412181dacb"
+          },
+          "jobId": "job_e0109a1889",
+          "error": "生图实例 http://127.0.0.1:8888 没在监听：fetch failed（生图实例平时是关着的，起它，或把 imageHost 指到 8188）",
+          "finishedAt": 1791019340973
+        },
+        {
+          "id": "take_cbb24314b4",
+          "nodeId": "n_14f5c86492",
+          "createdAt": 1791019534311,
+          "status": "done",
+          "source": "op",
+          "kind": "video",
+          "params": {
+            "start": 0,
+            "duration": 3,
+            "at": 0.2
+          },
+          "inputs": {
+            "n_a88bc1cc32": "take_f59190d6ea",
+            "n_f6d460857e": "take_70d8e4e628",
+            "n_a68226d092": "take_412181dacb"
+          },
+          "op": "concat",
+          "file": "n_14f5c86492/take_cbb24314b4.mp4",
+          "poster": "n_14f5c86492/take_cbb24314b4.jpg",
+          "probe": {
+            "duration": 18.374,
+            "width": 864,
+            "height": 480,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 3368295
+          },
+          "finishedAt": 1791019536024
+        }
+      ],
+      "activeTake": "take_cbb24314b4"
+    },
+    {
+      "id": "n_f6d460857e",
+      "kind": "video",
+      "title": "素材A",
+      "x": 340,
+      "y": 420,
+      "takes": [
+        {
+          "id": "take_70d8e4e628",
+          "nodeId": "n_f6d460857e",
+          "createdAt": 1791010993210,
+          "finishedAt": 1791010993210,
+          "status": "done",
+          "source": "import",
+          "kind": "video",
+          "file": "n_f6d460857e/take_70d8e4e628.mp4",
+          "poster": "n_f6d460857e/take_70d8e4e628.jpg",
+          "probe": {
+            "duration": 8,
+            "width": 864,
+            "height": 480,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1145468
+          },
+          "params": {},
+          "inputs": {},
+          "label": "shot-01.mp4"
+        }
+      ],
+      "activeTake": "take_70d8e4e628"
+    },
+    {
+      "id": "n_a68226d092",
+      "kind": "video",
+      "title": "素材B",
+      "x": 680,
+      "y": 420,
+      "takes": [
+        {
+          "id": "take_412181dacb",
+          "nodeId": "n_a68226d092",
+          "createdAt": 1791010994849,
+          "finishedAt": 1791010994849,
+          "status": "done",
+          "source": "import",
+          "kind": "video",
+          "file": "n_a68226d092/take_412181dacb.mp4",
+          "poster": "n_a68226d092/take_412181dacb.jpg",
+          "probe": {
+            "duration": 8,
+            "width": 864,
+            "height": 480,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1654881
+          },
+          "params": {},
+          "inputs": {},
+          "label": "shot-02.mp4"
+        }
+      ],
+      "activeTake": "take_412181dacb"
+    },
+    {
+      "id": "n_442517b633",
+      "kind": "text",
+      "title": "出片词·逆风上山脊",
+      "x": 680,
+      "y": -300,
+      "takes": [
+        {
+          "id": "take_e42c918ad4",
+          "nodeId": "n_442517b633",
+          "createdAt": 1791018854079,
+          "finishedAt": 1791018854079,
+          "status": "done",
+          "source": "text",
+          "kind": "image",
+          "text": "Locked-off camera, no movement for the whole shot. From this frame the figure leans into the wind and starts walking uphill, away from camera, taking two slow, heavy strides up the ridge; the wind gusts harder with every step, whipping the cape sideways and snapping its torn lower edge back and forth, while dust and drifting embers stream past the legs from the right side of frame to the left. The cold light stays steady on the hair and shoulders as the figure climbs, the ground shadow stretching longer behind the heels. Ends with the figure a step and a half higher on the ridge, back still to camera, cape stretched straight out in the wind.",
+          "params": {
+            "prompt": "Locked-off camera, no movement for the whole shot. From this frame the figure leans into the wind and starts walking uphill, away from camera, taking two slow, heavy strides up the ridge; the wind gusts harder with every step, whipping the cape sideways and snapping its torn lower edge back and forth, while dust and drifting embers stream past the legs from the right side of frame to the left. The cold light stays steady on the hair and shoulders as the figure climbs, the ground shadow stretching longer behind the heels. Ends with the figure a step and a half higher on the ridge, back still to camera, cape stretched straight out in the wind."
+          },
+          "inputs": {}
+        }
+      ],
+      "activeTake": "take_e42c918ad4"
+    },
+    {
+      "id": "n_a03856896d",
+      "kind": "image",
+      "title": "图片",
+      "x": -113,
+      "y": -453,
+      "takes": []
+    },
+    {
+      "id": "n_4910bf5b8a",
+      "kind": "op",
+      "title": "算子",
+      "x": 1000,
+      "y": -277,
+      "takes": [
+        {
+          "id": "take_2652ba3dab",
+          "nodeId": "n_4910bf5b8a",
+          "createdAt": 1791019416694,
+          "status": "failed",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "Locked-off camera, no movement for the whole shot. From this frame the figure leans into the wind and starts walking uphill, away from camera, taking two slow, heavy strides up the ridge; the wind gusts harder with every step, whipping the cape sideways and snapping its torn lower edge back and forth, while dust and drifting embers stream past the legs from the right side of frame to the left. The cold light stays steady on the hair and shoulders as the figure climbs, the ground shadow stretching longer behind the heels. Ends with the figure a step and a half higher on the ridge, back still to camera, cape stretched straight out in the wind."
+          },
+          "inputs": {
+            "n_a88bc1cc32": "take_f59190d6ea"
+          },
+          "jobId": "job_da85bddf86",
+          "error": "生图实例 http://127.0.0.1:8888 没在监听：fetch failed（生图实例平时是关着的，起它，或把 imageHost 指到 8188）",
+          "finishedAt": 1791019416757
+        },
+        {
+          "id": "take_1f1e13a7f9",
+          "nodeId": "n_4910bf5b8a",
+          "createdAt": 1791019432186,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {
+            "start": 0,
+            "duration": 3,
+            "at": -0.1
+          },
+          "inputs": {
+            "n_a88bc1cc32": "take_f59190d6ea"
+          },
+          "op": "poster",
+          "file": "n_4910bf5b8a/take_1f1e13a7f9.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 864,
+            "height": 480,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 48786
+          },
+          "finishedAt": 1791019432473
+        }
+      ],
+      "activeTake": "take_1f1e13a7f9"
+    },
+    {
+      "id": "n_4c688286b4",
+      "kind": "video",
+      "title": "视频",
+      "x": 1278,
+      "y": -201,
+      "takes": []
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_2bc9137bbe",
+      "from": "n_422a517c6c",
+      "to": "n_6436ce85b0",
+      "pin": "active",
+      "createdAt": 1791010704939
+    },
+    {
+      "id": "e_004af3ac1d",
+      "from": "n_6436ce85b0",
+      "to": "n_a88bc1cc32",
+      "pin": "take_3b5ec4c506",
+      "createdAt": 1791010706290
+    },
+    {
+      "id": "e_9431910b79",
+      "from": "n_a88bc1cc32",
+      "to": "n_14f5c86492",
+      "pin": "active",
+      "createdAt": 1791010707658
+    },
+    {
+      "id": "e_f684a05de3",
+      "from": "n_f6d460857e",
+      "to": "n_14f5c86492",
+      "pin": "active",
+      "createdAt": 1791010996215
+    },
+    {
+      "id": "e_2868be01c0",
+      "from": "n_a68226d092",
+      "to": "n_14f5c86492",
+      "pin": "active",
+      "createdAt": 1791010997634
+    },
+    {
+      "id": "e_32d44c846d",
+      "from": "n_442517b633",
+      "to": "n_a88bc1cc32",
+      "pin": "active",
+      "createdAt": 1791018860107
+    },
+    {
+      "id": "e_bdc4262ba5",
+      "from": "n_a88bc1cc32",
+      "to": "n_4910bf5b8a",
+      "pin": "active",
+      "createdAt": 1791019412889
+    },
+    {
+      "id": "e_c6c6b510e1",
+      "from": "n_4910bf5b8a",
+      "to": "n_4c688286b4",
+      "pin": "active",
+      "createdAt": 1791019476872
+    }
+  ],
+  "view": {
+    "x": 0,
+    "y": 0,
+    "zoom": 1
+  },
+  "settings": {
+    "comfyHost": "http://127.0.0.1:8188",
+    "imageHost": "http://127.0.0.1:8888",
+    "workflowImage": "z-image-guangyu",
+    "workflowVideo": "minimax-h3-i2v",
+    "workflowDir": "D:\\AI\\repos\\Easel\\skills\\shared\\comfy\\workflows",
+    "ffmpeg": "D:\\AI\\ffmpeg-master-latest-win64-gpl-shared\\bin\\ffmpeg.exe",
+    "ffprobe": "D:\\AI\\ffmpeg-master-latest-win64-gpl-shared\\bin\\ffprobe.exe",
+    "releaseImageBeforeVideo": true
+  }
+}

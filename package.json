@@ -1,0 +1,49 @@
+{
+  "name": "takeboard",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Takeboard — 无限画布视频工作台：一切产物皆 take，排列组合，推倒重来",
+  "scripts": {
+    "dev": "concurrently -n server,web -c cyan,magenta \"npm:dev:server\" \"npm:dev:web\"",
+    "dev:server": "tsx watch server/index.ts",
+    "dev:web": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "start": "tsx server/index.ts",
+    "take": "tsx server/cli.ts",
+    "check:pin": "tsx scripts/check-pin.ts",
+    "check:aspect": "tsx scripts/check-aspect.ts",
+    "check:agent": "tsx scripts/agent-smoke.ts",
+    "check:ai": "tsx scripts/check-ai.ts",
+    "check:h3": "tsx scripts/check-h3.ts",
+    "check:story": "tsx scripts/check-story.ts",
+    "check:machine": "tsx scripts/check-machine.ts",
+    "check:config": "tsx scripts/check-config.ts",
+    "check:ops": "tsx scripts/check-ops.ts",
+    "check:e2e": "node scripts/check-e2e-ops.mjs"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.12.0",
+    "express": "^5.2.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "ws": "^8.22.0",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/ws": "^8.18.2",
+    "@vitejs/plugin-react": "^6.1.1",
+    "concurrently": "^10.0.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}

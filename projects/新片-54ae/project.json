@@ -1,0 +1,855 @@
+{
+  "id": "新片-54ae",
+  "name": "新片",
+  "rev": 85,
+  "createdAt": 1791033325771,
+  "updatedAt": 1791052482470,
+  "nodes": [
+    {
+      "id": "node_d571bfb887",
+      "kind": "image",
+      "title": "提灯入雾谷·首帧",
+      "x": 120,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_e979edd061",
+          "nodeId": "node_d571bfb887",
+          "createdAt": 1791033544147,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "lean young wanderer, short dark hair, patched grey wool cloak, leather satchel, small brass lantern in left hand, seen from behind, standing at the mouth of a misty valley, towering fog-shrouded cliffs, winding path of pale stones, dawn haze, warm amber lantern glow against deep teal mist, low wide shot, 35mm lens, hand-painted storybook illustration, soft gouache texture, muted gold and indigo palette, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_434297f5e8",
+          "promptId": "6c3ed3b4-f073-424d-b773-3fa03eebd4cf",
+          "file": "node_d571bfb887/take_e979edd061.png",
+          "finishedAt": 1791033610628,
+          "probe": {
+            "width": 1024,
+            "height": 1024,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1644977
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "lean young wanderer, short dark hair, patched grey wool cloak, leather satchel, small brass lantern in left hand, seen from behind, standing at the mouth of a misty valley, towering fog-shrouded cliffs, winding path of pale stones, dawn haze, warm amber lantern glow against deep teal mist, low wide shot, 35mm lens, hand-painted storybook illustration, soft gouache texture, muted gold and indigo palette, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_e979edd061"
+    },
+    {
+      "id": "node_9d6f8aa419",
+      "kind": "video",
+      "title": "提灯入雾谷",
+      "x": 120,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_24de12cc1d",
+          "nodeId": "node_9d6f8aa419",
+          "createdAt": 1791033884729,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "he lifts the brass lantern a little and takes one slow step forward into the fog, camera pushes in gently behind him, mist drifts past in curling layers, lantern glow warms the edge of his grey cloak, ends with his silhouette half-swallowed by the valley, the pale path still leading on",
+            "seconds": 8,
+            "workflow": "minimax-h3-i2v",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 1024x1024"
+          },
+          "inputs": {
+            "node_d571bfb887": "take_e979edd061"
+          },
+          "jobId": "job_ccf8c0175b",
+          "promptId": "1fc57b38-3279-481a-8353-e6177ef0f131",
+          "file": "node_9d6f8aa419/take_24de12cc1d.mp4",
+          "poster": "node_9d6f8aa419/take_24de12cc1d.jpg",
+          "finishedAt": 1791034294145,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1529271
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "he lifts the brass lantern a little and takes one slow step forward into the fog, camera pushes in gently behind him, mist drifts past in curling layers, lantern glow warms the edge of his grey cloak, ends with his silhouette half-swallowed by the valley, the pale path still leading on",
+        "seconds": 8,
+        "workflow": "minimax-h3-i2v"
+      },
+      "activeTake": "take_24de12cc1d"
+    },
+    {
+      "id": "node_d1cef0e9e3",
+      "kind": "image",
+      "title": "石阶上的人·首帧",
+      "x": 500,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_36ea59afa9",
+          "nodeId": "node_d1cef0e9e3",
+          "createdAt": 1791033612255,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "same lean young wanderer, short dark hair, patched grey wool cloak, leather satchel, brass lantern set on stone, half-kneeling on mossy carved stone steps, facing an old woman in a moss-green hooded robe seated on the step above, ferns and pale light shafts through canopy, warm amber and deep teal shadows, eye-level medium shot, 35mm lens, hand-painted storybook illustration, soft gouache texture, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_3a0018f754",
+          "promptId": "daef5f06-04cc-433a-9dad-ec4153a65bdf",
+          "file": "node_d1cef0e9e3/take_36ea59afa9.png",
+          "finishedAt": 1791033666639,
+          "probe": {
+            "width": 1024,
+            "height": 1024,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1694145
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "same lean young wanderer, short dark hair, patched grey wool cloak, leather satchel, brass lantern set on stone, half-kneeling on mossy carved stone steps, facing an old woman in a moss-green hooded robe seated on the step above, ferns and pale light shafts through canopy, warm amber and deep teal shadows, eye-level medium shot, 35mm lens, hand-painted storybook illustration, soft gouache texture, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_36ea59afa9"
+    },
+    {
+      "id": "node_5f6195a8cf",
+      "kind": "video",
+      "title": "石阶上的人",
+      "x": 438,
+      "y": 534,
+      "takes": [
+        {
+          "id": "take_faa63f25a1",
+          "nodeId": "node_5f6195a8cf",
+          "createdAt": 1791034295414,
+          "status": "failed",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "the old woman slowly raises one finger and taps her own chest, his head tilts in confusion, camera holds then drifts a few inches left, a shaft of pale light widens across the steps with dust motes floating, ends on his uncertain face turned back toward the high path",
+            "seconds": 8,
+            "workflow": "minimax-h3-i2v",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 1024x1024"
+          },
+          "inputs": {
+            "node_d1cef0e9e3": "take_36ea59afa9"
+          },
+          "jobId": "job_e8f643b804",
+          "promptId": "7ceffbae-93b6-480c-b646-6e4377900fc9",
+          "error": "执行失败: {\"prompt_id\":\"7ceffbae-93b6-480c-b646-6e4377900fc9\",\"node_id\":\"131\",\"node_type\":\"MiniMaxH3ImageToVideo\",\"executed\":[\"174\"],\"exception_message\":\"Allocation on device \\nThis error means you ran out of memory on your GPU.\\n\\nTIPS: If the workflow worked before you might have accidentally set the batch_size to a large number.\",\"exception_type\":\"torch.OutOfMemoryError\",\"traceback\":[\"  File \\\"D:\\\\AI\\\\ComfyUI\\\\execution.py\\\", line 545, in execute\\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_block_cb=execution",
+          "finishedAt": 1791034303765
+        },
+        {
+          "id": "take_e0f0097df8",
+          "nodeId": "node_5f6195a8cf",
+          "createdAt": 1791035481589,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "the old woman slowly raises one finger and taps her own chest, his head tilts in confusion, camera holds then drifts a few inches left, a shaft of pale light widens across the steps with dust motes floating, ends on his uncertain face turned back toward the high path",
+            "seconds": 8,
+            "workflow": "minimax-h3-i2v",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 1024x1024"
+          },
+          "inputs": {
+            "node_d1cef0e9e3": "take_36ea59afa9"
+          },
+          "jobId": "job_45722a6f98",
+          "promptId": "11fdf123-b15b-4dab-b773-ab2daf08f7bc",
+          "file": "node_5f6195a8cf/take_e0f0097df8.mp4",
+          "poster": "node_5f6195a8cf/take_e0f0097df8.jpg",
+          "finishedAt": 1791035858805,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1746801
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "the old woman slowly raises one finger and taps her own chest, his head tilts in confusion, camera holds then drifts a few inches left, a shaft of pale light widens across the steps with dust motes floating, ends on his uncertain face turned back toward the high path",
+        "seconds": 8,
+        "workflow": "minimax-h3-i2v"
+      },
+      "activeTake": "take_e0f0097df8"
+    },
+    {
+      "id": "node_495aaf9bfc",
+      "kind": "image",
+      "title": "无字之书·首帧",
+      "x": 880,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_643d0586b7",
+          "nodeId": "node_495aaf9bfc",
+          "createdAt": 1791033668344,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "interior hollow beneath a giant tree, thick roots curving into shelves, hundreds of blank-page books, traveller seated on a root, brass lantern on the ground beside him, opening a book with empty pages, warm amber pools of light, deep indigo shadow, low angle medium shot, 35mm lens, hand-painted storybook illustration, soft gouache texture, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_73c7beeaf6",
+          "promptId": "146bf08c-cb6c-4766-bbf1-1aa1231ae72f",
+          "file": "node_495aaf9bfc/take_643d0586b7.png",
+          "finishedAt": 1791033719683,
+          "probe": {
+            "width": 1024,
+            "height": 1024,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1679786
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "interior hollow beneath a giant tree, thick roots curving into shelves, hundreds of blank-page books, traveller seated on a root, brass lantern on the ground beside him, opening a book with empty pages, warm amber pools of light, deep indigo shadow, low angle medium shot, 35mm lens, hand-painted storybook illustration, soft gouache texture, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_643d0586b7"
+    },
+    {
+      "id": "node_4b064c1a48",
+      "kind": "video",
+      "title": "无字之书",
+      "x": 880,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_331c1da01d",
+          "nodeId": "node_4b064c1a48",
+          "createdAt": 1791034305477,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "he turns one blank page then another, faster, paper rustling, camera orbits slowly around him from left to right, lantern flame flickers so amber light pulses across the roots, his hands slow and stop, ends with him staring down at the empty page",
+            "seconds": 8,
+            "workflow": "minimax-h3-i2v",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 1024x1024"
+          },
+          "inputs": {
+            "node_495aaf9bfc": "take_643d0586b7"
+          },
+          "jobId": "job_e8b918b7be",
+          "promptId": "dac0dc47-573c-4988-b25b-ffb7fe11dca0",
+          "file": "node_4b064c1a48/take_331c1da01d.mp4",
+          "poster": "node_4b064c1a48/take_331c1da01d.jpg",
+          "finishedAt": 1791034682485,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 2094719
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "he turns one blank page then another, faster, paper rustling, camera orbits slowly around him from left to right, lantern flame flickers so amber light pulses across the roots, his hands slow and stop, ends with him staring down at the empty page",
+        "seconds": 8,
+        "workflow": "minimax-h3-i2v"
+      },
+      "activeTake": "take_331c1da01d"
+    },
+    {
+      "id": "node_22a9f1875c",
+      "kind": "image",
+      "title": "湖中的自己·首帧",
+      "x": 1260,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_cbbdcfef14",
+          "nodeId": "node_22a9f1875c",
+          "createdAt": 1791033720430,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "still mirror lake under a dark teal sky scattered with stars, traveller kneeling on wet black stones at the water's edge, patched grey wool cloak, small brass lantern beside him, his own reflection looking back, faint ripples, low mist over the water, wide symmetrical composition centred on the reflection, camera near water level, 35mm lens, hand-painted storybook illustration, soft gouache texture, muted gold and indigo palette",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_f4b3b1b0f4",
+          "promptId": "c44a5493-1aac-47f4-a36e-68303706be91",
+          "file": "node_22a9f1875c/take_cbbdcfef14.png",
+          "finishedAt": 1791033777777,
+          "probe": {
+            "width": 1024,
+            "height": 1024,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1486502
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "still mirror lake under a dark teal sky scattered with stars, traveller kneeling on wet black stones at the water's edge, patched grey wool cloak, small brass lantern beside him, his own reflection looking back, faint ripples, low mist over the water, wide symmetrical composition centred on the reflection, camera near water level, 35mm lens, hand-painted storybook illustration, soft gouache texture, muted gold and indigo palette",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_cbbdcfef14"
+    },
+    {
+      "id": "node_654e449973",
+      "kind": "video",
+      "title": "湖中的自己",
+      "x": 1260,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_8605692767",
+          "nodeId": "node_654e449973",
+          "createdAt": 1791034683754,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "he leans down toward the water and the reflection leans up to meet him, fingertips touch the surface, the reflection shatters into widening rings, camera pushes in low and slow across the water, starlight glitters cold on the ripples, ends with the reflection reforming calm and clear",
+            "seconds": 8,
+            "workflow": "minimax-h3-i2v",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 1024x1024"
+          },
+          "inputs": {
+            "node_22a9f1875c": "take_cbbdcfef14"
+          },
+          "jobId": "job_cc1da1e792",
+          "promptId": "9866aae4-00a6-437a-b593-37840e4b24e6",
+          "file": "node_654e449973/take_8605692767.mp4",
+          "poster": "node_654e449973/take_8605692767.jpg",
+          "finishedAt": 1791035060707,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1280918
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "he leans down toward the water and the reflection leans up to meet him, fingertips touch the surface, the reflection shatters into widening rings, camera pushes in low and slow across the water, starlight glitters cold on the ripples, ends with the reflection reforming calm and clear",
+        "seconds": 8,
+        "workflow": "minimax-h3-i2v"
+      },
+      "activeTake": "take_8605692767"
+    },
+    {
+      "id": "node_221dd5bd1b",
+      "kind": "image",
+      "title": "峰顶灯灭·首帧",
+      "x": 1640,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_cd390c8cdc",
+          "nodeId": "node_221dd5bd1b",
+          "createdAt": 1791033778520,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "wind-blasted rocky summit above a sea of clouds, traveller braced against the gale, grey wool cloak snapping sideways, brass lantern held low in left hand, churning storm clouds, cold blue-grey light with a single amber point, low angle wide shot, 35mm lens, hand-painted storybook illustration, soft gouache texture, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_3153434592",
+          "promptId": "030afbbb-6e46-4ca0-883b-a494cfb61d5e",
+          "file": "node_221dd5bd1b/take_cd390c8cdc.png",
+          "finishedAt": 1791033829831,
+          "probe": {
+            "width": 1024,
+            "height": 1024,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1622004
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "wind-blasted rocky summit above a sea of clouds, traveller braced against the gale, grey wool cloak snapping sideways, brass lantern held low in left hand, churning storm clouds, cold blue-grey light with a single amber point, low angle wide shot, 35mm lens, hand-painted storybook illustration, soft gouache texture, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_cd390c8cdc"
+    },
+    {
+      "id": "node_7795f0acb2",
+      "kind": "video",
+      "title": "峰顶灯灭",
+      "x": 1640,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_1129acf9ae",
+          "nodeId": "node_7795f0acb2",
+          "createdAt": 1791035062038,
+          "status": "failed",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "a gust tears across the summit, his cloak whips sideways, the lantern is knocked from his hand and rolls over the rock, the flame gutters and dies, camera shakes slightly and tilts down to the dark lantern, colour drains from the frame toward near-black, ends in darkness with wind only",
+            "seconds": 8,
+            "workflow": "minimax-h3-i2v",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 1024x1024"
+          },
+          "inputs": {
+            "node_221dd5bd1b": "take_cd390c8cdc"
+          },
+          "jobId": "job_b4bbf9ebfe",
+          "promptId": "e87a65b6-319a-4bac-b987-ce5a28139689",
+          "error": "执行失败: {\"prompt_id\":\"e87a65b6-319a-4bac-b987-ce5a28139689\",\"node_id\":\"131\",\"node_type\":\"MiniMaxH3ImageToVideo\",\"executed\":[\"174\"],\"exception_message\":\"Allocation on device \\nThis error means you ran out of memory on your GPU.\\n\\nTIPS: If the workflow worked before you might have accidentally set the batch_size to a large number.\",\"exception_type\":\"torch.OutOfMemoryError\",\"traceback\":[\"  File \\\"D:\\\\AI\\\\ComfyUI\\\\execution.py\\\", line 545, in execute\\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_block_cb=execution",
+          "finishedAt": 1791035070232
+        },
+        {
+          "id": "take_2931e84646",
+          "nodeId": "node_7795f0acb2",
+          "createdAt": 1791035938571,
+          "status": "failed",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "a gust tears across the summit, his cloak whips sideways, the lantern is knocked from his hand and rolls over the rock, the flame gutters and dies, camera shakes slightly and tilts down to the dark lantern, colour drains from the frame toward near-black, ends in darkness with wind only",
+            "seconds": 8,
+            "workflow": "minimax-h3-i2v",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 1024x1024"
+          },
+          "inputs": {
+            "node_221dd5bd1b": "take_cd390c8cdc"
+          },
+          "jobId": "job_88ed7aa57a",
+          "promptId": "07082576-ab63-4635-b1ca-0a94da6c325b",
+          "error": "执行失败: {\"prompt_id\":\"07082576-ab63-4635-b1ca-0a94da6c325b\",\"node_id\":\"131\",\"node_type\":\"MiniMaxH3ImageToVideo\",\"executed\":[\"174\"],\"exception_message\":\"Allocation on device \\nThis error means you ran out of memory on your GPU.\\n\\nTIPS: If the workflow worked before you might have accidentally set the batch_size to a large number.\",\"exception_type\":\"torch.OutOfMemoryError\",\"traceback\":[\"  File \\\"D:\\\\AI\\\\ComfyUI\\\\execution.py\\\", line 545, in execute\\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_block_cb=execution",
+          "finishedAt": 1791035954819
+        },
+        {
+          "id": "take_f44629e9a8",
+          "nodeId": "node_7795f0acb2",
+          "createdAt": 1791035962146,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "a gust tears across the summit, his cloak whips sideways, the lantern is knocked from his hand and rolls over the rock, the flame gutters and dies, camera shakes slightly and tilts down to the dark lantern, colour drains from the frame toward near-black, ends in darkness with wind only",
+            "seconds": 8,
+            "workflow": "minimax-h3-i2v",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 1024x1024"
+          },
+          "inputs": {
+            "node_221dd5bd1b": "take_cd390c8cdc"
+          },
+          "jobId": "job_eb0cfe287f",
+          "promptId": "56711604-2b92-48c3-b7bf-1ab9bcf2bc6f",
+          "file": "node_7795f0acb2/take_f44629e9a8.mp4",
+          "poster": "node_7795f0acb2/take_f44629e9a8.jpg",
+          "finishedAt": 1791036302363,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1783831
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "a gust tears across the summit, his cloak whips sideways, the lantern is knocked from his hand and rolls over the rock, the flame gutters and dies, camera shakes slightly and tilts down to the dark lantern, colour drains from the frame toward near-black, ends in darkness with wind only",
+        "seconds": 8,
+        "workflow": "minimax-h3-i2v"
+      },
+      "activeTake": "take_f44629e9a8"
+    },
+    {
+      "id": "node_73c0fbcb78",
+      "kind": "image",
+      "title": "手里的光·首帧",
+      "x": 2020,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_a772ca5f3f",
+          "nodeId": "node_73c0fbcb78",
+          "createdAt": 1791033830601,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "same rocky summit at first light, cloud sea turned gold, traveller standing upright, hood fallen back, open palm raised holding a small warm glow, brass lantern resting at his feet, calm sky of pale rose and gold against teal, wide shot from behind and slightly above, 35mm lens, hand-painted storybook illustration, soft gouache texture, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_64a979e9b8",
+          "promptId": "b4cbc02d-7064-457c-8f5f-eb88c581974c",
+          "file": "node_73c0fbcb78/take_a772ca5f3f.png",
+          "finishedAt": 1791033881919,
+          "probe": {
+            "width": 1024,
+            "height": 1024,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1551163
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "same rocky summit at first light, cloud sea turned gold, traveller standing upright, hood fallen back, open palm raised holding a small warm glow, brass lantern resting at his feet, calm sky of pale rose and gold against teal, wide shot from behind and slightly above, 35mm lens, hand-painted storybook illustration, soft gouache texture, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_a772ca5f3f"
+    },
+    {
+      "id": "node_161b2f25b2",
+      "kind": "video",
+      "title": "手里的光",
+      "x": 2020,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_059a1c2dff",
+          "nodeId": "node_161b2f25b2",
+          "createdAt": 1791035072089,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "he straightens and raises his open palm, a small warm glow blooms inside it, the storm light breaks into gold dawn, camera pulls back and rises slowly revealing the whole valley under rolling mist, his cloak settles still, ends on the wide bright landscape with him small at its centre",
+            "seconds": 8,
+            "workflow": "minimax-h3-i2v",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 1024x1024"
+          },
+          "inputs": {
+            "node_73c0fbcb78": "take_a772ca5f3f"
+          },
+          "jobId": "job_958bbce13d",
+          "promptId": "855996bc-ae6e-40af-bb02-248ddf699c0d",
+          "file": "node_161b2f25b2/take_059a1c2dff.mp4",
+          "poster": "node_161b2f25b2/take_059a1c2dff.jpg",
+          "finishedAt": 1791035441199,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1082553
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "he straightens and raises his open palm, a small warm glow blooms inside it, the storm light breaks into gold dawn, camera pulls back and rises slowly revealing the whole valley under rolling mist, his cloak settles still, ends on the wide bright landscape with him small at its centre",
+        "seconds": 8,
+        "workflow": "minimax-h3-i2v"
+      },
+      "activeTake": "take_059a1c2dff"
+    },
+    {
+      "id": "node_943f968dcd",
+      "kind": "op",
+      "title": "成片",
+      "x": 2340,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_75231b39fa",
+          "nodeId": "node_943f968dcd",
+          "createdAt": 1791035442417,
+          "status": "done",
+          "source": "op",
+          "kind": "video",
+          "params": {
+            "transition": "fade",
+            "duration": 0.5,
+            "transitionUsed": 0.5,
+            "joints": 3
+          },
+          "inputs": {
+            "node_9d6f8aa419": "take_24de12cc1d",
+            "node_4b064c1a48": "take_331c1da01d",
+            "node_654e449973": "take_8605692767",
+            "node_161b2f25b2": "take_059a1c2dff"
+          },
+          "op": "xfade",
+          "file": "node_943f968dcd/take_75231b39fa.mp4",
+          "poster": "node_943f968dcd/take_75231b39fa.jpg",
+          "probe": {
+            "duration": 30.5,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 6556272
+          },
+          "finishedAt": 1791035445320
+        },
+        {
+          "id": "take_6bdda4b8a7",
+          "nodeId": "node_943f968dcd",
+          "createdAt": 1791052415267,
+          "status": "failed",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "transition": "fade",
+            "duration": 0.5,
+            "transitionUsed": 0.5,
+            "joints": 3,
+            "prompt": "he lifts the brass lantern a little and takes one slow step forward into the fog, camera pushes in gently behind him, mist drifts past in curling layers, lantern glow warms the edge of his grey cloak, ends with his silhouette half-swallowed by the valley, the pale path still leading on"
+          },
+          "inputs": {
+            "node_9d6f8aa419": "take_24de12cc1d",
+            "node_4b064c1a48": "take_331c1da01d",
+            "node_654e449973": "take_8605692767",
+            "node_161b2f25b2": "take_059a1c2dff"
+          },
+          "jobId": "job_a1609a372a",
+          "error": "生图实例 http://127.0.0.1:8888 没在监听：fetch failed（生图实例平时是关着的，起它，或把 imageHost 指到 8188）",
+          "finishedAt": 1791052415324
+        },
+        {
+          "id": "take_abe8cc31de",
+          "nodeId": "node_943f968dcd",
+          "createdAt": 1791052427714,
+          "status": "done",
+          "source": "op",
+          "kind": "video",
+          "params": {
+            "transition": "fade",
+            "duration": 0.5,
+            "transitionUsed": 0.5,
+            "joints": 5
+          },
+          "inputs": {
+            "node_9d6f8aa419": "take_24de12cc1d",
+            "node_4b064c1a48": "take_331c1da01d",
+            "node_654e449973": "take_8605692767",
+            "node_161b2f25b2": "take_059a1c2dff",
+            "node_5f6195a8cf": "take_e0f0097df8",
+            "node_7795f0acb2": "take_f44629e9a8"
+          },
+          "op": "xfade",
+          "file": "node_943f968dcd/take_abe8cc31de.mp4",
+          "poster": "node_943f968dcd/take_abe8cc31de.jpg",
+          "probe": {
+            "duration": 45.5,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 10378711
+          },
+          "finishedAt": 1791052434322
+        }
+      ],
+      "activeTake": "take_abe8cc31de"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_ff33dfb2a2",
+      "from": "node_d571bfb887",
+      "to": "node_9d6f8aa419",
+      "pin": "active",
+      "createdAt": 1791033436707
+    },
+    {
+      "id": "edge_3a5c5f28e3",
+      "from": "node_d1cef0e9e3",
+      "to": "node_5f6195a8cf",
+      "pin": "active",
+      "createdAt": 1791033436707
+    },
+    {
+      "id": "edge_9fe645daa5",
+      "from": "node_495aaf9bfc",
+      "to": "node_4b064c1a48",
+      "pin": "active",
+      "createdAt": 1791033436708
+    },
+    {
+      "id": "edge_2d63565fff",
+      "from": "node_22a9f1875c",
+      "to": "node_654e449973",
+      "pin": "active",
+      "createdAt": 1791033436708
+    },
+    {
+      "id": "edge_3b1c00c21e",
+      "from": "node_221dd5bd1b",
+      "to": "node_7795f0acb2",
+      "pin": "active",
+      "createdAt": 1791033436708
+    },
+    {
+      "id": "edge_287000e976",
+      "from": "node_73c0fbcb78",
+      "to": "node_161b2f25b2",
+      "pin": "active",
+      "createdAt": 1791033436708
+    },
+    {
+      "id": "e_d263e50f61",
+      "from": "node_9d6f8aa419",
+      "to": "node_943f968dcd",
+      "pin": "active",
+      "createdAt": 1791035442389
+    },
+    {
+      "id": "e_b408dc2231",
+      "from": "node_4b064c1a48",
+      "to": "node_943f968dcd",
+      "pin": "active",
+      "createdAt": 1791035442389
+    },
+    {
+      "id": "e_d73d965698",
+      "from": "node_654e449973",
+      "to": "node_943f968dcd",
+      "pin": "active",
+      "createdAt": 1791035442389
+    },
+    {
+      "id": "e_63dff8c6ae",
+      "from": "node_161b2f25b2",
+      "to": "node_943f968dcd",
+      "pin": "active",
+      "createdAt": 1791035442389
+    },
+    {
+      "id": "e_7e66ad170b",
+      "from": "node_5f6195a8cf",
+      "to": "node_943f968dcd",
+      "pin": "active",
+      "createdAt": 1791052427699
+    },
+    {
+      "id": "e_76315d8221",
+      "from": "node_7795f0acb2",
+      "to": "node_943f968dcd",
+      "pin": "active",
+      "createdAt": 1791052427699
+    }
+  ],
+  "view": {
+    "x": 0,
+    "y": 0,
+    "zoom": 1
+  },
+  "settings": {
+    "comfyHost": "http://127.0.0.1:8188",
+    "imageHost": "http://127.0.0.1:8888",
+    "workflowImage": "z-image-guangyu",
+    "workflowVideo": "minimax-h3-i2v",
+    "workflowDir": "D:\\AI\\repos\\Easel\\skills\\shared\\comfy\\workflows",
+    "ffmpeg": "D:\\AI\\ffmpeg-master-latest-win64-gpl-shared\\bin\\ffmpeg.exe",
+    "ffprobe": "D:\\AI\\ffmpeg-master-latest-win64-gpl-shared\\bin\\ffprobe.exe",
+    "releaseImageBeforeVideo": true,
+    "transition": {
+      "type": "fade",
+      "duration": 0.5
+    }
+  },
+  "story": {
+    "title": "提灯找真理",
+    "logline": "一个提灯的年轻人翻山越湖去寻找真理，把灯吹灭之后，才发现光一直在自己手里。",
+    "style": "hand-painted storybook illustration, soft gouache texture, warm amber lantern light against deep teal mist, muted gold and indigo palette, subtle film grain, 35mm lens, gentle fairy-tale mood",
+    "beats": [
+      {
+        "id": "beat_f1938041ab",
+        "title": "提灯入雾谷",
+        "action": "年轻旅人背对镜头站在雾谷入口，提灯望向远处山影，镜头从背后缓缓推近。",
+        "image": "lean young wanderer, short dark hair, patched grey wool cloak, leather satchel, small brass lantern in left hand, seen from behind, standing at the mouth of a misty valley, towering fog-shrouded cliffs, winding path of pale stones, dawn haze, warm amber lantern glow against deep teal mist, low wide shot, 35mm lens, hand-painted storybook illustration, soft gouache texture, muted gold and indigo palette, subtle film grain",
+        "video": "he lifts the brass lantern a little and takes one slow step forward into the fog, camera pushes in gently behind him, mist drifts past in curling layers, lantern glow warms the edge of his grey cloak, ends with his silhouette half-swallowed by the valley, the pale path still leading on",
+        "seconds": 8,
+        "imageNodeId": "node_d571bfb887",
+        "videoNodeId": "node_9d6f8aa419"
+      },
+      {
+        "id": "beat_9b0ccc034b",
+        "title": "石阶上的人",
+        "action": "苔石阶边，绿袍老妇抬手点了点自己的胸口，旅人跪坐半侧身，一脸不解。",
+        "image": "same lean young wanderer, short dark hair, patched grey wool cloak, leather satchel, brass lantern set on stone, half-kneeling on mossy carved stone steps, facing an old woman in a moss-green hooded robe seated on the step above, ferns and pale light shafts through canopy, warm amber and deep teal shadows, eye-level medium shot, 35mm lens, hand-painted storybook illustration, soft gouache texture, subtle film grain",
+        "video": "the old woman slowly raises one finger and taps her own chest, his head tilts in confusion, camera holds then drifts a few inches left, a shaft of pale light widens across the steps with dust motes floating, ends on his uncertain face turned back toward the high path",
+        "seconds": 8,
+        "line": "真理不在山顶，在你胸口。",
+        "imageNodeId": "node_d1cef0e9e3",
+        "videoNodeId": "node_5f6195a8cf"
+      },
+      {
+        "id": "beat_307b0e999a",
+        "title": "无字之书",
+        "action": "巨树根须盘成的洞窟里，旅人翻看一本空白的书，镜头绕他缓慢环移。",
+        "image": "interior hollow beneath a giant tree, thick roots curving into shelves, hundreds of blank-page books, traveller seated on a root, brass lantern on the ground beside him, opening a book with empty pages, warm amber pools of light, deep indigo shadow, low angle medium shot, 35mm lens, hand-painted storybook illustration, soft gouache texture, subtle film grain",
+        "video": "he turns one blank page then another, faster, paper rustling, camera orbits slowly around him from left to right, lantern flame flickers so amber light pulses across the roots, his hands slow and stop, ends with him staring down at the empty page",
+        "seconds": 8,
+        "imageNodeId": "node_495aaf9bfc",
+        "videoNodeId": "node_4b064c1a48"
+      },
+      {
+        "id": "beat_1c96369f55",
+        "title": "湖中的自己",
+        "action": "夜里的镜湖岸边，旅人俯身看水中倒影，镜头贴近水面缓缓推近。",
+        "image": "still mirror lake under a dark teal sky scattered with stars, traveller kneeling on wet black stones at the water's edge, patched grey wool cloak, small brass lantern beside him, his own reflection looking back, faint ripples, low mist over the water, wide symmetrical composition centred on the reflection, camera near water level, 35mm lens, hand-painted storybook illustration, soft gouache texture, muted gold and indigo palette",
+        "video": "he leans down toward the water and the reflection leans up to meet him, fingertips touch the surface, the reflection shatters into widening rings, camera pushes in low and slow across the water, starlight glitters cold on the ripples, ends with the reflection reforming calm and clear",
+        "seconds": 8,
+        "imageNodeId": "node_22a9f1875c",
+        "videoNodeId": "node_654e449973"
+      },
+      {
+        "id": "beat_da7165bcc3",
+        "title": "峰顶灯灭",
+        "action": "狂风峰顶，旅人撑住身子，铜灯被风掀翻滚落，灯焰熄灭，画面沉入黑暗。",
+        "image": "wind-blasted rocky summit above a sea of clouds, traveller braced against the gale, grey wool cloak snapping sideways, brass lantern held low in left hand, churning storm clouds, cold blue-grey light with a single amber point, low angle wide shot, 35mm lens, hand-painted storybook illustration, soft gouache texture, subtle film grain",
+        "video": "a gust tears across the summit, his cloak whips sideways, the lantern is knocked from his hand and rolls over the rock, the flame gutters and dies, camera shakes slightly and tilts down to the dark lantern, colour drains from the frame toward near-black, ends in darkness with wind only",
+        "seconds": 8,
+        "imageNodeId": "node_221dd5bd1b",
+        "videoNodeId": "node_7795f0acb2"
+      },
+      {
+        "id": "beat_72f03e6a2f",
+        "title": "手里的光",
+        "action": "风暴散去的峰顶，旅人直起身摊开手掌，一点暖光在掌心亮起，镜头后拉升高露出整片云海。",
+        "image": "same rocky summit at first light, cloud sea turned gold, traveller standing upright, hood fallen back, open palm raised holding a small warm glow, brass lantern resting at his feet, calm sky of pale rose and gold against teal, wide shot from behind and slightly above, 35mm lens, hand-painted storybook illustration, soft gouache texture, subtle film grain",
+        "video": "he straightens and raises his open palm, a small warm glow blooms inside it, the storm light breaks into gold dawn, camera pulls back and rises slowly revealing the whole valley under rolling mist, his cloak settles still, ends on the wide bright landscape with him small at its centre",
+        "seconds": 8,
+        "line": "原来它一直在我手里。",
+        "imageNodeId": "node_73c0fbcb78",
+        "videoNodeId": "node_161b2f25b2"
+      }
+    ],
+    "source": "ai",
+    "updatedAt": 1791033544109
+  }
+}

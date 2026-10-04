@@ -1,0 +1,79 @@
+{
+  "id": "助手联调-f328",
+  "name": "助手联调",
+  "rev": 6,
+  "createdAt": 1791015677297,
+  "updatedAt": 1791017150729,
+  "nodes": [
+    {
+      "id": "n_9b26d453bd",
+      "kind": "text",
+      "title": "雨夜霓虹独行者·提示词",
+      "x": 0,
+      "y": 0,
+      "takes": [
+        {
+          "id": "take_8b8711e2d2",
+          "nodeId": "n_9b26d453bd",
+          "createdAt": 1791015687986,
+          "finishedAt": 1791015687986,
+          "status": "done",
+          "source": "text",
+          "kind": "image",
+          "text": "solitary figure in a soaked dark grey wool coat, shoulders hunched, walking away from camera through shallow puddle water, collar pulled up, hands deep in pockets, rain streaking diagonally, narrow night alley in a dense Asian city, wet asphalt reflecting magenta and cyan neon signage, steam drifting from a vent grate, low angle wide shot, subject placed right of center, deep receding perspective, backlit by neon sign glow, rim light on wet shoulders, hard magenta key from left, cyan fill from right, rain droplets catching light, wet wool fiber texture, slick reflective ground, 24mm wide lens, f/2.8, slight barrel distortion, cyberpunk neo-noir film still, cinematic color grading, teal and magenta split tone, volumetric haze, high detail, 8k, photorealistic\n\n负面词：multiple people, crowd, face clearly lit, cartoon, anime, 3d render, cgi, plastic skin, blurry, low resolution, jpeg artifacts, watermark, text, logo, extra limbs, deformed hands, oversaturated, flat lighting, daylight, sunny, dry ground, clean streets",
+          "params": {
+            "prompt": "solitary figure in a soaked dark grey wool coat, shoulders hunched, walking away from camera through shallow puddle water, collar pulled up, hands deep in pockets, rain streaking diagonally, narrow night alley in a dense Asian city, wet asphalt reflecting magenta and cyan neon signage, steam drifting from a vent grate, low angle wide shot, subject placed right of center, deep receding perspective, backlit by neon sign glow, rim light on wet shoulders, hard magenta key from left, cyan fill from right, rain droplets catching light, wet wool fiber texture, slick reflective ground, 24mm wide lens, f/2.8, slight barrel distortion, cyberpunk neo-noir film still, cinematic color grading, teal and magenta split tone, volumetric haze, high detail, 8k, photorealistic\n\n负面词：multiple people, crowd, face clearly lit, cartoon, anime, 3d render, cgi, plastic skin, blurry, low resolution, jpeg artifacts, watermark, text, logo, extra limbs, deformed hands, oversaturated, flat lighting, daylight, sunny, dry ground, clean streets"
+          },
+          "inputs": {}
+        },
+        {
+          "id": "take_8c9b488384",
+          "nodeId": "n_9b26d453bd",
+          "createdAt": 1791015885954,
+          "finishedAt": 1791015885954,
+          "status": "done",
+          "source": "text",
+          "kind": "image",
+          "text": "solitary figure in a soaked dark grey wool coat, shoulders hunched, walking away from camera through shallow puddle water, collar pulled up, hands deep in pockets, rain streaking diagonally, narrow night alley in a dense Asian city, wet asphalt reflecting magenta and cyan neon signage, steam drifting from a vent grate, low angle wide shot, subject placed right of center, deep receding perspective, backlit by neon sign glow, rim light on wet shoulders, hard magenta key from left, cyan fill from right, rain droplets catching light, wet wool fiber texture, slick reflective ground, 24mm wide lens, f/2.8, slight barrel distortion, cyberpunk neo-noir film still, cinematic color grading, teal and magenta split tone, volumetric haze, high detail, 8k, photorealistic",
+          "params": {
+            "prompt": "solitary figure in a soaked dark grey wool coat, shoulders hunched, walking away from camera through shallow puddle water, collar pulled up, hands deep in pockets, rain streaking diagonally, narrow night alley in a dense Asian city, wet asphalt reflecting magenta and cyan neon signage, steam drifting from a vent grate, low angle wide shot, subject placed right of center, deep receding perspective, backlit by neon sign glow, rim light on wet shoulders, hard magenta key from left, cyan fill from right, rain droplets catching light, wet wool fiber texture, slick reflective ground, 24mm wide lens, f/2.8, slight barrel distortion, cyberpunk neo-noir film still, cinematic color grading, teal and magenta split tone, volumetric haze, high detail, 8k, photorealistic"
+          },
+          "inputs": {}
+        }
+      ],
+      "activeTake": "take_8c9b488384"
+    },
+    {
+      "id": "n_6eab083b2a",
+      "kind": "image",
+      "title": "首帧",
+      "x": 262,
+      "y": 0,
+      "takes": []
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_410d9971aa",
+      "from": "n_9b26d453bd",
+      "to": "n_6eab083b2a",
+      "pin": "active",
+      "createdAt": 1791015887710
+    }
+  ],
+  "view": {
+    "x": 0,
+    "y": 0,
+    "zoom": 1
+  },
+  "settings": {
+    "comfyHost": "http://127.0.0.1:8188",
+    "imageHost": "http://127.0.0.1:8888",
+    "workflowImage": "z-image-guangyu",
+    "workflowVideo": "minimax-h3-i2v",
+    "workflowDir": "D:\\AI\\repos\\Easel\\skills\\shared\\comfy\\workflows",
+    "ffmpeg": "D:\\AI\\ffmpeg-master-latest-win64-gpl-shared\\bin\\ffmpeg.exe",
+    "ffprobe": "D:\\AI\\ffmpeg-master-latest-win64-gpl-shared\\bin\\ffprobe.exe",
+    "releaseImageBeforeVideo": true
+  }
+}

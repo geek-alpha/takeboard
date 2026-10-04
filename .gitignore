@@ -1,0 +1,31 @@
+node_modules/
+dist/
+
+# 密钥与本地配置
+.env
+.env.*
+!.env.example
+data/llm.json
+
+# 日志
+logs/
+*.log
+
+# 编辑器/工具备份
+*.bak
+*.bak-*
+*.orig
+*.tmp
+
+# 临时脚本与临时产物
+scripts/tmp-*
+data/take_*_frame.png
+
+# 项目素材（体积大，不入库；只保留 project.json 等元数据）
+projects/**/media/
+projects/**/*.mp4
+projects/**/*.jpg
+projects/**/*.jpeg
+projects/**/*.png
+projects/**/*.m4a
+projects/**/*.wav

@@ -1,0 +1,1580 @@
+{
+  "id": "生图链路验证-7ba0",
+  "name": "生图链路验证",
+  "rev": 392,
+  "createdAt": 1791011592011,
+  "updatedAt": 1791065409435,
+  "nodes": [
+    {
+      "id": "n_0818aec12e",
+      "kind": "text",
+      "title": "提示词",
+      "x": 0,
+      "y": 0,
+      "takes": [
+        {
+          "id": "take_0cd0329214",
+          "nodeId": "n_0818aec12e",
+          "createdAt": 1791011602277,
+          "status": "done",
+          "source": "text",
+          "kind": "image",
+          "text": "夜晚的山脊，一个背对镜头的行者站在强光里，逆光剪影，面部完全处于暗部看不见五官，电影感广角",
+          "params": {
+            "prompt": "夜晚的山脊，一个背对镜头的行者站在强光里，逆光剪影，面部完全处于暗部看不见五官，电影感广角"
+          },
+          "inputs": {}
+        },
+        {
+          "id": "take_88a80b7fd4",
+          "nodeId": "n_0818aec12e",
+          "createdAt": 1791011814861,
+          "status": "done",
+          "source": "text",
+          "kind": "image",
+          "text": "正午的沙漠公路，旅人背影走在热浪里，脸部完全背对镜头看不见五官，远景电影感",
+          "params": {
+            "prompt": "正午的沙漠公路，旅人背影走在热浪里，脸部完全背对镜头看不见五官，远景电影感"
+          },
+          "inputs": {}
+        }
+      ],
+      "activeTake": "take_88a80b7fd4"
+    },
+    {
+      "id": "n_db61383d5f",
+      "kind": "image",
+      "title": "生图",
+      "x": 399,
+      "y": -84,
+      "takes": [
+        {
+          "id": "take_4cd1f4bedb",
+          "nodeId": "n_db61383d5f",
+          "createdAt": 1791011613723,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "seed": 1967675340,
+            "prompt": "夜晚的山脊，一个背对镜头的行者站在强光里，逆光剪影，面部完全处于暗部看不见五官，电影感广角",
+            "workflow": "z-image-guangyu",
+            "aiReview": {
+              "score": 90,
+              "verdict": "夜晚山脊、背对镜头的行者踩在光爆正中心，逆光剪影干净，五官完全埋进暗部，暖橙光晕与冷蓝山脊拉开层次，广角山峦纵深撑住了电影感，基本是提示词的直译命中。",
+              "at": 1791017772624,
+              "model": "deepseek-v4.1-flash",
+              "criteria": "主体是否为背对镜头的旅人、沙漠公路热浪氛围、电影感构图光影、有无肢体/比例崩坏、当作 video 首帧的可用性"
+            }
+          },
+          "inputs": {
+            "n_0818aec12e": "take_0cd0329214"
+          },
+          "label": "抽卡 1/2",
+          "jobId": "job_d8d51b9be1",
+          "promptId": "b8499b88-e2f3-4b20-89c8-84cc143b9a4e",
+          "file": "n_db61383d5f/take_4cd1f4bedb.png",
+          "finishedAt": 1791011683445,
+          "probe": {
+            "width": 1024,
+            "height": 1024,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1299514
+          }
+        },
+        {
+          "id": "take_6c48c5a4d7",
+          "nodeId": "n_db61383d5f",
+          "createdAt": 1791011613760,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "seed": 1967675341,
+            "prompt": "夜晚的山脊，一个背对镜头的行者站在强光里，逆光剪影，面部完全处于暗部看不见五官，电影感广角",
+            "workflow": "z-image-guangyu",
+            "aiReview": {
+              "score": 70,
+              "verdict": "剪影、披风、逆光闪烁的火星都对，画面也好看，但环境是青绿色巨树洞窟／废墟，不是夜晚山脊，氛围从史诗山野跑偏成地下奇幻，且行者小腿与暗色岩坡糊在一起，落脚点读不清。",
+              "issues": "场景与提示词核心的'夜晚山脊'不符，变成巨树洞窟；行者下半身与地面暗部融合，肢体轮廓发糊",
+              "at": 1791017772624,
+              "model": "deepseek-v4.1-flash",
+              "criteria": "主体是否为背对镜头的旅人、沙漠公路热浪氛围、电影感构图光影、有无肢体/比例崩坏、当作 video 首帧的可用性"
+            }
+          },
+          "inputs": {
+            "n_0818aec12e": "take_0cd0329214"
+          },
+          "label": "抽卡 2/2",
+          "jobId": "job_568b56c600",
+          "promptId": "b9fb9d6f-e258-4fde-8acd-14649a22ca88",
+          "file": "n_db61383d5f/take_6c48c5a4d7.png",
+          "finishedAt": 1791011734521,
+          "probe": {
+            "width": 1024,
+            "height": 1024,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1356482
+          }
+        },
+        {
+          "id": "take_3402556b54",
+          "nodeId": "n_db61383d5f",
+          "createdAt": 1791011816343,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "seed": 777,
+            "prompt": "正午的沙漠公路，旅人背影走在热浪里，脸部完全背对镜头看不见五官，远景电影感",
+            "workflow": "z-image-guangyu",
+            "aiReview": {
+              "score": 52,
+              "verdict": "背对镜头的行者、公路构图确实成立，但这是大白天沙漠公路，蓝天高亮、人物被顺光照亮，黑斗篷边缘没有逆光轮廓线，夜晚、山脊、强光剪影三个关键词全丢，只剩'背影'。",
+              "issues": "白天沙漠场景与提示词完全不符；无逆光剪影、无夜晚山脊强光；面部与身形处于受光面，光影逻辑与提示词相反",
+              "at": 1791017772624,
+              "model": "deepseek-v4.1-flash",
+              "criteria": "主体是否为背对镜头的旅人、沙漠公路热浪氛围、电影感构图光影、有无肢体/比例崩坏、当作 video 首帧的可用性"
+            }
+          },
+          "inputs": {
+            "n_0818aec12e": "take_88a80b7fd4"
+          },
+          "jobId": "job_0152a5837c",
+          "promptId": "19486c3d-f34a-4ae5-8c46-f8d1a913f681",
+          "file": "n_db61383d5f/take_3402556b54.png",
+          "finishedAt": 1791011873811,
+          "probe": {
+            "width": 1024,
+            "height": 1024,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1237754
+          }
+        },
+        {
+          "id": "take_e612157c6f",
+          "nodeId": "n_db61383d5f",
+          "createdAt": 1791062817700,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "seed": 777,
+            "prompt": "正午的沙漠公路，旅人背影走在热浪里，脸部完全背对镜头看不见五官，远景电影感",
+            "workflow": "z-image-guangyu",
+            "aiReview": {
+              "score": 52,
+              "verdict": "背对镜头的行者、公路构图确实成立，但这是大白天沙漠公路，蓝天高亮、人物被顺光照亮，黑斗篷边缘没有逆光轮廓线，夜晚、山脊、强光剪影三个关键词全丢，只剩'背影'。",
+              "issues": "白天沙漠场景与提示词完全不符；无逆光剪影、无夜晚山脊强光；面部与身形处于受光面，光影逻辑与提示词相反",
+              "at": 1791017772624,
+              "model": "deepseek-v4.1-flash",
+              "criteria": "主体是否为背对镜头的旅人、沙漠公路热浪氛围、电影感构图光影、有无肢体/比例崩坏、当作 video 首帧的可用性"
+            }
+          },
+          "inputs": {
+            "n_0818aec12e": "take_88a80b7fd4"
+          },
+          "jobId": "job_39ba055b69",
+          "promptId": "0783898d-f1a8-4a9a-b818-35babf0e09ea",
+          "file": "n_db61383d5f/take_e612157c6f.png",
+          "finishedAt": 1791062863095,
+          "probe": {
+            "width": 720,
+            "height": 1280,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1178550
+          }
+        },
+        {
+          "id": "take_ff5e75c99f",
+          "nodeId": "n_db61383d5f",
+          "createdAt": 1791064075788,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "seed": 777,
+            "prompt": "夜晚的山脊，一个背对镜头的行者站在强光里，逆光剪影，面部完全处于暗部看不见五官，电影感广角",
+            "workflow": "z-image-guangyu",
+            "aiReview": {
+              "score": 52,
+              "verdict": "背对镜头的行者、公路构图确实成立，但这是大白天沙漠公路，蓝天高亮、人物被顺光照亮，黑斗篷边缘没有逆光轮廓线，夜晚、山脊、强光剪影三个关键词全丢，只剩'背影'。",
+              "issues": "白天沙漠场景与提示词完全不符；无逆光剪影、无夜晚山脊强光；面部与身形处于受光面，光影逻辑与提示词相反",
+              "at": 1791017772624,
+              "model": "deepseek-v4.1-flash",
+              "criteria": "主体是否为背对镜头的旅人、沙漠公路热浪氛围、电影感构图光影、有无肢体/比例崩坏、当作 video 首帧的可用性"
+            }
+          },
+          "inputs": {
+            "n_0818aec12e": "take_88a80b7fd4"
+          },
+          "jobId": "job_af3c782440",
+          "promptId": "f4c568c2-a454-479e-9557-b1d71567dc3d",
+          "file": "n_db61383d5f/take_ff5e75c99f.png",
+          "finishedAt": 1791064124185,
+          "probe": {
+            "width": 720,
+            "height": 1280,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1287957
+          }
+        }
+      ],
+      "activeTake": "take_ff5e75c99f"
+    },
+    {
+      "id": "n_e2838459a9",
+      "kind": "video",
+      "title": "视频",
+      "x": 667,
+      "y": -87,
+      "takes": [
+        {
+          "id": "take_cf2c12d0aa",
+          "nodeId": "n_e2838459a9",
+          "createdAt": 1791012344879,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "dance",
+            "workflow": "minimax-h3-i2v"
+          },
+          "inputs": {
+            "n_db61383d5f": "take_3402556b54"
+          },
+          "jobId": "job_b65822c6ac",
+          "promptId": "eca0f3e5-3344-487f-bcf1-0f4ca27ca28c",
+          "file": "n_e2838459a9/take_cf2c12d0aa.mp4",
+          "poster": "n_e2838459a9/take_cf2c12d0aa.jpg",
+          "finishedAt": 1791012770276,
+          "probe": {
+            "duration": 8,
+            "width": 864,
+            "height": 480,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 827801
+          }
+        },
+        {
+          "id": "take_055defa40e",
+          "nodeId": "n_e2838459a9",
+          "createdAt": 1791014378272,
+          "status": "failed",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "正午的沙漠公路，旅人背影走在热浪里，脸部完全背对镜头看不见五官，远景电影感",
+            "workflow": "minimax-h3-i2v",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 1024x1024"
+          },
+          "inputs": {
+            "n_db61383d5f": "take_3402556b54"
+          },
+          "jobId": "job_ec6d26b65f",
+          "promptId": "d3dceb79-355f-4a91-83c2-6918ecb8c30b",
+          "error": "执行失败: {\"prompt_id\":\"d3dceb79-355f-4a91-83c2-6918ecb8c30b\",\"node_id\":\"131\",\"node_type\":\"MiniMaxH3ImageToVideo\",\"executed\":[\"115\",\"133\",\"132\",\"174\"],\"exception_message\":\"Allocation on device \\nThis error means you ran out of memory on your GPU.\\n\\nTIPS: If the workflow worked before you might have accidentally set the batch_size to a large number.\",\"exception_type\":\"torch.OutOfMemoryError\",\"traceback\":[\"  File \\\"D:\\\\AI\\\\ComfyUI\\\\execution.py\\\", line 545, in execute\\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_",
+          "finishedAt": 1791014386739
+        },
+        {
+          "id": "take_46c45214d3",
+          "nodeId": "n_e2838459a9",
+          "createdAt": 1791014408757,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "正午的沙漠公路，旅人背影走在热浪里，脸部完全背对镜头看不见五官，远景电影感",
+            "workflow": "minimax-h3-i2v",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 1024x1024"
+          },
+          "inputs": {
+            "n_db61383d5f": "take_3402556b54"
+          },
+          "jobId": "job_31f0806766",
+          "promptId": "228103f1-918f-4394-ac76-d1af0a2dd4f5",
+          "file": "n_e2838459a9/take_46c45214d3.mp4",
+          "poster": "n_e2838459a9/take_46c45214d3.jpg",
+          "finishedAt": 1791014737668,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 700253
+          }
+        },
+        {
+          "id": "take_109936535b",
+          "nodeId": "n_e2838459a9",
+          "createdAt": 1791018313151,
+          "status": "failed",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "Starting on this frame, the traveler continues walking away at an even pace, one foot after the other, the stride staying loose and continuous. The camera slowly dollies forward behind them while rising gently on a crane, tilting down a few degrees as it gains height, so the road and the empty land open up around the figure. Dust lifts off the shoulders of the road in slow drifts, and heat haze rolls across the asphalt in long waves. The light stays high and hard, but as the camera rises the glare on the pavement stretches into a long bright band toward the horizon. The move ends high and wide, the traveler now a lone small shape on an enormous empty road, still walking away.",
+            "workflow": "minimax-h3-i2v",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "面板指定"
+          },
+          "inputs": {
+            "n_db61383d5f": "take_4cd1f4bedb"
+          },
+          "jobId": "job_d6d288514a",
+          "promptId": "c504ef3e-6763-468f-9279-9f0e11e807d2",
+          "error": "执行失败: {\"prompt_id\":\"c504ef3e-6763-468f-9279-9f0e11e807d2\",\"node_id\":\"131\",\"node_type\":\"MiniMaxH3ImageToVideo\",\"executed\":[\"115\",\"133\",\"132\",\"174\"],\"exception_message\":\"Allocation on device \\nThis error means you ran out of memory on your GPU.\\n\\nTIPS: If the workflow worked before you might have accidentally set the batch_size to a large number.\",\"exception_type\":\"torch.OutOfMemoryError\",\"traceback\":[\"  File \\\"D:\\\\AI\\\\ComfyUI\\\\execution.py\\\", line 545, in execute\\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_",
+          "finishedAt": 1791018321391
+        },
+        {
+          "id": "take_c7d71444a5",
+          "nodeId": "n_e2838459a9",
+          "createdAt": 1791018354135,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "Starting on this frame, the traveler continues walking away at an even pace, one foot after the other, the stride staying loose and continuous. The camera slowly dollies forward behind them while rising gently on a crane, tilting down a few degrees as it gains height, so the road and the empty land open up around the figure. Dust lifts off the shoulders of the road in slow drifts, and heat haze rolls across the asphalt in long waves. The light stays high and hard, but as the camera rises the glare on the pavement stretches into a long bright band toward the horizon. The move ends high and wide, the traveler now a lone small shape on an enormous empty road, still walking away.",
+            "workflow": "minimax-h3-i2v",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "面板指定"
+          },
+          "inputs": {
+            "n_db61383d5f": "take_3402556b54"
+          },
+          "jobId": "job_792d3196fa",
+          "promptId": "86e7209e-ba53-4848-9178-48f9023ae550",
+          "file": "n_e2838459a9/take_c7d71444a5.mp4",
+          "poster": "n_e2838459a9/take_c7d71444a5.jpg",
+          "finishedAt": 1791018704647,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1319931
+          }
+        },
+        {
+          "id": "take_0ed19aaa2d",
+          "nodeId": "n_e2838459a9",
+          "createdAt": 1791023278803,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "Starting on this frame, the traveler continues walking away at an even pace, one foot after the other, stride loose and continuous. The camera slowly dollies forward behind them while rising gently on a crane, tilting down a few degrees as it gains height, so the road and the land open up around the figure. Mid-rise the environment turns over: the horizon flattens into a vast rust-red basin, the tan dunes harden into iron-oxide rock and low crater rims, the teal sky drains to butterscotch and thins toward near-black at the top of frame, and the asphalt greys and cracks into a fading strip of regolith-dusted road. A few thin dust devils crawl across the plain. The light stays high and hard, but as the camera rises the glare on the ground stretches into a long bright band toward the horizon. The move ends high and wide, the traveler now a lone small shape on an enormous red plain, still walking away, the road almost gone beneath them.",
+            "workflow": "minimax-h3-i2v",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "面板指定"
+          },
+          "inputs": {
+            "n_db61383d5f": "take_3402556b54"
+          },
+          "jobId": "job_8cd6f865ef",
+          "promptId": "2fab9746-80d1-45f6-835a-73c3de923918",
+          "file": "n_e2838459a9/take_0ed19aaa2d.mp4",
+          "poster": "n_e2838459a9/take_0ed19aaa2d.jpg",
+          "finishedAt": 1791023639874,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1148650
+          }
+        },
+        {
+          "id": "take_aedabe4b41",
+          "nodeId": "n_e2838459a9",
+          "createdAt": 1791061575287,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "Starting on this frame, the traveler continues walking away at an even pace, one foot after the other, stride loose and continuous. The camera slowly dollies forward behind them while rising gently on a crane, tilting down a few degrees as it gains height, so the road and the land open up around the figure. Mid-rise the environment turns over: the horizon flattens into a vast rust-red basin, the tan dunes harden into iron-oxide rock and low crater rims, the teal sky drains to butterscotch and thins toward near-black at the top of frame, and the asphalt greys and cracks into a fading strip of regolith-dusted road. A few thin dust devils crawl across the plain. The light stays high and hard, but as the camera rises the glare on the ground stretches into a long bright band toward the horizon. The move ends high and wide, the traveler now a lone small shape on an enormous red plain, still walking away, the road almost gone beneath them.",
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 1024x1024",
+            "seconds": 5
+          },
+          "inputs": {
+            "n_db61383d5f": "take_3402556b54"
+          },
+          "jobId": "job_9abec0c85d",
+          "promptId": "cde2a5aa-4967-4624-8740-da08ce7810cd",
+          "file": "n_e2838459a9/take_aedabe4b41.mp4",
+          "poster": "n_e2838459a9/take_aedabe4b41.jpg",
+          "finishedAt": 1791062098575,
+          "probe": {
+            "duration": 5.167,
+            "width": 800,
+            "height": 800,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 864392
+          }
+        },
+        {
+          "id": "take_e3dfa02ae4",
+          "nodeId": "n_e2838459a9",
+          "createdAt": 1791062214818,
+          "status": "failed",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "Starting on this frame, the traveler continues walking away at an even pace, one foot after the other, stride loose and continuous. The camera slowly dollies forward behind them while rising gently on a crane, tilting down a few degrees as it gains height, so the road and the land open up around the figure. Mid-rise the environment turns over: the horizon flattens into a vast rust-red basin, the tan dunes harden into iron-oxide rock and low crater rims, the teal sky drains to butterscotch and thins toward near-black at the top of frame, and the asphalt greys and cracks into a fading strip of regolith-dusted road. A few thin dust devils crawl across the plain. The light stays high and hard, but as the camera rises the glare on the ground stretches into a long bright band toward the horizon. The move ends high and wide, the traveler now a lone small shape on an enormous red plain, still walking away, the road almost gone beneath them.",
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 1024x1024",
+            "seconds": 8
+          },
+          "inputs": {
+            "n_db61383d5f": "take_3402556b54"
+          },
+          "jobId": "job_3bd5457880",
+          "promptId": "524d6829-0925-43fd-9e8f-6512cf7e05be",
+          "error": "执行失败: {\"prompt_id\":\"524d6829-0925-43fd-9e8f-6512cf7e05be\",\"node_id\":\"125\",\"node_type\":\"SamplerCustomAdvanced\",\"executed\":[\"133\",\"132\",\"154\",\"159\",\"126\",\"131\"],\"exception_message\":\"Allocation on device \\nThis error means you ran out of memory on your GPU.\\n\\nTIPS: If the workflow worked before you might have accidentally set the batch_size to a large number.\",\"exception_type\":\"torch.OutOfMemoryError\",\"traceback\":[\"  File \\\"D:\\\\AI\\\\ComfyUI\\\\execution.py\\\", line 545, in execute\\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all",
+          "finishedAt": 1791062679556
+        },
+        {
+          "id": "take_0c3334dd2a",
+          "nodeId": "n_e2838459a9",
+          "createdAt": 1791062973263,
+          "status": "failed",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "正午的沙漠公路，旅人背影走在热浪里，脸部完全背对镜头看不见五官，远景电影感",
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "9:16 (Portrait Widescreen)",
+            "aspectFrom": "首帧 720x1280",
+            "seconds": 8
+          },
+          "inputs": {
+            "n_db61383d5f": "take_e612157c6f"
+          },
+          "jobId": "job_34d25956b6",
+          "promptId": "4a90e36d-1501-4b0c-b7f2-a41c44af43fd",
+          "error": "执行失败: {\"prompt_id\":\"4a90e36d-1501-4b0c-b7f2-a41c44af43fd\",\"node_id\":\"125\",\"node_type\":\"SamplerCustomAdvanced\",\"executed\":[\"154\",\"159\",\"174\",\"126\",\"115\",\"131\"],\"exception_message\":\"Allocation on device \\nThis error means you ran out of memory on your GPU.\\n\\nTIPS: If the workflow worked before you might have accidentally set the batch_size to a large number.\",\"exception_type\":\"torch.OutOfMemoryError\",\"traceback\":[\"  File \\\"D:\\\\AI\\\\ComfyUI\\\\execution.py\\\", line 545, in execute\\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all",
+          "finishedAt": 1791063746073
+        },
+        {
+          "id": "take_19f3de2303",
+          "nodeId": "n_e2838459a9",
+          "createdAt": 1791064446851,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "正午的沙漠公路，旅人背影走在热浪里，脸部完全背对镜头看不见五官，远景电影感",
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "9:16 (Portrait Widescreen)",
+            "aspectFrom": "首帧 720x1280",
+            "seconds": 5
+          },
+          "inputs": {
+            "n_db61383d5f": "take_ff5e75c99f"
+          },
+          "jobId": "job_1f81e8af85",
+          "promptId": "54ff1a8c-39e1-414b-bc39-7fe77253480a",
+          "file": "n_e2838459a9/take_19f3de2303.mp4",
+          "poster": "n_e2838459a9/take_19f3de2303.jpg",
+          "finishedAt": 1791064921696,
+          "probe": {
+            "duration": 5.167,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 700723
+          }
+        },
+        {
+          "id": "take_4bede10781",
+          "nodeId": "n_e2838459a9",
+          "createdAt": 1791065392902,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "正午的沙漠公路，旅人背影走在热浪里，脸部完全背对镜头看不见五官，远景电影感",
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "9:16 (Portrait Widescreen)",
+            "aspectFrom": "首帧 720x1280",
+            "seconds": 5
+          },
+          "inputs": {
+            "n_db61383d5f": "take_ff5e75c99f"
+          },
+          "jobId": "job_b3dd8a760a",
+          "promptId": "9c97d872-2aab-438d-841f-d0dd62fd28dc",
+          "file": "n_e2838459a9/take_4bede10781.mp4",
+          "poster": "n_e2838459a9/take_4bede10781.jpg",
+          "finishedAt": 1791065409434,
+          "probe": {
+            "duration": 5.167,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 700723
+          }
+        }
+      ],
+      "activeTake": "take_4bede10781"
+    },
+    {
+      "id": "n_402211740e",
+      "kind": "op",
+      "title": "算子",
+      "x": 977,
+      "y": 65,
+      "takes": [
+        {
+          "id": "take_57facbad5c",
+          "nodeId": "n_402211740e",
+          "createdAt": 1791021421770,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "n_e2838459a9": "take_c7d71444a5"
+          },
+          "op": "lastframe",
+          "file": "n_402211740e/take_57facbad5c.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 640,
+            "height": 640,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 72355
+          },
+          "finishedAt": 1791021422255
+        }
+      ],
+      "activeTake": "take_57facbad5c"
+    },
+    {
+      "id": "n_dabd051e57",
+      "kind": "video",
+      "title": "视频",
+      "x": 1257,
+      "y": 65,
+      "takes": [
+        {
+          "id": "take_d2cfd7dc52",
+          "nodeId": "n_dabd051e57",
+          "createdAt": 1791022746858,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "Starting from this frame, the traveler keeps walking away, steady rhythm, cloak flaring wide behind. The camera swings into a fast spiral around the traveler while climbing, whipping past the roadside dunes twice, then drops back onto the centerline. The light shifts across the pass: the sky slides from teal to burnt orange, the sand turns rust, long red shadows rake across the asphalt, wind-driven dust streams across the road. Ends slowing into a smooth forward push directly behind the traveler, still centered and mid-stride, now walking the red road.",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 640x640",
+            "workflow": "minimax-h3-i2v"
+          },
+          "inputs": {
+            "n_402211740e": "take_57facbad5c"
+          },
+          "jobId": "job_277682292e",
+          "promptId": "610daed1-8c02-4286-b0b5-2ad64d02852a",
+          "file": "n_dabd051e57/take_d2cfd7dc52.mp4",
+          "poster": "n_dabd051e57/take_d2cfd7dc52.jpg",
+          "finishedAt": 1791023115986,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1589907
+          }
+        },
+        {
+          "id": "take_beeeda6856",
+          "nodeId": "n_dabd051e57",
+          "createdAt": 1791023848635,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "Starting on this frame, the traveler keeps walking away, steady rhythm, cloak flaring. The camera rolls ninety degrees while climbing into a top-down view, so the road centerline reads as a single vertical seam; as it rolls back, a hard sun flare sweeps across the lens from left to right and burns the frame out for a beat. As the burn clears, the teal sky has gone dusty butterscotch, the sand has turned deep rust, wind-driven grit streams across the asphalt, and a dust devil drags over the right dune throwing a long shadow. The camera eases into a slow forward push directly behind the traveler, still centered and mid-stride, now crossing the red plain as the light drops into burnt orange.",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "面板指定",
+            "workflow": "minimax-h3-i2v"
+          },
+          "inputs": {
+            "n_402211740e": "take_57facbad5c"
+          },
+          "jobId": "job_4689c1acca",
+          "promptId": "05187140-9831-4881-9746-9bbe34e544f6",
+          "file": "n_dabd051e57/take_beeeda6856.mp4",
+          "poster": "n_dabd051e57/take_beeeda6856.jpg",
+          "finishedAt": 1791024201610,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1389430
+          }
+        }
+      ],
+      "activeTake": "take_d2cfd7dc52"
+    },
+    {
+      "id": "node_13a64fe94e",
+      "kind": "op",
+      "title": "尾帧·视频",
+      "x": 1543,
+      "y": 180,
+      "takes": [
+        {
+          "id": "take_cd4d40f0fb",
+          "nodeId": "node_13a64fe94e",
+          "createdAt": 1791024349326,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "n_dabd051e57": "take_d2cfd7dc52"
+          },
+          "op": "lastframe",
+          "file": "node_13a64fe94e/take_cd4d40f0fb.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 640,
+            "height": 640,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 43197
+          },
+          "finishedAt": 1791024349733
+        }
+      ],
+      "activeTake": "take_cd4d40f0fb"
+    },
+    {
+      "id": "n_d3def0ec5b",
+      "kind": "video",
+      "title": "视频",
+      "x": 1841,
+      "y": 180,
+      "takes": [
+        {
+          "id": "take_4680fa2939",
+          "nodeId": "n_d3def0ec5b",
+          "createdAt": 1791024561338,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "The traveler continues walking away at a steady rhythm, the cloak swinging wide on each step and flaring when a gust crosses the road. The camera pushes in slowly and smoothly from behind at walking speed, keeping the traveler centered on the yellow center line and tightening from a wide road view to a medium-back shot, the dune ridges sliding past the edges of frame. Sunlight on the horizon slowly intensifies while sand streams right to left across the asphalt. Ends with the traveler mid-stride and noticeably larger in frame, still centered, cloak settling, horizon still far ahead.",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 640x640",
+            "workflow": "minimax-h3-i2v"
+          },
+          "inputs": {
+            "node_13a64fe94e": "take_cd4d40f0fb"
+          },
+          "jobId": "job_280677c69d",
+          "promptId": "a279c96c-d628-4d92-b782-a280697e8001",
+          "file": "n_d3def0ec5b/take_4680fa2939.mp4",
+          "poster": "n_d3def0ec5b/take_4680fa2939.jpg",
+          "finishedAt": 1791024914608,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 706848
+          }
+        },
+        {
+          "id": "take_e254489709",
+          "nodeId": "n_d3def0ec5b",
+          "createdAt": 1791025146572,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "Starting from this frame, the traveler walks away for two steps, then sweeps the left leg out in a wide controlled kick-and-stretch along the yellow line, holding the extended leg for a beat with the cloak snapping out behind like a flag in the wind, then reels it back in and folds into a short low crouch before standing up and continuing to walk away at the original pace. The camera lifts slowly from a low near-ground angle up to chest height while pushing in gently, staying directly behind the traveler the whole time. Wind picks up across the shot, sand streaming right to left over the asphalt and off the dune shoulders, while the low sunlight on the horizon warms and intensifies. Ends with the traveler upright, mid-stride and clearly larger in frame, still centered on the center line, cloak settling, the road still stretching to the far dunes.",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "面板指定",
+            "workflow": "minimax-h3-i2v"
+          },
+          "inputs": {
+            "node_13a64fe94e": "take_cd4d40f0fb"
+          },
+          "jobId": "job_2cc666ae07",
+          "promptId": "c64de3d5-52f0-4673-a20b-4c7cc3f0bb98",
+          "file": "n_d3def0ec5b/take_e254489709.mp4",
+          "poster": "n_d3def0ec5b/take_e254489709.jpg",
+          "finishedAt": 1791025515604,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 758904
+          }
+        }
+      ],
+      "activeTake": "take_e254489709"
+    },
+    {
+      "id": "n_c16ecdbe17",
+      "kind": "op",
+      "title": "算子",
+      "x": 2116,
+      "y": 250,
+      "takes": [
+        {
+          "id": "take_d42b7d11c6",
+          "nodeId": "n_c16ecdbe17",
+          "createdAt": 1791025692985,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "n_d3def0ec5b": "take_e254489709"
+          },
+          "op": "lastframe",
+          "file": "n_c16ecdbe17/take_d42b7d11c6.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 640,
+            "height": 640,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 42121
+          },
+          "finishedAt": 1791025693413
+        }
+      ],
+      "activeTake": "take_d42b7d11c6"
+    },
+    {
+      "id": "n_c651443cb0",
+      "kind": "video",
+      "title": "视频",
+      "x": 2385,
+      "y": 369,
+      "takes": [
+        {
+          "id": "take_91eafd8c96",
+          "nodeId": "n_c651443cb0",
+          "createdAt": 1791026213043,
+          "status": "failed",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "From this frame forward, the traveler takes one more step, plants his foot and tips his head up; a ladder telescopes straight up out of the yellow line in snapping segments and he begins to climb, hands over hands, quicker and more eager than his walk, cloak snapping behind him. Camera tilts up smoothly with his ascent, then cranes upward — the road slides out of frame bottom, sky fills the frame — and keeps rising with him until the moon sits directly overhead, enormous and cratered. Light shifts from low golden sun to cool blue moonlight as he climbs above the horizon haze. Ends on him mid-climb, small on the rungs against the moon's face, wind tugging at the cloak.",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 640x640",
+            "workflow": "minimax-h3-i2v"
+          },
+          "inputs": {
+            "n_c16ecdbe17": "take_d42b7d11c6"
+          },
+          "jobId": "job_e8134b2eb0",
+          "promptId": "e43b978e-ff80-4723-a02b-3c40be99b862",
+          "error": "执行失败: {\"prompt_id\":\"e43b978e-ff80-4723-a02b-3c40be99b862\",\"node_id\":\"131\",\"node_type\":\"MiniMaxH3ImageToVideo\",\"executed\":[\"174\"],\"exception_message\":\"Allocation on device \\nThis error means you ran out of memory on your GPU.\\n\\nTIPS: If the workflow worked before you might have accidentally set the batch_size to a large number.\",\"exception_type\":\"torch.OutOfMemoryError\",\"traceback\":[\"  File \\\"D:\\\\AI\\\\ComfyUI\\\\execution.py\\\", line 545, in execute\\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_block_cb=execution",
+          "finishedAt": 1791026229229
+        },
+        {
+          "id": "take_6e92c43a58",
+          "nodeId": "n_c651443cb0",
+          "createdAt": 1791026232697,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "From this frame forward, the traveler takes one more step, plants his foot and tips his head up; a ladder telescopes straight up out of the yellow line in snapping segments and he begins to climb, hands over hands, quicker and more eager than his walk, cloak snapping behind him. Camera tilts up smoothly with his ascent, then cranes upward — the road slides out of frame bottom, sky fills the frame — and keeps rising with him until the moon sits directly overhead, enormous and cratered. Light shifts from low golden sun to cool blue moonlight as he climbs above the horizon haze. Ends on him mid-climb, small on the rungs against the moon's face, wind tugging at the cloak.",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 640x640",
+            "workflow": "minimax-h3-i2v"
+          },
+          "inputs": {
+            "n_c16ecdbe17": "take_d42b7d11c6"
+          },
+          "jobId": "job_98885352f8",
+          "promptId": "277457cd-6bdd-4221-bba6-99f11361bef8",
+          "file": "n_c651443cb0/take_6e92c43a58.mp4",
+          "poster": "n_c651443cb0/take_6e92c43a58.jpg",
+          "finishedAt": 1791026545507,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1517525
+          }
+        }
+      ],
+      "activeTake": "take_6e92c43a58"
+    },
+    {
+      "id": "n_ca1c07554f",
+      "kind": "op",
+      "title": "算子",
+      "x": 2665,
+      "y": 438,
+      "takes": [
+        {
+          "id": "take_da18911b1a",
+          "nodeId": "n_ca1c07554f",
+          "createdAt": 1791026811965,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "n_c651443cb0": "take_6e92c43a58"
+          },
+          "op": "lastframe",
+          "file": "n_ca1c07554f/take_da18911b1a.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 640,
+            "height": 640,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 85248
+          },
+          "finishedAt": 1791026812391
+        }
+      ],
+      "activeTake": "take_da18911b1a"
+    },
+    {
+      "id": "n_d23ba346e2",
+      "kind": "video",
+      "title": "视频",
+      "x": 2935,
+      "y": 535,
+      "takes": [
+        {
+          "id": "take_5fb4c499cb",
+          "nodeId": "n_d23ba346e2",
+          "createdAt": 1791027001570,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "Starting from this frame, the traveler surges up the ladder taking the rungs two at a time, cloak flaring wide. At the top he steps onto the lunar surface and a rover arrives beside him; he swings on and drives. The camera cranes upward alongside him, then arcs into a slow orbit around the rover as it accelerates away, keeping him centered while the moon turns behind. Starlight twinkles, the moon's surface glow sweeps across the frame, dust bursts from the tires and hangs in the low gravity. Ends mid-orbit with the rover speeding toward the far edge and the camera still circling.",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 640x640",
+            "workflow": "minimax-h3-i2v"
+          },
+          "inputs": {
+            "n_ca1c07554f": "take_da18911b1a"
+          },
+          "jobId": "job_d6d47cc00a",
+          "promptId": "351cfe7a-2e50-4c0b-ab30-3189f3c816b2",
+          "file": "n_d23ba346e2/take_5fb4c499cb.mp4",
+          "poster": "n_d23ba346e2/take_5fb4c499cb.jpg",
+          "finishedAt": 1791027362616,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 2824939
+          }
+        }
+      ],
+      "activeTake": "take_5fb4c499cb"
+    },
+    {
+      "id": "n_faba968d43",
+      "kind": "op",
+      "title": "算子",
+      "x": 3254,
+      "y": 596,
+      "takes": [
+        {
+          "id": "take_d42c1593b4",
+          "nodeId": "n_faba968d43",
+          "createdAt": 1791027726937,
+          "status": "failed",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {},
+          "op": "lastframe",
+          "error": "算子节点没有可用输入（上游要有跑完的版本）",
+          "finishedAt": 1791027726950
+        },
+        {
+          "id": "take_1247238860",
+          "nodeId": "n_faba968d43",
+          "createdAt": 1791027747245,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "n_d23ba346e2": "take_5fb4c499cb"
+          },
+          "op": "lastframe",
+          "file": "n_faba968d43/take_1247238860.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 640,
+            "height": 640,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 39024
+          },
+          "finishedAt": 1791027747709
+        }
+      ],
+      "activeTake": "take_1247238860"
+    },
+    {
+      "id": "n_858f9cb793",
+      "kind": "video",
+      "title": "视频",
+      "x": 3523,
+      "y": 644,
+      "takes": [
+        {
+          "id": "take_81b3473580",
+          "nodeId": "n_858f9cb793",
+          "createdAt": 1791027917922,
+          "status": "failed",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "Beginning on this frame, the figure hops down from the buggy, plants both boots, and stands still for a beat while the cloak settles, then turns his back fully to the camera and takes two measured steps toward a rocket rising ahead of him. The camera swings out of the rear angle into a slow half-circle around him, orbiting left at belly height, keeping his back and silver hair centered. Ice-dust skitters across the ground in the growing wind, the sky darkens by one stop, the rocket's exhaust glow floods up from below and rims his cloak. He boards; the rocket punches up through frame and out. The orbit stops and holds on the empty crust, with Mars burning low and the buggy's silhouette small at the edge.",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 640x640",
+            "workflow": "minimax-h3-i2v"
+          },
+          "inputs": {
+            "n_faba968d43": "take_1247238860"
+          },
+          "jobId": "job_2ce702da33",
+          "promptId": "9a4035ee-b272-4751-b12d-9ae42012cbb9",
+          "error": "执行失败: {\"prompt_id\":\"9a4035ee-b272-4751-b12d-9ae42012cbb9\",\"node_id\":\"131\",\"node_type\":\"MiniMaxH3ImageToVideo\",\"executed\":[\"174\"],\"exception_message\":\"Allocation on device \\nThis error means you ran out of memory on your GPU.\\n\\nTIPS: If the workflow worked before you might have accidentally set the batch_size to a large number.\",\"exception_type\":\"torch.OutOfMemoryError\",\"traceback\":[\"  File \\\"D:\\\\AI\\\\ComfyUI\\\\execution.py\\\", line 545, in execute\\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_block_cb=execution",
+          "finishedAt": 1791027926074
+        },
+        {
+          "id": "take_577c759cc0",
+          "nodeId": "n_858f9cb793",
+          "createdAt": 1791027935812,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "Beginning on this frame, the figure hops down from the buggy, plants both boots, and stands still for a beat while the cloak settles, then turns his back fully to the camera and takes two measured steps toward a rocket rising ahead of him. The camera swings out of the rear angle into a slow half-circle around him, orbiting left at belly height, keeping his back and silver hair centered. Ice-dust skitters across the ground in the growing wind, the sky darkens by one stop, the rocket's exhaust glow floods up from below and rims his cloak. He boards; the rocket punches up through frame and out. The orbit stops and holds on the empty crust, with Mars burning low and the buggy's silhouette small at the edge.",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 640x640",
+            "workflow": "minimax-h3-i2v"
+          },
+          "inputs": {
+            "n_faba968d43": "take_1247238860"
+          },
+          "jobId": "job_6420b69711",
+          "promptId": "93bfc24b-cd4f-4d86-a22e-7df79df2a0d5",
+          "file": "n_858f9cb793/take_577c759cc0.mp4",
+          "poster": "n_858f9cb793/take_577c759cc0.jpg",
+          "finishedAt": 1791028296758,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1839728
+          }
+        },
+        {
+          "id": "take_b7a791651b",
+          "nodeId": "n_858f9cb793",
+          "createdAt": 1791028844094,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "integrated_multimodal_description: [Shot 1] Live-action, cinematic, magical-realist with an absurdist streak: a low rear-angle medium-wide shot on a black ice crust under a dense field of white stars, the buggy's red tail lights still burning behind him. A traveler with silver hair and a long black hooded cloak, his face never visible, hops down from the buggy, plants both boots and holds still for a beat while the cloak settles, then turns his back fully to the camera and takes two measured steps toward a slender rocket standing ahead in the dark. The camera swings out of the rear angle into a slow half-circle orbit to the left at belly height, keeping his back and silver hair centered. Ice dust skitters across the ground in the growing wind and the sky darkens by one stop. A low engine hum rises under the wind. [Shot 2] At 00:03.200, the camera cuts to a low wide shot beside the rocket's base as the traveler hooks a rung, hauls himself up the rungs two at a time, cloak flaring wide, and swings a leg over the hull to sit astride the rocket, gripping the casing; exhaust glow floods up from below and rims the black fabric. [Shot 3] At 00:05.400, the camera cuts to a static wide shot as the rocket punches up through frame with the traveler riding astride it, the plume blowing the crust wide, and the orbit settles into a hold on the empty ice with Mars burning low ahead and the buggy's silhouette small at the edge of frame, the rider shrinking toward the red disc.\n\noverall_soundscape: A thin wind drags ice dust over hard crust, boot soles crunch down, and heavy fabric snaps in the gusts. Metal rungs ring under gloved hands, a hatch thumps, then a deep ignition roar swells and tears upward, thinning out into high, empty wind over the frozen ground.\n\nnon_diegetic_music: A sustained low synth drone with slow kettle-drum strikes, building into a brass swell at the launch, then decaying into a single high shimmering tone as the rocket shrinks into the distance.",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "面板指定",
+            "workflow": "minimax-h3-i2v"
+          },
+          "inputs": {
+            "n_faba968d43": "take_1247238860"
+          },
+          "jobId": "job_31e82c7eca",
+          "promptId": "07a9aaaf-e5c4-48be-ab6d-10e1f6ab7b1a",
+          "file": "n_858f9cb793/take_b7a791651b.mp4",
+          "poster": "n_858f9cb793/take_b7a791651b.jpg",
+          "finishedAt": 1791029205149,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1797889
+          }
+        }
+      ],
+      "activeTake": "take_b7a791651b"
+    },
+    {
+      "id": "n_9b797e9719",
+      "kind": "op",
+      "title": "算子",
+      "x": 3799,
+      "y": 717,
+      "takes": [
+        {
+          "id": "take_68817c0894",
+          "nodeId": "n_9b797e9719",
+          "createdAt": 1791029371404,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "n_858f9cb793": "take_b7a791651b"
+          },
+          "op": "lastframe",
+          "file": "n_9b797e9719/take_68817c0894.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 640,
+            "height": 640,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 66683
+          },
+          "finishedAt": 1791029371812
+        }
+      ],
+      "activeTake": "take_68817c0894"
+    },
+    {
+      "id": "n_027c02ea6d",
+      "kind": "video",
+      "title": "视频",
+      "x": 4068,
+      "y": 800,
+      "takes": [
+        {
+          "id": "take_c73af82829",
+          "nodeId": "n_027c02ea6d",
+          "createdAt": 1791029824198,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "integrated_multimodal_description: [Shot 1] Live-action, cinematic, magical-realist with an absurdist streak: a low rear-angle wide shot on a pale grey lunar plain, hard rim light cutting across the ridges while a colossal rust-red Mars with dark banded canyons fills the upper half of the black sky. The traveler — slight build, white hair, long black cloak with a flared hem — stands on the crest with his back to camera, watching a slim rocket climb on a column of white-pink exhaust. The camera tilts up with small amplitude at slow speed until the rocket is a single point of light against the planet. [Shot 2] At 00:03.200, the camera cuts to a wide shot on an ochre Martian plain ridged with long dunes, the same white-haired traveler in the same black cloak riding a low open buggy that tears forward along a straight dust track, twin plumes rolling off the wheels, a pale low sun behind him. The camera tracks right with small amplitude at slow speed alongside the buggy. [Shot 3] At 00:05.800, the camera cuts to a medium-wide shot: the buggy stops, dust settles, and the traveler steps down; across from him stand four short round-bellied Martians with copper-green skin, oversized bald heads and three-fingered hands, wrapped in tattered silver thermal blankets. The tallest one, with a buzzy nasal voice that clicks on every consonant (S1), steps forward and says: <d>[English] You are late.</d> while holding out a single steaming potato on a dented tin plate; the traveler's cloak settles around his ankles and he does not move.\n\noverall_soundscape: A deep rocket roar fades into a thin wind hiss over the lunar plain, then gives way to the crunch of wheels grinding through Martian dust. The buggy engine cuts, a soft metallic click of three-fingered hands on tin follows, and a faint steam hiss rises from the plate.\n\nnon_diegetic_music: A slow sparse synth drone in a minor key, joined by one plucked string and a soft low pulse that thins out and stops on the final beat.",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 640x640",
+            "workflow": "minimax-h3-i2v"
+          },
+          "inputs": {
+            "n_9b797e9719": "take_68817c0894"
+          },
+          "jobId": "job_3583729bc6",
+          "promptId": "b240af8e-c287-4629-8ae5-9d289daad87e",
+          "file": "n_027c02ea6d/take_c73af82829.mp4",
+          "poster": "n_027c02ea6d/take_c73af82829.jpg",
+          "finishedAt": 1791030217094,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1530483
+          }
+        }
+      ],
+      "activeTake": "take_c73af82829"
+    },
+    {
+      "id": "n_52f52cebfc",
+      "kind": "video",
+      "title": "视频",
+      "x": 4699,
+      "y": 860,
+      "takes": [
+        {
+          "id": "take_2922907620",
+          "nodeId": "n_52f52cebfc",
+          "createdAt": 1791031924920,
+          "status": "failed",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "integrated_multimodal_description: [Shot 1] Live-action, cinematic, magical-realist with an absurdist epic streak: a worm's-eye extreme low-angle shot sits right under the chassis of the yellow-wheeled rover on the desert highway, sand spitting between the tires toward the lens. The silver-haired traveler in the black cloak walks into frame from the left, back to the camera and face unseen, while the four bald ochre-skinned aliens in shiny silver quilted blankets sprint alongside the rover, metal bowls raised. The camera tracks left with small amplitude at slow speed, hugging the axle as grit streaks across the frame. [Shot 2] At 00:03.100, the camera cuts to a wide low shot from behind the traveler as he plants a boot on the rover's roll bar and vaults onto the hood; an alien hurls its bowl like a discus and the traveler ducks, the bowl shearing the air past his shoulder. The camera whips into a fast arc shot with large amplitude around the rover as dust obscures the rear wheels. [Shot 3] At 00:05.700, the camera cuts to a high wide shot pulling out from the highway as the rover careens off the asphalt and all four aliens are dragged behind in a flapping silver bundle, the traveler balanced on the roof with his cloak streaming. The camera pulls out with large amplitude at slow speed until dunes, road and the tiny wreck settle into a single epic golden frame.\n\noverall_soundscape: Engines rattle and tires churn sand in continuous sheets, mixed with the clatter of metal bowls and snapping silver fabric. Boots thud on sheet metal and a spray of grit hisses past, while thin alien squeals rise and fall with the chase.\n\nnon_diegetic_music: Hand percussion and clapping in a fast comedic gallop, undercut by a full brass section that swells at the vault and resolves on one long held chord at the pull-out.",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 640x640",
+            "workflow": "minimax-h3-i2v"
+          },
+          "inputs": {
+            "n_4bdc5ab31f": "take_1323ff870c"
+          },
+          "jobId": "job_3723ec8867",
+          "promptId": "e12bf608-1bb6-421e-9ec8-ebb69891f426",
+          "error": "执行失败: {\"prompt_id\":\"e12bf608-1bb6-421e-9ec8-ebb69891f426\",\"node_id\":\"131\",\"node_type\":\"MiniMaxH3ImageToVideo\",\"executed\":[\"174\"],\"exception_message\":\"Allocation on device \\nThis error means you ran out of memory on your GPU.\\n\\nTIPS: If the workflow worked before you might have accidentally set the batch_size to a large number.\",\"exception_type\":\"torch.OutOfMemoryError\",\"traceback\":[\"  File \\\"D:\\\\AI\\\\ComfyUI\\\\execution.py\\\", line 545, in execute\\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_block_cb=execution",
+          "finishedAt": 1791031941154
+        },
+        {
+          "id": "take_8e840e8b43",
+          "nodeId": "n_52f52cebfc",
+          "createdAt": 1791031951812,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "integrated_multimodal_description: [Shot 1] Live-action, cinematic, magical-realist with an absurdist epic streak: a worm's-eye extreme low-angle shot sits right under the chassis of the yellow-wheeled rover on the desert highway, sand spitting between the tires toward the lens. The silver-haired traveler in the black cloak walks into frame from the left, back to the camera and face unseen, while the four bald ochre-skinned aliens in shiny silver quilted blankets sprint alongside the rover, metal bowls raised. The camera tracks left with small amplitude at slow speed, hugging the axle as grit streaks across the frame. [Shot 2] At 00:03.100, the camera cuts to a wide low shot from behind the traveler as he plants a boot on the rover's roll bar and vaults onto the hood; an alien hurls its bowl like a discus and the traveler ducks, the bowl shearing the air past his shoulder. The camera whips into a fast arc shot with large amplitude around the rover as dust obscures the rear wheels. [Shot 3] At 00:05.700, the camera cuts to a high wide shot pulling out from the highway as the rover careens off the asphalt and all four aliens are dragged behind in a flapping silver bundle, the traveler balanced on the roof with his cloak streaming. The camera pulls out with large amplitude at slow speed until dunes, road and the tiny wreck settle into a single epic golden frame.\n\noverall_soundscape: Engines rattle and tires churn sand in continuous sheets, mixed with the clatter of metal bowls and snapping silver fabric. Boots thud on sheet metal and a spray of grit hisses past, while thin alien squeals rise and fall with the chase.\n\nnon_diegetic_music: Hand percussion and clapping in a fast comedic gallop, undercut by a full brass section that swells at the vault and resolves on one long held chord at the pull-out.",
+            "aspect": "1:1 (Square)",
+            "aspectFrom": "首帧 640x640",
+            "workflow": "minimax-h3-i2v"
+          },
+          "inputs": {
+            "n_4bdc5ab31f": "take_1323ff870c"
+          },
+          "jobId": "job_4784dd637f",
+          "promptId": "b362c417-92a3-4760-ae99-1dff072fef5f",
+          "file": "n_52f52cebfc/take_8e840e8b43.mp4",
+          "poster": "n_52f52cebfc/take_8e840e8b43.jpg",
+          "finishedAt": 1791032328892,
+          "probe": {
+            "duration": 8,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1602742
+          }
+        }
+      ],
+      "activeTake": "take_8e840e8b43"
+    },
+    {
+      "id": "n_4bdc5ab31f",
+      "kind": "op",
+      "title": "算子",
+      "x": 4407,
+      "y": 772,
+      "takes": [
+        {
+          "id": "take_1323ff870c",
+          "nodeId": "n_4bdc5ab31f",
+          "createdAt": 1791031052278,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "n_027c02ea6d": "take_c73af82829"
+          },
+          "op": "lastframe",
+          "file": "n_4bdc5ab31f/take_1323ff870c.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 640,
+            "height": 640,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 67137
+          },
+          "finishedAt": 1791031052706
+        }
+      ],
+      "activeTake": "take_1323ff870c"
+    },
+    {
+      "id": "node_0659ca31ab",
+      "kind": "op",
+      "title": "成片",
+      "x": 5019,
+      "y": 860,
+      "takes": [
+        {
+          "id": "take_bfb8fb97cb",
+          "nodeId": "node_0659ca31ab",
+          "createdAt": 1791032607767,
+          "status": "done",
+          "source": "op",
+          "kind": "video",
+          "params": {
+            "transition": "radial",
+            "duration": 1.05,
+            "transitionUsed": 1.05,
+            "joints": 7
+          },
+          "inputs": {
+            "n_e2838459a9": "take_c7d71444a5",
+            "n_dabd051e57": "take_d2cfd7dc52",
+            "n_d3def0ec5b": "take_e254489709",
+            "n_c651443cb0": "take_6e92c43a58",
+            "n_d23ba346e2": "take_5fb4c499cb",
+            "n_858f9cb793": "take_b7a791651b",
+            "n_027c02ea6d": "take_c73af82829",
+            "n_52f52cebfc": "take_8e840e8b43"
+          },
+          "op": "xfade",
+          "file": "node_0659ca31ab/take_bfb8fb97cb.mp4",
+          "poster": "node_0659ca31ab/take_bfb8fb97cb.jpg",
+          "probe": {
+            "duration": 56.667,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 13657643
+          },
+          "finishedAt": 1791032613273
+        },
+        {
+          "id": "take_3f12e94dcb",
+          "nodeId": "node_0659ca31ab",
+          "createdAt": 1791032629202,
+          "status": "done",
+          "source": "op",
+          "kind": "video",
+          "params": {
+            "transition": "radial",
+            "duration": 1.05,
+            "transitionUsed": 1.05,
+            "joints": 7
+          },
+          "inputs": {
+            "n_e2838459a9": "take_c7d71444a5",
+            "n_dabd051e57": "take_d2cfd7dc52",
+            "n_d3def0ec5b": "take_e254489709",
+            "n_c651443cb0": "take_6e92c43a58",
+            "n_d23ba346e2": "take_5fb4c499cb",
+            "n_858f9cb793": "take_b7a791651b",
+            "n_027c02ea6d": "take_c73af82829",
+            "n_52f52cebfc": "take_8e840e8b43"
+          },
+          "op": "xfade",
+          "file": "node_0659ca31ab/take_3f12e94dcb.mp4",
+          "poster": "node_0659ca31ab/take_3f12e94dcb.jpg",
+          "probe": {
+            "duration": 56.667,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 13657643
+          },
+          "finishedAt": 1791032634602
+        },
+        {
+          "id": "take_1fa0e428be",
+          "nodeId": "node_0659ca31ab",
+          "createdAt": 1791032799593,
+          "status": "done",
+          "source": "op",
+          "kind": "video",
+          "params": {},
+          "inputs": {
+            "n_e2838459a9": "take_c7d71444a5",
+            "n_dabd051e57": "take_d2cfd7dc52",
+            "n_d3def0ec5b": "take_e254489709",
+            "n_c651443cb0": "take_6e92c43a58",
+            "n_d23ba346e2": "take_5fb4c499cb",
+            "n_858f9cb793": "take_b7a791651b",
+            "n_027c02ea6d": "take_c73af82829",
+            "n_52f52cebfc": "take_8e840e8b43"
+          },
+          "op": "concat",
+          "file": "node_0659ca31ab/take_1fa0e428be.mp4",
+          "poster": "node_0659ca31ab/take_1fa0e428be.jpg",
+          "probe": {
+            "duration": 64.041,
+            "width": 640,
+            "height": 640,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 14942663
+          },
+          "finishedAt": 1791032804272
+        }
+      ],
+      "activeTake": "take_1fa0e428be"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_226a08d4fa",
+      "from": "n_0818aec12e",
+      "to": "n_db61383d5f",
+      "pin": "active",
+      "createdAt": 1791011612305
+    },
+    {
+      "id": "e_1486602c40",
+      "from": "n_db61383d5f",
+      "to": "n_e2838459a9",
+      "pin": "active",
+      "createdAt": 1791012292325
+    },
+    {
+      "id": "e_ab71d16b93",
+      "from": "n_e2838459a9",
+      "to": "n_402211740e",
+      "pin": "active",
+      "createdAt": 1791021415498
+    },
+    {
+      "id": "e_57aede8276",
+      "from": "n_402211740e",
+      "to": "n_dabd051e57",
+      "pin": "active",
+      "createdAt": 1791022383457
+    },
+    {
+      "id": "e_2d39798bf9",
+      "from": "n_dabd051e57",
+      "to": "node_13a64fe94e",
+      "pin": "active",
+      "createdAt": 1791024349312
+    },
+    {
+      "id": "e_bbe6c968cf",
+      "from": "node_13a64fe94e",
+      "to": "n_d3def0ec5b",
+      "pin": "active",
+      "createdAt": 1791024479129
+    },
+    {
+      "id": "e_7b03cae580",
+      "from": "n_d3def0ec5b",
+      "to": "n_c16ecdbe17",
+      "pin": "active",
+      "createdAt": 1791025683643
+    },
+    {
+      "id": "e_1b401992b9",
+      "from": "n_c16ecdbe17",
+      "to": "n_c651443cb0",
+      "pin": "active",
+      "createdAt": 1791025705026
+    },
+    {
+      "id": "e_02a4727a4a",
+      "from": "n_c651443cb0",
+      "to": "n_ca1c07554f",
+      "pin": "active",
+      "createdAt": 1791026809618
+    },
+    {
+      "id": "e_b9d46afe25",
+      "from": "n_ca1c07554f",
+      "to": "n_d23ba346e2",
+      "pin": "active",
+      "createdAt": 1791026847553
+    },
+    {
+      "id": "e_15d6a53fbf",
+      "from": "n_d23ba346e2",
+      "to": "n_faba968d43",
+      "pin": "active",
+      "createdAt": 1791027743115
+    },
+    {
+      "id": "e_935280f688",
+      "from": "n_faba968d43",
+      "to": "n_858f9cb793",
+      "pin": "active",
+      "createdAt": 1791027779113
+    },
+    {
+      "id": "e_616b170cb5",
+      "from": "n_858f9cb793",
+      "to": "n_9b797e9719",
+      "pin": "active",
+      "createdAt": 1791029338285
+    },
+    {
+      "id": "e_0f9c8285c6",
+      "from": "n_9b797e9719",
+      "to": "n_027c02ea6d",
+      "pin": "active",
+      "createdAt": 1791029399444
+    },
+    {
+      "id": "e_ba3e38f2ee",
+      "from": "n_027c02ea6d",
+      "to": "n_4bdc5ab31f",
+      "pin": "active",
+      "createdAt": 1791031050172
+    },
+    {
+      "id": "e_e126e29b23",
+      "from": "n_4bdc5ab31f",
+      "to": "n_52f52cebfc",
+      "pin": "active",
+      "createdAt": 1791031064483
+    },
+    {
+      "id": "e_e58788617e",
+      "from": "n_e2838459a9",
+      "to": "node_0659ca31ab",
+      "pin": "active",
+      "createdAt": 1791032607751
+    },
+    {
+      "id": "e_8aa20e683f",
+      "from": "n_dabd051e57",
+      "to": "node_0659ca31ab",
+      "pin": "active",
+      "createdAt": 1791032607751
+    },
+    {
+      "id": "e_0d371a10ec",
+      "from": "n_d3def0ec5b",
+      "to": "node_0659ca31ab",
+      "pin": "active",
+      "createdAt": 1791032607751
+    },
+    {
+      "id": "e_4af6de5bf4",
+      "from": "n_c651443cb0",
+      "to": "node_0659ca31ab",
+      "pin": "active",
+      "createdAt": 1791032607751
+    },
+    {
+      "id": "e_05145f1cc8",
+      "from": "n_d23ba346e2",
+      "to": "node_0659ca31ab",
+      "pin": "active",
+      "createdAt": 1791032607751
+    },
+    {
+      "id": "e_79ee2c7921",
+      "from": "n_858f9cb793",
+      "to": "node_0659ca31ab",
+      "pin": "active",
+      "createdAt": 1791032607751
+    },
+    {
+      "id": "e_af58ea26f0",
+      "from": "n_027c02ea6d",
+      "to": "node_0659ca31ab",
+      "pin": "active",
+      "createdAt": 1791032607751
+    },
+    {
+      "id": "e_124fce2685",
+      "from": "n_52f52cebfc",
+      "to": "node_0659ca31ab",
+      "pin": "active",
+      "createdAt": 1791032607751
+    }
+  ],
+  "view": {
+    "x": 0,
+    "y": 0,
+    "zoom": 1
+  },
+  "settings": {
+    "comfyHost": "http://127.0.0.1:8188",
+    "imageHost": "http://127.0.0.1:8888",
+    "workflowImage": "z-image-guangyu",
+    "workflowVideo": "minimax-h3-i2v",
+    "workflowDir": "D:\\AI\\repos\\Easel\\skills\\shared\\comfy\\workflows",
+    "ffmpeg": "D:\\AI\\ffmpeg-master-latest-win64-gpl-shared\\bin\\ffmpeg.exe",
+    "ffprobe": "D:\\AI\\ffmpeg-master-latest-win64-gpl-shared\\bin\\ffprobe.exe",
+    "releaseImageBeforeVideo": true,
+    "transition": {
+      "type": "none",
+      "duration": 1.05
+    },
+    "frameSize": "720x1280",
+    "videoSeconds": 5,
+    "videoMegapixels": 0.6
+  },
+  "story": {
+    "title": "举灯的人",
+    "logline": "一个提着灯的青年走遍森林、石像、长河与山巅去寻找真理，直到灯灭之夜发现光一直在他掌心，于是他回到村庄把光分给别人。",
+    "style": "painterly storybook illustration, soft volumetric light, muted teal and amber palette, matte gouache texture, gentle film grain, cinematic composition",
+    "beats": [
+      {
+        "id": "beat_e905a593e0",
+        "title": "晨雾出发",
+        "action": "天刚亮，提灯的青年离开村口踏上苔藓小径，越走越深，村舍在雾里消失。",
+        "image": "young wanderer with short black hair, patched indigo wool coat, canvas satchel, brass lantern swinging in right hand, stepping onto a mossy forest path, thatched village roofs fading in mist behind him, low angle wide shot, amber dawn light through birch trunks, volumetric fog, swinging lantern glow on wet moss, painterly storybook illustration, matte gouache texture, 35mm lens",
+        "video": "he walks away from camera at a steady pace, coat and lantern swinging gently, camera slowly pushes forward through the fog following his back, dawn light brightens and mist thins to reveal deeper forest, ends on his small silhouette continuing down the path",
+        "seconds": 8
+      },
+      {
+        "id": "beat_50641f5da3",
+        "title": "石像不答",
+        "action": "青年在环形废墟里举灯仰问覆满青苔的巨像，石像空洞的双眼毫无回应。",
+        "image": "the same wanderer standing small before a colossal moss-covered stone statue with hollow empty eyes, ruined circular shrine with broken dome, he looks up raising his brass lantern, shafts of white daylight falling through the opening, drifting dust motes, low angle medium shot, cool grey-green stone against warm lantern glow, painterly storybook illustration, matte gouache texture, 50mm lens",
+        "video": "he lifts the lantern higher toward the statue's face and waits, moss sways slightly in a draft while the statue stays perfectly still, camera slowly cranes up from his upturned face to the statue's hollow eyes, light flickers and dust drifts through the beam, ends holding on the empty eyes with him tiny at the bottom of frame",
+        "seconds": 8,
+        "line": "请告诉我，真理在哪里？"
+      },
+      {
+        "id": "beat_0eea1c5fba",
+        "title": "河水照影",
+        "action": "午后河边，青年跪在水边问长河，河水只推来一圈圈涟漪打碎他的倒影。",
+        "image": "the same wanderer kneeling at the edge of a wide slow river in golden afternoon, hands on knees, brass lantern set beside him on the pebbles, his mirrored reflection in the still water, tall reeds, distant blue hills, wide shot from low water level, warm backlight through reeds, ripples breaking the mirror, painterly storybook illustration, matte gouache texture, 35mm lens",
+        "video": "he leans down toward the water and his breath ripples the surface, camera drifts slowly sideways along the waterline, the reflection breaks apart and reforms then scatters again, sunlight lowers and warms, ends on the disturbed water holding only fragments of his face",
+        "seconds": 8,
+        "line": "你流了千年，你见过它吗？"
+      },
+      {
+        "id": "beat_e14b2a6eeb",
+        "title": "山巅问星",
+        "action": "夜里青年登上峰顶，对着漫天星海转圈发问，云层滑过星群，没有人回答。",
+        "image": "the same wanderer small on a rocky summit at night, arms slightly open, brass lantern dim at his side, vast field of stars and a slow milky way river overhead, jagged black peaks below, extreme wide shot, cold blue moonlight rim light on his indigo coat, deep shadows, painterly storybook illustration, matte gouache texture, 24mm lens",
+        "video": "he turns in a slow circle addressing the sky, coat flaring, camera pulls back and tilts up from him into the star field, thin clouds slide over the stars and moonlight dims, ends with him a tiny figure under the enormous silent sky",
+        "seconds": 8
+      },
+      {
+        "id": "beat_a3e06c006b",
+        "title": "灯灭悟心",
+        "action": "灯焰熄灭，黑暗里青年合掌，掌心自己亮起一小团暖光，映亮他的眼。",
+        "image": "the same wanderer sitting cross-legged on the summit rock in near darkness, hands cupped at his chest cradling a small warm glow, dead brass lantern tipped beside him, close-up three-quarter shot, single warm light source on his tired young face, deep blue night behind, painterly storybook illustration, matte gouache texture, 85mm lens",
+        "video": "the lantern flame shrinks and dies, darkness closes in, he slowly cups his hands and a soft warm glow blooms between his palms and rises to light his face, camera pushes in gently to his eyes, ends on a small smile lit only by his own hands",
+        "seconds": 8
+      },
+      {
+        "id": "beat_b76cff7e9c",
+        "title": "归村传灯",
+        "action": "黎明时分青年回到村口，把灯高高举起，光和晨雾一起铺开在村人脸上。",
+        "image": "the same wanderer back at the village gate at dawn, holding his glowing brass lantern high, village children and an old woman gathering toward him, thin morning mist, thatched roofs and low stone wall, warm lantern glow against pale blue dawn, wide shot from slightly low, painterly storybook illustration, matte gouache texture, 35mm lens",
+        "video": "he raises the lantern and its warm light spreads across the villagers' upturned faces as they step closer, camera pulls back and rises slowly over the village, dawn colors warm the sky and small lights answer from the windows, ends on a wide dawn village glowing point by point",
+        "seconds": 8,
+        "line": "真理不在远方，就在举灯的手里。"
+      }
+    ],
+    "source": "ai",
+    "updatedAt": 1791033308954
+  }
+}

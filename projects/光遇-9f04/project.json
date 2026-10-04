@@ -1,0 +1,2490 @@
+{
+  "id": "光遇-9f04",
+  "name": "光遇",
+  "rev": 232,
+  "createdAt": 1791069023967,
+  "updatedAt": 1791095866649,
+  "nodes": [
+    {
+      "id": "node_95e36f0e21",
+      "kind": "image",
+      "title": "舰队跃出星门·首帧",
+      "x": 120,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_e25c8d4252",
+          "nodeId": "node_95e36f0e21",
+          "createdAt": 1791070245089,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "vast imperial expedition fleet emerging from a glowing ring-shaped wormhole, twenty navy-grey capital ships in V formation, matte hull plating with faint panel seams, tiny escorts trailing amber engine lines, deep navy space with magenta-teal nebula clouds, wide establishing shot, low angle from behind the wormhole rim, slow push-in, volumetric rim light, anamorphic lens flare, 35mm anamorphic, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_5deff7ee91",
+          "promptId": "2d8c92ce-1e8a-488c-aac8-c41e58cd9820",
+          "file": "node_95e36f0e21/take_e25c8d4252.png",
+          "finishedAt": 1791070308701,
+          "probe": {
+            "width": 720,
+            "height": 1280,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1510710
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "vast imperial expedition fleet emerging from a glowing ring-shaped wormhole, twenty navy-grey capital ships in V formation, matte hull plating with faint panel seams, tiny escorts trailing amber engine lines, deep navy space with magenta-teal nebula clouds, wide establishing shot, low angle from behind the wormhole rim, slow push-in, volumetric rim light, anamorphic lens flare, 35mm anamorphic, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_e25c8d4252"
+    },
+    {
+      "id": "node_5db092f138",
+      "kind": "video",
+      "title": "舰队跃出星门",
+      "x": 120,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_dfb7679081",
+          "nodeId": "node_5db092f138",
+          "createdAt": 1791071097492,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism, an anamorphic frame in a deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, IMAX-grade detail and subtle film grain. A colossal circular jump gate dominates the frame, its wormhole throat a swirling vortex of violet and cyan nebula light. The inner ring flares blinding white, then the flare contracts into a thin glowing halo as the capital ships glide forward out of the gate and fan into a V formation, amber engine trails streaking beneath their hulls. The camera pushes in with large amplitude at slow speed past the ring toward the fleet. The engine trails brighten and thin as the ships spread wide, and the shot ends on the flagship silhouetted against the nebula, the camera holding steady.\n\noverall_soundscape: A deep, reverberating low-frequency hum rises from the jump gate ring, breaking into a sharp crackling wash of energy as the ring flares white. Massive hulls glide through with a sustained sub-bass rumble, thruster wash hissing and thinning as the ships spread into formation. The hum decays toward near silence as the camera settles on the flagship.\n\nnon_diegetic_music: A low sustained contrabass string drone enters beneath the gate flare, joined by a slow swelling brass chord that rises in pitch and volume as the fleet fans out. A single deep timpani hit marks the fleet locking formation, then the score thins to a quiet high sustained tone under the final hold.",
+            "seconds": 5,
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "9:16 (Portrait Widescreen)",
+            "aspectFrom": "首帧 720x1280"
+          },
+          "inputs": {
+            "node_95e36f0e21": "take_e25c8d4252"
+          },
+          "jobId": "job_728efd1ae9",
+          "promptId": "9aac857d-7605-4262-93aa-c9c85b7837fe",
+          "file": "node_5db092f138/take_dfb7679081.mp4",
+          "poster": "node_5db092f138/take_dfb7679081.jpg",
+          "finishedAt": 1791071795208,
+          "probe": {
+            "duration": 5.167,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1466571
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism, an anamorphic frame in a deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, IMAX-grade detail and subtle film grain. A colossal circular jump gate dominates the frame, its wormhole throat a swirling vortex of violet and cyan nebula light. The inner ring flares blinding white, then the flare contracts into a thin glowing halo as the capital ships glide forward out of the gate and fan into a V formation, amber engine trails streaking beneath their hulls. The camera pushes in with large amplitude at slow speed past the ring toward the fleet. The engine trails brighten and thin as the ships spread wide, and the shot ends on the flagship silhouetted against the nebula, the camera holding steady.\n\noverall_soundscape: A deep, reverberating low-frequency hum rises from the jump gate ring, breaking into a sharp crackling wash of energy as the ring flares white. Massive hulls glide through with a sustained sub-bass rumble, thruster wash hissing and thinning as the ships spread into formation. The hum decays toward near silence as the camera settles on the flagship.\n\nnon_diegetic_music: A low sustained contrabass string drone enters beneath the gate flare, joined by a slow swelling brass chord that rises in pitch and volume as the fleet fans out. A single deep timpani hit marks the fleet locking formation, then the score thins to a quiet high sustained tone under the final hold.",
+        "seconds": 5,
+        "workflow": "minimax-h3-i2v-turbo"
+      },
+      "activeTake": "take_dfb7679081"
+    },
+    {
+      "id": "node_2f5e5abd33",
+      "kind": "image",
+      "title": "舰桥确认坐标·首帧",
+      "x": 500,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_5a1f8d34c0",
+          "nodeId": "node_2f5e5abd33",
+          "createdAt": 1791070309169,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "woman in her thirties, short black hair, small scar above left eyebrow, dark navy flight suit with amber piping, standing before a floating holographic galactic map, mid-command, dark navy bridge interior, amber console glow, cyan holo lines, console banks receding into darkness, medium shot, eye-level, camera slowly arcing around her from her right side, shallow depth of field, 50mm spherical lens, amber key light from the console bank, cyan rim light on her hair and shoulder, volumetric haze in the air, matte flight-suit fabric with amber piping catching the console glow, thin volumetric cyan holo lines with faint drifting dust motes, deep navy and amber palette with cyan holo accents, faint practical lens flares, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_26ac21a16d",
+          "promptId": "9c8ae9cd-6441-425e-8b3e-2c05cc74539c",
+          "file": "node_2f5e5abd33/take_5a1f8d34c0.png",
+          "finishedAt": 1791070366536,
+          "probe": {
+            "width": 720,
+            "height": 1280,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1413298
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "woman in her thirties, short black hair, small scar above left eyebrow, dark navy flight suit with amber piping, standing before a floating holographic galactic map, mid-command, dark navy bridge interior, amber console glow, cyan holo lines, console banks receding into darkness, medium shot, eye-level, camera slowly arcing around her from her right side, shallow depth of field, 50mm spherical lens, amber key light from the console bank, cyan rim light on her hair and shoulder, volumetric haze in the air, matte flight-suit fabric with amber piping catching the console glow, thin volumetric cyan holo lines with faint drifting dust motes, deep navy and amber palette with cyan holo accents, faint practical lens flares, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_5a1f8d34c0"
+    },
+    {
+      "id": "node_dcbb5a1469",
+      "kind": "video",
+      "title": "舰桥确认坐标",
+      "x": 500,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_e4dcfb7476",
+          "nodeId": "node_dcbb5a1469",
+          "createdAt": 1791071817894,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism, anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain. A medium shot frames from behind the shoulder of Lin Yuan, a young woman with short white hair, glowing cyan optics and a dark segmented cloak with a cyan crystal glowing at her chest, standing before a giant holographic planet rendered as a cyan wireframe globe, banks of amber-lit consoles lining the curved bridge around her. She raises one hand and rotates the holographic map a quarter turn, amber and cyan glyphs rippling across her face. The camera performs an arc shot from left to right with small amplitude at slow speed behind her shoulder. The holographic light pulses brighter, then the camera comes to rest, holding on her steady profile.\n\noverall_soundscape: A low bridge hum runs throughout, layered with the soft whir of the holographic projection and intermittent clicks from the console banks. Her cloak rustles faintly as she lifts her arm, and the hologram gives off a faint crystalline resonance as the map rotates, followed by silence under the final hold.\n\nnon_diegetic_music: A sustained low synthesizer drone at a slow, even pulse, with a sparse high shimmer entering as the holographic light brightens and settling under the final hold.",
+            "seconds": 5,
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "9:16 (Portrait Widescreen)",
+            "aspectFrom": "首帧 608x1056"
+          },
+          "inputs": {
+            "node_2f5e5abd33": "take_5a1f8d34c0",
+            "node_862fa87a1b": "take_54b3458e41"
+          },
+          "jobId": "job_74d20ade88",
+          "promptId": "8bd310eb-769d-43d3-bbfe-0e13d834c0d2",
+          "file": "node_dcbb5a1469/take_e4dcfb7476.mp4",
+          "poster": "node_dcbb5a1469/take_e4dcfb7476.jpg",
+          "finishedAt": 1791072298817,
+          "probe": {
+            "duration": 5.167,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1438096
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism, anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain. A medium shot frames from behind the shoulder of Lin Yuan, a young woman with short white hair, glowing cyan optics and a dark segmented cloak with a cyan crystal glowing at her chest, standing before a giant holographic planet rendered as a cyan wireframe globe, banks of amber-lit consoles lining the curved bridge around her. She raises one hand and rotates the holographic map a quarter turn, amber and cyan glyphs rippling across her face. The camera performs an arc shot from left to right with small amplitude at slow speed behind her shoulder. The holographic light pulses brighter, then the camera comes to rest, holding on her steady profile.\n\noverall_soundscape: A low bridge hum runs throughout, layered with the soft whir of the holographic projection and intermittent clicks from the console banks. Her cloak rustles faintly as she lifts her arm, and the hologram gives off a faint crystalline resonance as the map rotates, followed by silence under the final hold.\n\nnon_diegetic_music: A sustained low synthesizer drone at a slow, even pulse, with a sparse high shimmer entering as the holographic light brightens and settling under the final hold.",
+        "seconds": 5,
+        "workflow": "minimax-h3-i2v-turbo"
+      },
+      "activeTake": "take_e4dcfb7476"
+    },
+    {
+      "id": "node_a6f3f8c0a4",
+      "kind": "image",
+      "title": "引擎点火·首帧",
+      "x": 880,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_eacb05d715",
+          "nodeId": "node_a6f3f8c0a4",
+          "createdAt": 1791070367263,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "close-up, three massive engine nozzles on a navy-grey capital ship hull, amber plasma igniting inside each nozzle, riveted heat-scarred plating, deep navy void behind, hard rim light from the ignition, low angle, camera hugging the engine hull, slow push-in, 85mm, shallow depth of field, anamorphic 2.39:1, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_a082bdaeeb",
+          "promptId": "aa7cd39c-5747-4de0-a9a9-8c975a7fa18c",
+          "file": "node_a6f3f8c0a4/take_eacb05d715.png",
+          "finishedAt": 1791070418802,
+          "probe": {
+            "width": 720,
+            "height": 1280,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1349268
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "close-up, three massive engine nozzles on a navy-grey capital ship hull, amber plasma igniting inside each nozzle, riveted heat-scarred plating, deep navy void behind, hard rim light from the ignition, low angle, camera hugging the engine hull, slow push-in, 85mm, shallow depth of field, anamorphic 2.39:1, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_eacb05d715"
+    },
+    {
+      "id": "node_98d7784830",
+      "kind": "video",
+      "title": "引擎点火",
+      "x": 880,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_27caeacca1",
+          "nodeId": "node_98d7784830",
+          "createdAt": 1791072348866,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism, vertical 9:16 framing, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain. The first frame is fully anchored: the flagship's stern engine cluster, three riveted dark-metal nozzles set in the housing against deep space, the hull surface running away toward the bow. The three nozzles ignite in sequence from left to right, each throat brightening in turn, and amber plasma blooms out of the mouths and stretches into long exhaust lines that stream back past the housing. The camera pushes forward along the hull with small amplitude at slow speed, hugging the engine skin, and a practical lens flare sweeps across the frame, blooming off the nozzle rims. The shot ends with the ship accelerating away, the camera holding as the flagship shrinks to a single bright point against the dark.\n\noverall_soundscape: Three deep ignition thuds land one after another, each followed by a swelling roar of plasma. The hull metal groans and resonates under the camera's path, and a low engine drone carries through the shot before it thins out into near silence as the ship pulls away.\n\nnon_diegetic_music: A sustained low synth drone holds beneath the shot, joined by a slow brass swell that rises through a three-note figure timed to the ignitions, then decays to one long tone as the ship recedes.",
+            "seconds": 5,
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "9:16 (Portrait Widescreen)",
+            "aspectFrom": "首帧 608x1056"
+          },
+          "inputs": {
+            "node_a6f3f8c0a4": "take_eacb05d715",
+            "node_31161823e9": "take_c607a0af1d"
+          },
+          "jobId": "job_def0055e0e",
+          "promptId": "bfcfaac5-3ac3-422f-bf97-7b080615225e",
+          "file": "node_98d7784830/take_27caeacca1.mp4",
+          "poster": "node_98d7784830/take_27caeacca1.jpg",
+          "finishedAt": 1791072829809,
+          "probe": {
+            "duration": 5.167,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 963074
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism, vertical 9:16 framing, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain. The first frame is fully anchored: the flagship's stern engine cluster, three riveted dark-metal nozzles set in the housing against deep space, the hull surface running away toward the bow. The three nozzles ignite in sequence from left to right, each throat brightening in turn, and amber plasma blooms out of the mouths and stretches into long exhaust lines that stream back past the housing. The camera pushes forward along the hull with small amplitude at slow speed, hugging the engine skin, and a practical lens flare sweeps across the frame, blooming off the nozzle rims. The shot ends with the ship accelerating away, the camera holding as the flagship shrinks to a single bright point against the dark.\n\noverall_soundscape: Three deep ignition thuds land one after another, each followed by a swelling roar of plasma. The hull metal groans and resonates under the camera's path, and a low engine drone carries through the shot before it thins out into near silence as the ship pulls away.\n\nnon_diegetic_music: A sustained low synth drone holds beneath the shot, joined by a slow brass swell that rises through a three-note figure timed to the ignitions, then decays to one long tone as the ship recedes.",
+        "seconds": 5,
+        "workflow": "minimax-h3-i2v-turbo"
+      },
+      "activeTake": "take_27caeacca1"
+    },
+    {
+      "id": "node_5c39760c4a",
+      "kind": "image",
+      "title": "抵达未知星系·首帧",
+      "x": 1260,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_dd2eed6079",
+          "nodeId": "node_5c39760c4a",
+          "createdAt": 1791070419357,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "imperial fleet arriving in a binary star system, two stars, one amber one pale blue, a violet crystal planet in lower frame, capital ships crossing the planet's dark limb, deep navy space, nebula haze, amber starlight raking across hull plating, volumetric god rays through nebula dust, wet-lens highlights on hull edges, wide high-angle shot, slow rising camera from behind the planet's dark limb, 24mm, anamorphic 2.39:1, cinematic sci-fi realism, practical lens flares, IMAX-grade detail, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_2ee4e6f6ed",
+          "promptId": "762d8677-194b-41db-95f7-3dcae90cbaee",
+          "file": "node_5c39760c4a/take_dd2eed6079.png",
+          "finishedAt": 1791070473706,
+          "probe": {
+            "width": 720,
+            "height": 1280,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1268131
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "imperial fleet arriving in a binary star system, two stars, one amber one pale blue, a violet crystal planet in lower frame, capital ships crossing the planet's dark limb, deep navy space, nebula haze, amber starlight raking across hull plating, volumetric god rays through nebula dust, wet-lens highlights on hull edges, wide high-angle shot, slow rising camera from behind the planet's dark limb, 24mm, anamorphic 2.39:1, cinematic sci-fi realism, practical lens flares, IMAX-grade detail, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_dd2eed6079"
+    },
+    {
+      "id": "node_dda95d5ba9",
+      "kind": "video",
+      "title": "抵达未知星系",
+      "x": 1260,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_6879bae160",
+          "nodeId": "node_dda95d5ba9",
+          "createdAt": 1791072863216,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism with anamorphic lens character, a deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail and subtle film grain; a vertical frame opens on the dark limb of a planet filling the lower edge against a deep navy starfield. The camera rises slowly with small amplitude from behind the planet's dark limb, and twin suns flare over the horizon and light the fleet's hulls one by one, each hull flaring amber as it catches the light. Ships drift into frame and decelerate, their engine glows trailing long cyan streaks as they settle into formation, and the shot ends with the fleet suspended above the violet crystal planet, holding on the final composition.\n\noverall_soundscape: A deep sub-bass rumble of open space runs under the whole shot, joined by the swelling hum of ship engines as the fleet decelerates and the faint metallic groan of hulls settling into formation. No voices and no impacts are heard.\n\nnon_diegetic_music: A sustained low string drone at a slow tempo, with sparse low-brass swells that rise gradually through the shot and resolve into a single held chord at the end.",
+            "seconds": 5,
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "9:16 (Portrait Widescreen)",
+            "aspectFrom": "首帧 608x1056"
+          },
+          "inputs": {
+            "node_5c39760c4a": "take_dd2eed6079",
+            "node_e0a0f8ffb5": "take_55db37f850"
+          },
+          "jobId": "job_47475718de",
+          "promptId": "9da97ddf-9d63-4741-8746-86b55e425046",
+          "file": "node_dda95d5ba9/take_6879bae160.mp4",
+          "poster": "node_dda95d5ba9/take_6879bae160.jpg",
+          "finishedAt": 1791073344915,
+          "probe": {
+            "duration": 5.167,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 507986
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism with anamorphic lens character, a deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail and subtle film grain; a vertical frame opens on the dark limb of a planet filling the lower edge against a deep navy starfield. The camera rises slowly with small amplitude from behind the planet's dark limb, and twin suns flare over the horizon and light the fleet's hulls one by one, each hull flaring amber as it catches the light. Ships drift into frame and decelerate, their engine glows trailing long cyan streaks as they settle into formation, and the shot ends with the fleet suspended above the violet crystal planet, holding on the final composition.\n\noverall_soundscape: A deep sub-bass rumble of open space runs under the whole shot, joined by the swelling hum of ship engines as the fleet decelerates and the faint metallic groan of hulls settling into formation. No voices and no impacts are heard.\n\nnon_diegetic_music: A sustained low string drone at a slow tempo, with sparse low-brass swells that rise gradually through the shot and resolve into a single held chord at the end.",
+        "seconds": 5,
+        "workflow": "minimax-h3-i2v-turbo"
+      },
+      "activeTake": "take_6879bae160"
+    },
+    {
+      "id": "node_0794f31013",
+      "kind": "image",
+      "title": "异常信号·首帧",
+      "x": 1640,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_c0712fd2d7",
+          "nodeId": "node_0794f31013",
+          "createdAt": 1791070475455,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "woman with short black hair, small scar above left eyebrow, dark navy flight suit, staring at a holographic signal waveform spiking violently above an amber console, waveform reflection on her face, dark bridge interior, cyan and amber light mix, close-up, waveform in the foreground, very slow push-in, rack focus from waveform to her eyes, 85mm, shallow depth of field, matte fabric texture, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_3f4281eb24",
+          "promptId": "84fac52a-0b7b-46f4-8874-087b1f0a13dc",
+          "file": "node_0794f31013/take_c0712fd2d7.png",
+          "finishedAt": 1791070526802,
+          "probe": {
+            "width": 720,
+            "height": 1280,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1321943
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "woman with short black hair, small scar above left eyebrow, dark navy flight suit, staring at a holographic signal waveform spiking violently above an amber console, waveform reflection on her face, dark bridge interior, cyan and amber light mix, close-up, waveform in the foreground, very slow push-in, rack focus from waveform to her eyes, 85mm, shallow depth of field, matte fabric texture, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_c0712fd2d7"
+    },
+    {
+      "id": "node_e25b06ae8d",
+      "kind": "video",
+      "title": "异常信号",
+      "x": 1640,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_d7e688e4b3",
+          "nodeId": "node_e25b06ae8d",
+          "createdAt": 1791073365664,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism in a vertical 9:16 frame, anamorphic with a deep navy and amber palette and cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail and subtle film grain; a medium close-up looks past a glowing orange-and-cyan control console in the foreground at a young woman, Lin Yuan, dark-skinned with short tousled white hair threaded with pale bead-like ornaments, luminous pale eyes and a small red mark below one eye, wearing a dark high-collared cloak with gold insignia, her gloved hand resting on the console's keys. The cyan waveform rising above the console spikes and repeats in a rhythmic pulse, and the camera racks focus from the holographic waveform in the foreground to her face while pushing in with small amplitude at slow speed; her eyes narrow and she leans in toward the signal. Amber alarm light washes across the bridge, sweeping over her white hair and the console panels, and the shot ends on her lips parting as she draws a breath.\n\noverall_soundscape: The bridge interior hums with a low reactor drone and the quiet chatter of consoles, overlaid by an electronic signal tone that pulses and quickens with the waveform. A distant alarm chime starts to ring from the far speakers, cloth rustles as she leans over the console, and a faint intake of breath is audible at the end.\n\nnon_diegetic_music: A low sustained synth drone holds under the whole shot, joined by a repeating two-note electronic pulse at a steady tempo whose volume rises slightly toward the end.",
+            "seconds": 5,
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "9:16 (Portrait Widescreen)",
+            "aspectFrom": "首帧 608x1056"
+          },
+          "inputs": {
+            "node_0794f31013": "take_c0712fd2d7",
+            "node_b4840b252a": "take_73a6aab37e"
+          },
+          "jobId": "job_d6013227a1",
+          "promptId": "1b77888d-e6e6-4959-befc-2af45fecb23b",
+          "file": "node_e25b06ae8d/take_d7e688e4b3.mp4",
+          "poster": "node_e25b06ae8d/take_d7e688e4b3.jpg",
+          "finishedAt": 1791073854564,
+          "probe": {
+            "duration": 5.167,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1227506
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism in a vertical 9:16 frame, anamorphic with a deep navy and amber palette and cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail and subtle film grain; a medium close-up looks past a glowing orange-and-cyan control console in the foreground at a young woman, Lin Yuan, dark-skinned with short tousled white hair threaded with pale bead-like ornaments, luminous pale eyes and a small red mark below one eye, wearing a dark high-collared cloak with gold insignia, her gloved hand resting on the console's keys. The cyan waveform rising above the console spikes and repeats in a rhythmic pulse, and the camera racks focus from the holographic waveform in the foreground to her face while pushing in with small amplitude at slow speed; her eyes narrow and she leans in toward the signal. Amber alarm light washes across the bridge, sweeping over her white hair and the console panels, and the shot ends on her lips parting as she draws a breath.\n\noverall_soundscape: The bridge interior hums with a low reactor drone and the quiet chatter of consoles, overlaid by an electronic signal tone that pulses and quickens with the waveform. A distant alarm chime starts to ring from the far speakers, cloth rustles as she leans over the console, and a faint intake of breath is audible at the end.\n\nnon_diegetic_music: A low sustained synth drone holds under the whole shot, joined by a repeating two-note electronic pulse at a steady tempo whose volume rises slightly toward the end.",
+        "seconds": 5,
+        "workflow": "minimax-h3-i2v-turbo"
+      },
+      "activeTake": "take_d7e688e4b3"
+    },
+    {
+      "id": "node_0a4a46b2d7",
+      "kind": "image",
+      "title": "登陆艇入大气·首帧",
+      "x": 2020,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_6b524997f7",
+          "nodeId": "node_0a4a46b2d7",
+          "createdAt": 1791070527554,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "small imperial lander plunging into a violet planet's atmosphere, hull plating glowing orange from friction heat, thick magenta cloud layers streaming past the hull, cyan crystal peaks visible far below through gaps in the cloud deck, aerial tracking shot from behind and above the craft, camera diving with it through the cloud layers, lander held small in frame against the magenta cloud mass, hard rim light from the friction glow along the hull edge, molten orange light spilling across dark ceramic hull plating and heat-scorched leading edges, 35mm lens, anamorphic 2.39:1 framing, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_71aa1e56c7",
+          "promptId": "2cd8be43-c365-491d-9552-f94be294474e",
+          "file": "node_0a4a46b2d7/take_6b524997f7.png",
+          "finishedAt": 1791070584919,
+          "probe": {
+            "width": 720,
+            "height": 1280,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1281139
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "small imperial lander plunging into a violet planet's atmosphere, hull plating glowing orange from friction heat, thick magenta cloud layers streaming past the hull, cyan crystal peaks visible far below through gaps in the cloud deck, aerial tracking shot from behind and above the craft, camera diving with it through the cloud layers, lander held small in frame against the magenta cloud mass, hard rim light from the friction glow along the hull edge, molten orange light spilling across dark ceramic hull plating and heat-scorched leading edges, 35mm lens, anamorphic 2.39:1 framing, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_6b524997f7"
+    },
+    {
+      "id": "node_f46b99b2c4",
+      "kind": "video",
+      "title": "登陆艇入大气",
+      "x": 2020,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_1ed21d84ac",
+          "nodeId": "node_f46b99b2c4",
+          "createdAt": 1791073893528,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism with anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail and subtle film grain. A vertical 9:16 frame holds on the first-frame image: the dark finned lander with its ring of round portholes dives nose-down through layered magenta-purple cloud banks, its engine exhaust blazing orange-white and dragging a long magenta light streak across the upper-left sky, while faint cyan-lit structures glimmer on the cloud tops far below. As the lander punches through the upper cloud layers, the heat glow along the hull cools from bright orange to dull red and thin vapor streaks past its fins. The camera tracks alongside the hull with small amplitude at slow speed, matching the descent, then tilts down with large amplitude at fast speed to reveal the cloud deck tearing open beneath the ship, ordered clusters of cyan crystal spires rising from the dark surface below. Clouds streak past the lens as the lander banks gently and its nose swings toward a flat landing plateau among the spires, its engine glow settling into a steady ember red.\n\noverall_soundscape: A continuous high-altitude wind roars and hisses around the hull while the lander's engines push a deep steady rumble through the frame. Cloud vapor whips past the microphone in fast streaking whooshes, the rumble drops in pitch as the ship slows its descent, and a faint crystalline resonance hums up from the crystal fields below.\n\nnon_diegetic_music: A low sustained synth drone in the bass register under a slow half-note pulse, joined by a rising two-note brass swell as the cloud deck opens, decaying into a long tail at the end.",
+            "seconds": 5,
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "9:16 (Portrait Widescreen)",
+            "aspectFrom": "首帧 608x1056"
+          },
+          "inputs": {
+            "node_0a4a46b2d7": "take_6b524997f7",
+            "node_705cd28589": "take_c78c3ee4f9"
+          },
+          "jobId": "job_74b3a234f0",
+          "promptId": "d6c47b09-9e79-463d-8d8f-c63b1a189352",
+          "file": "node_f46b99b2c4/take_1ed21d84ac.mp4",
+          "poster": "node_f46b99b2c4/take_1ed21d84ac.jpg",
+          "finishedAt": 1791074374414,
+          "probe": {
+            "duration": 5.167,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1115887
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism with anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail and subtle film grain. A vertical 9:16 frame holds on the first-frame image: the dark finned lander with its ring of round portholes dives nose-down through layered magenta-purple cloud banks, its engine exhaust blazing orange-white and dragging a long magenta light streak across the upper-left sky, while faint cyan-lit structures glimmer on the cloud tops far below. As the lander punches through the upper cloud layers, the heat glow along the hull cools from bright orange to dull red and thin vapor streaks past its fins. The camera tracks alongside the hull with small amplitude at slow speed, matching the descent, then tilts down with large amplitude at fast speed to reveal the cloud deck tearing open beneath the ship, ordered clusters of cyan crystal spires rising from the dark surface below. Clouds streak past the lens as the lander banks gently and its nose swings toward a flat landing plateau among the spires, its engine glow settling into a steady ember red.\n\noverall_soundscape: A continuous high-altitude wind roars and hisses around the hull while the lander's engines push a deep steady rumble through the frame. Cloud vapor whips past the microphone in fast streaking whooshes, the rumble drops in pitch as the ship slows its descent, and a faint crystalline resonance hums up from the crystal fields below.\n\nnon_diegetic_music: A low sustained synth drone in the bass register under a slow half-note pulse, joined by a rising two-note brass swell as the cloud deck opens, decaying into a long tail at the end.",
+        "seconds": 5,
+        "workflow": "minimax-h3-i2v-turbo"
+      },
+      "activeTake": "take_1ed21d84ac"
+    },
+    {
+      "id": "node_2a8f6c6a0d",
+      "kind": "image",
+      "title": "踏出舱门·首帧",
+      "x": 2400,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_1c17d81d3a",
+          "nodeId": "node_2a8f6c6a0d",
+          "createdAt": 1791070585637,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "woman in her thirties, short black hair, small scar above left eyebrow, dark navy flight suit with amber piping, descending a lander ramp, boot sole making first contact with the cyan crystal ground, faceted crystal plain with glassy fracture planes and sharp specular glints, violet sky, pale magenta sunlight raking low across the ground, crystal spires in background, low angle tracking shot from behind, subject centered on the ramp axis, ramp edge cutting the lower third of frame, 35mm anamorphic lens, shallow focus on the figure, cinematic sci-fi realism, 2.39:1, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_fac21312d1",
+          "promptId": "d180df03-06f4-45f5-a4ac-96b134a95568",
+          "file": "node_2a8f6c6a0d/take_1c17d81d3a.png",
+          "finishedAt": 1791070636950,
+          "probe": {
+            "width": 720,
+            "height": 1280,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1327216
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "woman in her thirties, short black hair, small scar above left eyebrow, dark navy flight suit with amber piping, descending a lander ramp, boot sole making first contact with the cyan crystal ground, faceted crystal plain with glassy fracture planes and sharp specular glints, violet sky, pale magenta sunlight raking low across the ground, crystal spires in background, low angle tracking shot from behind, subject centered on the ramp axis, ramp edge cutting the lower third of frame, 35mm anamorphic lens, shallow focus on the figure, cinematic sci-fi realism, 2.39:1, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_1c17d81d3a"
+    },
+    {
+      "id": "node_987849a817",
+      "kind": "video",
+      "title": "踏出舱门",
+      "x": 2400,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_ee06ca8f74",
+          "nodeId": "node_987849a817",
+          "createdAt": 1791074414641,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism with IMAX-grade detail and subtle film grain, a deep navy and amber palette accented by cyan crystal light, volumetric god rays, practical lens flares and wet-lens highlights; a low-angle vertical shot frames her from behind at ground level — the lone woman's pale hair, black-masked face, dark navy jacket with utility belt, and long dark cape — as she walks down the landing-ramp of the lander onto the crystal plain, shattered crystal spires flanking the path under a purple sky. The camera follows low behind her in a tracking shot with small amplitude at normal speed, holding on her back and the swing of her cape as her boot comes down and lands on the crystal surface; a ring of cyan light ripples out from the contact point across the faceted paving, dust motes drifting through magenta light. The camera continues tracking low behind her as she takes a few more steps, then eases to a halt as she stops and looks up, her head tilting back toward the spires ahead while the cyan ripple fades across the ground at her feet.\n\noverall_soundscape: A low wind sweeps the crystal plain while the lander's idling engines hum behind her. Her boots land with crisp taps on the faceted paving, each step answered by a faint glassy shimmer as the cyan ring of light spreads. The fabric of the long cape rustles with her stride, and a single soft breath is audible as she stops and looks up.\n\nnon_diegetic_music: A sustained low synth drone under a slow single-note string swell, joined by sparse metallic bell tones at a measured tempo, the dynamics thinning toward near-silence as the shot settles.",
+            "seconds": 5,
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "9:16 (Portrait Widescreen)",
+            "aspectFrom": "首帧 608x1056"
+          },
+          "inputs": {
+            "node_2a8f6c6a0d": "take_1c17d81d3a",
+            "node_efcd954c37": "take_1f0379eb44"
+          },
+          "jobId": "job_43d7751fdb",
+          "promptId": "efc2b317-188d-416e-971d-820a3dcbf3e5",
+          "file": "node_987849a817/take_ee06ca8f74.mp4",
+          "poster": "node_987849a817/take_ee06ca8f74.jpg",
+          "finishedAt": 1791074895547,
+          "probe": {
+            "duration": 5.167,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1328903
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism with IMAX-grade detail and subtle film grain, a deep navy and amber palette accented by cyan crystal light, volumetric god rays, practical lens flares and wet-lens highlights; a low-angle vertical shot frames her from behind at ground level — the lone woman's pale hair, black-masked face, dark navy jacket with utility belt, and long dark cape — as she walks down the landing-ramp of the lander onto the crystal plain, shattered crystal spires flanking the path under a purple sky. The camera follows low behind her in a tracking shot with small amplitude at normal speed, holding on her back and the swing of her cape as her boot comes down and lands on the crystal surface; a ring of cyan light ripples out from the contact point across the faceted paving, dust motes drifting through magenta light. The camera continues tracking low behind her as she takes a few more steps, then eases to a halt as she stops and looks up, her head tilting back toward the spires ahead while the cyan ripple fades across the ground at her feet.\n\noverall_soundscape: A low wind sweeps the crystal plain while the lander's idling engines hum behind her. Her boots land with crisp taps on the faceted paving, each step answered by a faint glassy shimmer as the cyan ring of light spreads. The fabric of the long cape rustles with her stride, and a single soft breath is audible as she stops and looks up.\n\nnon_diegetic_music: A sustained low synth drone under a slow single-note string swell, joined by sparse metallic bell tones at a measured tempo, the dynamics thinning toward near-silence as the shot settles.",
+        "seconds": 5,
+        "workflow": "minimax-h3-i2v-turbo"
+      },
+      "activeTake": "take_ee06ca8f74"
+    },
+    {
+      "id": "node_cbc1ca61e5",
+      "kind": "image",
+      "title": "晶体尖塔·首帧",
+      "x": 2780,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_68d4ab7edc",
+          "nodeId": "node_cbc1ca61e5",
+          "createdAt": 1791070637718,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "lone figure in a navy flight suit standing small in the foreground, head tipped back, gazing up at the spires, towering cyan crystal spires across a violet plain, nearest spire already lit, distant spires still dark, spires igniting from base to tip with inner cyan light, magenta sky, volumetric haze, wide low-angle shot, near ground-level camera, figure placed lower third and off-center, slow tilt up, 24mm, cyan rim light from the ignited crystal along the figure's shoulders, faceted crystal surfaces with sharp edges and faint internal fractures, deep navy, violet and cyan palette, anamorphic 2.39:1, practical lens flare, wet-lens highlights, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_017cc271a3",
+          "promptId": "15c3d3dd-5210-41e1-9c1b-b412b068f42c",
+          "file": "node_cbc1ca61e5/take_68d4ab7edc.png",
+          "finishedAt": 1791070689039,
+          "probe": {
+            "width": 720,
+            "height": 1280,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1294697
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "lone figure in a navy flight suit standing small in the foreground, head tipped back, gazing up at the spires, towering cyan crystal spires across a violet plain, nearest spire already lit, distant spires still dark, spires igniting from base to tip with inner cyan light, magenta sky, volumetric haze, wide low-angle shot, near ground-level camera, figure placed lower third and off-center, slow tilt up, 24mm, cyan rim light from the ignited crystal along the figure's shoulders, faceted crystal surfaces with sharp edges and faint internal fractures, deep navy, violet and cyan palette, anamorphic 2.39:1, practical lens flare, wet-lens highlights, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_68d4ab7edc"
+    },
+    {
+      "id": "node_8dd1e76487",
+      "kind": "video",
+      "title": "晶体尖塔",
+      "x": 2780,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_c5c9f13d05",
+          "nodeId": "node_8dd1e76487",
+          "createdAt": 1791074919604,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism with anamorphic lens character in a vertical 9:16 frame, deep violet atmosphere and cyan crystal accents, volumetric haze, practical lens flares, wet-lens highlights on the crystal facets, IMAX-grade detail and subtle film grain. A low-angle composition looks up past the small, cloaked figure of Lin Yuan, seen from behind at the bottom of frame, toward a cluster of towering crystal spires rising into a violet sky. The camera tilts up with small amplitude at slow speed from the figure to the spires as internal cyan light climbs each crystal from base to tip in a wave outward, the haze brightening around the plain, ending on the tallest spire glowing against the violet sky.\n\noverall_soundscape: Wind drags low across the crystal plain while the air carries a faint crystalline hum that swells into a clear resonant ring each time a spire ignites, the pitch rising as the wave of light travels outward. Cloak fabric rustles faintly, and the hum settles into a steady high shimmer by the end.\n\nnon_diegetic_music: A sustained low synth drone at a slow tempo, joined by a rising string pad and sparse high bell tones that enter as the spires ignite, dynamics swelling gradually toward the final frame.",
+            "seconds": 5,
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "9:16 (Portrait Widescreen)",
+            "aspectFrom": "首帧 608x1056"
+          },
+          "inputs": {
+            "node_cbc1ca61e5": "take_68d4ab7edc",
+            "node_79e2c836a0": "take_2a3d9e2634"
+          },
+          "jobId": "job_d721c1a052",
+          "promptId": "7709d1c9-f83d-4c21-b439-bf6bac95fc97",
+          "file": "node_8dd1e76487/take_c5c9f13d05.mp4",
+          "poster": "node_8dd1e76487/take_c5c9f13d05.jpg",
+          "finishedAt": 1791075400489,
+          "probe": {
+            "duration": 5.167,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 762082
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism with anamorphic lens character in a vertical 9:16 frame, deep violet atmosphere and cyan crystal accents, volumetric haze, practical lens flares, wet-lens highlights on the crystal facets, IMAX-grade detail and subtle film grain. A low-angle composition looks up past the small, cloaked figure of Lin Yuan, seen from behind at the bottom of frame, toward a cluster of towering crystal spires rising into a violet sky. The camera tilts up with small amplitude at slow speed from the figure to the spires as internal cyan light climbs each crystal from base to tip in a wave outward, the haze brightening around the plain, ending on the tallest spire glowing against the violet sky.\n\noverall_soundscape: Wind drags low across the crystal plain while the air carries a faint crystalline hum that swells into a clear resonant ring each time a spire ignites, the pitch rising as the wave of light travels outward. Cloak fabric rustles faintly, and the hum settles into a steady high shimmer by the end.\n\nnon_diegetic_music: A sustained low synth drone at a slow tempo, joined by a rising string pad and sparse high bell tones that enter as the spires ignite, dynamics swelling gradually toward the final frame.",
+        "seconds": 5,
+        "workflow": "minimax-h3-i2v-turbo"
+      },
+      "activeTake": "take_c5c9f13d05"
+    },
+    {
+      "id": "node_795a9ed2bb",
+      "kind": "image",
+      "title": "遗迹门开启·首帧",
+      "x": 3160,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_34dadd4e8f",
+          "nodeId": "node_795a9ed2bb",
+          "createdAt": 1791070689806,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "colossal ancient metal gate set into a crystal spire base, weathered dark alloy with fine surface pitting, vertical seam splitting open, cyan light bleeding out through the gap, volumetric haze in the beam, woman in a navy flight suit with amber piping, holding a handheld lamp, practical lamp glow, backlit silhouette against the cyan glow, fine dust drifting through the light, medium-wide shot, 35mm, eye-level slight low angle, static frame, deep navy and amber palette with cyan crystal accents, cinematic sci-fi realism, anamorphic 2.39:1, IMAX-grade detail, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_2c7b2c1850",
+          "promptId": "2f38e24a-6211-49b3-8659-bc9468110022",
+          "file": "node_795a9ed2bb/take_34dadd4e8f.png",
+          "finishedAt": 1791070744108,
+          "probe": {
+            "width": 720,
+            "height": 1280,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1469819
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "colossal ancient metal gate set into a crystal spire base, weathered dark alloy with fine surface pitting, vertical seam splitting open, cyan light bleeding out through the gap, volumetric haze in the beam, woman in a navy flight suit with amber piping, holding a handheld lamp, practical lamp glow, backlit silhouette against the cyan glow, fine dust drifting through the light, medium-wide shot, 35mm, eye-level slight low angle, static frame, deep navy and amber palette with cyan crystal accents, cinematic sci-fi realism, anamorphic 2.39:1, IMAX-grade detail, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_34dadd4e8f"
+    },
+    {
+      "id": "node_6522b490ce",
+      "kind": "video",
+      "title": "遗迹门开启",
+      "x": 3160,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_b809003b5a",
+          "nodeId": "node_6522b490ce",
+          "createdAt": 1791075426165,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism, vertical 9:16 framing, anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain. The opening composition matches the first frame: at the base of a towering riveted metal gate set between colossal ribbed crystal pillars, a traveler with short pale hair and a dark coat with amber lining stands small on a flight of cracked stone steps, holding a lantern raised toward the dark seam of the doors, glowing embers scattered across the debris-strewn ground around her boots. The gate's central seam splits with a thin vertical filament of cyan light that widens as the two metal halves grind apart; cyan light spills out and grows, washing up the steps and pushing the long shadows back. She lifts the lantern higher and steps forward into the opening. The camera tracks forward a few steps behind her at low height, pushing in with small amplitude at slow speed as the light grows around her silhouette. The shot ends as she crosses the threshold and the interior of the spire opens up into vast darkness lit only by the widening cyan glow.\n\noverall_soundscape: A deep metallic groan builds as the gate halves grind apart over a low resonant hum of cyan energy, small stones trickling down the cracked steps and embers crackling on the rubble. The traveler's boots scuff across stone, and her footsteps gain a hollow echo the moment she passes the threshold.\n\nnon_diegetic_music: A sustained low string drone at slow tempo, joined by a sparse rising two-note motif on muted brass that swells in volume as the gate opens and fades down at the end.",
+            "seconds": 5,
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "9:16 (Portrait Widescreen)",
+            "aspectFrom": "首帧 608x1056"
+          },
+          "inputs": {
+            "node_795a9ed2bb": "take_34dadd4e8f",
+            "node_496b27cc69": "take_e6bbbf0d22"
+          },
+          "jobId": "job_82bd129f99",
+          "promptId": "2dba8c83-bd86-4e82-88ad-bcd288c1c6b0",
+          "file": "node_6522b490ce/take_b809003b5a.mp4",
+          "poster": "node_6522b490ce/take_b809003b5a.jpg",
+          "finishedAt": 1791075907038,
+          "probe": {
+            "duration": 5.167,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 634602
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism, vertical 9:16 framing, anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain. The opening composition matches the first frame: at the base of a towering riveted metal gate set between colossal ribbed crystal pillars, a traveler with short pale hair and a dark coat with amber lining stands small on a flight of cracked stone steps, holding a lantern raised toward the dark seam of the doors, glowing embers scattered across the debris-strewn ground around her boots. The gate's central seam splits with a thin vertical filament of cyan light that widens as the two metal halves grind apart; cyan light spills out and grows, washing up the steps and pushing the long shadows back. She lifts the lantern higher and steps forward into the opening. The camera tracks forward a few steps behind her at low height, pushing in with small amplitude at slow speed as the light grows around her silhouette. The shot ends as she crosses the threshold and the interior of the spire opens up into vast darkness lit only by the widening cyan glow.\n\noverall_soundscape: A deep metallic groan builds as the gate halves grind apart over a low resonant hum of cyan energy, small stones trickling down the cracked steps and embers crackling on the rubble. The traveler's boots scuff across stone, and her footsteps gain a hollow echo the moment she passes the threshold.\n\nnon_diegetic_music: A sustained low string drone at slow tempo, joined by a sparse rising two-note motif on muted brass that swells in volume as the gate opens and fades down at the end.",
+        "seconds": 5,
+        "workflow": "minimax-h3-i2v-turbo"
+      },
+      "activeTake": "take_b809003b5a"
+    },
+    {
+      "id": "node_ef7511e195",
+      "kind": "image",
+      "title": "守护者苏醒·首帧",
+      "x": 3540,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_b13dad779f",
+          "nodeId": "node_ef7511e195",
+          "createdAt": 1791070745883,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "towering ancient mechanical sentinel inside a vast crystal hall, segmented alloy body unfolding and lifting its head, cyan light igniting along its joints, a small human figure in a navy flight suit standing still below, dust and volumetric god rays, wide low angle from behind the standing figure, slow push in, 24mm anamorphic lens, brushed alloy plating and faceted crystal wall surfaces, deep navy and amber palette with cyan crystal accents, practical lens flares, wet-lens highlights, cinematic sci-fi realism, IMAX-grade detail, subtle film grain, 2.39:1",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_0f55b5be77",
+          "promptId": "f27f26cb-08d7-479b-8a23-39285b266d06",
+          "file": "node_ef7511e195/take_b13dad779f.png",
+          "finishedAt": 1791070797219,
+          "probe": {
+            "width": 720,
+            "height": 1280,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1544463
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "towering ancient mechanical sentinel inside a vast crystal hall, segmented alloy body unfolding and lifting its head, cyan light igniting along its joints, a small human figure in a navy flight suit standing still below, dust and volumetric god rays, wide low angle from behind the standing figure, slow push in, 24mm anamorphic lens, brushed alloy plating and faceted crystal wall surfaces, deep navy and amber palette with cyan crystal accents, practical lens flares, wet-lens highlights, cinematic sci-fi realism, IMAX-grade detail, subtle film grain, 2.39:1",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_b13dad779f"
+    },
+    {
+      "id": "node_faa855707d",
+      "kind": "video",
+      "title": "守护者苏醒",
+      "x": 3540,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_18126e1fc7",
+          "nodeId": "node_faa855707d",
+          "createdAt": 1791075937403,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism, 9:16 vertical framing with anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain. A low-angle wide shot inside the vast vertical hall of the crystal ruins frames a lone woman in dark clothing standing small and still on the debris-strewn floor, seen from behind, while the colossal armored sentinel towers above her, its plating cut by amber light and cyan crystal seams. The sentinel's segments unfold upward one by one, cyan light ignites along its joints, and dust sprays from its shoulders. The camera pushes in at slow speed past the woman's shoulder toward the sentinel's face, ending on its single glowing eye locking downward.\n\noverall_soundscape: A deep cavernous room tone fills the crystal hall, layered with the heavy grinding of armor segments unfolding one after another and the resonant clank of metal settling into position. Fine dust and rubble patter onto the floor, a rising electrical hum builds as cyan light ignites along the joints, and the take closes on a long, low metallic resonance inside the hall.\n\nnon_diegetic_music: A sustained low synthesizer drone holds beneath sparse, slow percussive hits that land on each unfolding segment, its volume rising steadily toward the end of the take.",
+            "seconds": 5,
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "9:16 (Portrait Widescreen)",
+            "aspectFrom": "首帧 608x1056"
+          },
+          "inputs": {
+            "node_ef7511e195": "take_b13dad779f",
+            "node_ac009fca51": "take_8fb46b2a68"
+          },
+          "jobId": "job_f9d2a18d81",
+          "promptId": "bd83c6c1-3a80-4004-aab9-7734b534ea55",
+          "file": "node_faa855707d/take_18126e1fc7.mp4",
+          "poster": "node_faa855707d/take_18126e1fc7.jpg",
+          "finishedAt": 1791076418309,
+          "probe": {
+            "duration": 5.167,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 811330
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism, 9:16 vertical framing with anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain. A low-angle wide shot inside the vast vertical hall of the crystal ruins frames a lone woman in dark clothing standing small and still on the debris-strewn floor, seen from behind, while the colossal armored sentinel towers above her, its plating cut by amber light and cyan crystal seams. The sentinel's segments unfold upward one by one, cyan light ignites along its joints, and dust sprays from its shoulders. The camera pushes in at slow speed past the woman's shoulder toward the sentinel's face, ending on its single glowing eye locking downward.\n\noverall_soundscape: A deep cavernous room tone fills the crystal hall, layered with the heavy grinding of armor segments unfolding one after another and the resonant clank of metal settling into position. Fine dust and rubble patter onto the floor, a rising electrical hum builds as cyan light ignites along the joints, and the take closes on a long, low metallic resonance inside the hall.\n\nnon_diegetic_music: A sustained low synthesizer drone holds beneath sparse, slow percussive hits that land on each unfolding segment, its volume rising steadily toward the end of the take.",
+        "seconds": 5,
+        "workflow": "minimax-h3-i2v-turbo"
+      },
+      "activeTake": "take_18126e1fc7"
+    },
+    {
+      "id": "node_f8e94db911",
+      "kind": "image",
+      "title": "触碰古器·首帧",
+      "x": 3920,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_26df433e8d",
+          "nodeId": "node_f8e94db911",
+          "createdAt": 1791070797970,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "close-up, bare human hand, palm flat, fingers spread, pressing onto an ornate metal panel at the center of an ancient altar, cyan glyph channels lighting up under the fingers, engraved metal surface, micro-scratches and worn tarnish, fine dust on the metal, unlit darkness falling off beyond the panel edge, amber lamp glow from offscreen left, cyan emission rimming the fingers, shallow depth of field, 85mm, f/2, anamorphic 2.39:1, cinematic sci-fi realism, deep navy and amber palette with cyan accents, faint volumetric haze in the lamp glow, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_d124359900",
+          "promptId": "2297361f-b03f-4ea7-b0ef-eabce0ac1ff1",
+          "file": "node_f8e94db911/take_26df433e8d.png",
+          "finishedAt": 1791070849276,
+          "probe": {
+            "width": 720,
+            "height": 1280,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1375004
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "close-up, bare human hand, palm flat, fingers spread, pressing onto an ornate metal panel at the center of an ancient altar, cyan glyph channels lighting up under the fingers, engraved metal surface, micro-scratches and worn tarnish, fine dust on the metal, unlit darkness falling off beyond the panel edge, amber lamp glow from offscreen left, cyan emission rimming the fingers, shallow depth of field, 85mm, f/2, anamorphic 2.39:1, cinematic sci-fi realism, deep navy and amber palette with cyan accents, faint volumetric haze in the lamp glow, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_26df433e8d"
+    },
+    {
+      "id": "node_3a03c836a1",
+      "kind": "video",
+      "title": "触碰古器",
+      "x": 3920,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_7d11050751",
+          "nodeId": "node_3a03c836a1",
+          "createdAt": 1791076450914,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism in a vertical 9:16 frame, IMAX-grade detail with subtle film grain, wet-lens highlights and a practical lens flare off the flame, deep navy shadow against amber candlelight with cyan crystal accents and volumetric god rays. A medium close-up at a slightly low angle holds on an ancient dark metal altar panel carved with a circular medallion, a small candlestick with a live flame burning at the left edge of the frame. The young woman with short white hair, wearing a dark ornate robe patterned with amber-gold motifs and her forearm bare, presses her bare palm down onto the center of the metal panel. Cyan glyph channels ignite under her fingers and spread outward from beneath her hand across the altar surface, fine lines branching and connecting, while fine dust lifts off the stone into the air and drifts through the light. The camera pushes in with small amplitude, tightening as the channels run to the outer grooves of the panel, and ends on the glyphs fully lit, their cyan glow climbing across the carved metal while the amber flame light stays warm on the left.\n\noverall_soundscape: A deep, low room tone hums through the ancient chamber with a faint crystalline resonance far in the background. The bare palm lands on the metal panel with a soft, dull slap, fabric rustles as her arm settles, and a rising electronic hum swells as the glyph channels ignite while dust drifts and settles around the altar.\n\nnon_diegetic_music: N/A",
+            "seconds": 5,
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "9:16 (Portrait Widescreen)",
+            "aspectFrom": "首帧 608x1056"
+          },
+          "inputs": {
+            "node_f8e94db911": "take_26df433e8d",
+            "node_c9a228dbc8": "take_57ff95512d"
+          },
+          "jobId": "job_a813758e7c",
+          "promptId": "b8a07943-fa83-4078-a0ba-7164e98a5993",
+          "file": "node_3a03c836a1/take_7d11050751.mp4",
+          "poster": "node_3a03c836a1/take_7d11050751.jpg",
+          "finishedAt": 1791076931843,
+          "probe": {
+            "duration": 5.167,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 941978
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism in a vertical 9:16 frame, IMAX-grade detail with subtle film grain, wet-lens highlights and a practical lens flare off the flame, deep navy shadow against amber candlelight with cyan crystal accents and volumetric god rays. A medium close-up at a slightly low angle holds on an ancient dark metal altar panel carved with a circular medallion, a small candlestick with a live flame burning at the left edge of the frame. The young woman with short white hair, wearing a dark ornate robe patterned with amber-gold motifs and her forearm bare, presses her bare palm down onto the center of the metal panel. Cyan glyph channels ignite under her fingers and spread outward from beneath her hand across the altar surface, fine lines branching and connecting, while fine dust lifts off the stone into the air and drifts through the light. The camera pushes in with small amplitude, tightening as the channels run to the outer grooves of the panel, and ends on the glyphs fully lit, their cyan glow climbing across the carved metal while the amber flame light stays warm on the left.\n\noverall_soundscape: A deep, low room tone hums through the ancient chamber with a faint crystalline resonance far in the background. The bare palm lands on the metal panel with a soft, dull slap, fabric rustles as her arm settles, and a rising electronic hum swells as the glyph channels ignite while dust drifts and settles around the altar.\n\nnon_diegetic_music: N/A",
+        "seconds": 5,
+        "workflow": "minimax-h3-i2v-turbo"
+      },
+      "activeTake": "take_7d11050751"
+    },
+    {
+      "id": "node_f8423b27d4",
+      "kind": "image",
+      "title": "星图点亮·首帧",
+      "x": 4300,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_58503f524f",
+          "nodeId": "node_f8423b27d4",
+          "createdAt": 1791070850065,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "vast crystal hall interior, faceted crystal ceiling blooming into a giant holographic galactic map, thousands of cyan star points, amber trade route lines branching across the projection, a woman in a navy flight suit standing at the center of the floor looking up, volumetric haze drifting through the hall, deep navy and amber palette with cyan crystal accents, volumetric god rays cutting through the projection, practical lens flares, wet-lens highlights on the crystal facets, slow wide tilt-up shot, 24mm, anamorphic 2.39:1, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_47e62738d0",
+          "promptId": "7af3a74f-9cea-4410-97c2-bca8303cbeca",
+          "file": "node_f8423b27d4/take_58503f524f.png",
+          "finishedAt": 1791070901385,
+          "probe": {
+            "width": 720,
+            "height": 1280,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1538090
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "vast crystal hall interior, faceted crystal ceiling blooming into a giant holographic galactic map, thousands of cyan star points, amber trade route lines branching across the projection, a woman in a navy flight suit standing at the center of the floor looking up, volumetric haze drifting through the hall, deep navy and amber palette with cyan crystal accents, volumetric god rays cutting through the projection, practical lens flares, wet-lens highlights on the crystal facets, slow wide tilt-up shot, 24mm, anamorphic 2.39:1, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_58503f524f"
+    },
+    {
+      "id": "node_f879f4882c",
+      "kind": "video",
+      "title": "星图点亮",
+      "x": 4300,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_6a4257e1eb",
+          "nodeId": "node_f879f4882c",
+          "createdAt": 1791076954646,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism, anamorphic glass, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain, framed in a 9:16 vertical composition. A low-angle wide shot opens on the vast interior of the ancient crystal hall: Lin Yuan, a female explorer in a pale ice-blue cloak, stands small at the center of the frame with her back to the camera on the wet reflective stone floor, a towering arched gateway ahead of her and rows of warm amber lanterns lining the columns on both sides. The hall flares bright as the holographic star map expands overhead; cyan star points ignite in sequence across the dome and amber routes draw themselves between them, one after another. The camera tilts up with large amplitude at slow speed from her toward the glowing chart, the amber energy column and the crystal ceiling filling the upper frame, ending with the complete ancient empire chart filling the frame, and the shot holds on the finished map as the last amber routes settle into place.\n\noverall_soundscape: A deep sub-bass hall hum runs under the whole shot, joined by crystalline chimes that ring one after another as each star point ignites overhead, a soft rustle of cloak fabric, and a faint high-frequency shimmer that swells while the amber routes connect and settles into a steady hall tone on the final hold.\n\nnon_diegetic_music: A sustained low synthesizer drone at slow tempo, layered with sparse rising string harmonics that swell gradually in step with the igniting star points and hold on a single quiet chord at the end.",
+            "seconds": 5,
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "9:16 (Portrait Widescreen)",
+            "aspectFrom": "首帧 608x1056"
+          },
+          "inputs": {
+            "node_f8423b27d4": "take_58503f524f",
+            "node_4fdb513d48": "take_a1183ef720"
+          },
+          "jobId": "job_7b3225a6ac",
+          "promptId": "2faba9bf-fa76-434c-93bf-031cbe8862bd",
+          "file": "node_f879f4882c/take_6a4257e1eb.mp4",
+          "poster": "node_f879f4882c/take_6a4257e1eb.jpg",
+          "finishedAt": 1791077435550,
+          "probe": {
+            "duration": 5.167,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1496315
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism, anamorphic glass, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain, framed in a 9:16 vertical composition. A low-angle wide shot opens on the vast interior of the ancient crystal hall: Lin Yuan, a female explorer in a pale ice-blue cloak, stands small at the center of the frame with her back to the camera on the wet reflective stone floor, a towering arched gateway ahead of her and rows of warm amber lanterns lining the columns on both sides. The hall flares bright as the holographic star map expands overhead; cyan star points ignite in sequence across the dome and amber routes draw themselves between them, one after another. The camera tilts up with large amplitude at slow speed from her toward the glowing chart, the amber energy column and the crystal ceiling filling the upper frame, ending with the complete ancient empire chart filling the frame, and the shot holds on the finished map as the last amber routes settle into place.\n\noverall_soundscape: A deep sub-bass hall hum runs under the whole shot, joined by crystalline chimes that ring one after another as each star point ignites overhead, a soft rustle of cloak fabric, and a faint high-frequency shimmer that swells while the amber routes connect and settles into a steady hall tone on the final hold.\n\nnon_diegetic_music: A sustained low synthesizer drone at slow tempo, layered with sparse rising string harmonics that swell gradually in step with the igniting star points and hold on a single quiet chord at the end.",
+        "seconds": 5,
+        "workflow": "minimax-h3-i2v-turbo"
+      },
+      "activeTake": "take_6a4257e1eb"
+    },
+    {
+      "id": "node_d7c6f81530",
+      "kind": "image",
+      "title": "轨道集结·首帧",
+      "x": 4680,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_8a7d699bb3",
+          "nodeId": "node_d7c6f81530",
+          "createdAt": 1791070902159,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "imperial fleet re-forming in orbit around a violet crystal planet, capital ships sliding into a ring formation, amber running lights blinking in sequence, deep navy space, faint nebula, ultra-wide pull-back shot from directly above the fleet, 35mm, high vantage showing the full fleet spread, cinematic sci-fi realism, anamorphic 2.39:1, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_e8dd1961ea",
+          "promptId": "83d0319e-e9ae-41f2-807f-61e96c31be8d",
+          "file": "node_d7c6f81530/take_8a7d699bb3.png",
+          "finishedAt": 1791070953443,
+          "probe": {
+            "width": 720,
+            "height": 1280,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1415292
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "imperial fleet re-forming in orbit around a violet crystal planet, capital ships sliding into a ring formation, amber running lights blinking in sequence, deep navy space, faint nebula, ultra-wide pull-back shot from directly above the fleet, 35mm, high vantage showing the full fleet spread, cinematic sci-fi realism, anamorphic 2.39:1, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_8a7d699bb3"
+    },
+    {
+      "id": "node_f335d7722e",
+      "kind": "video",
+      "title": "轨道集结",
+      "x": 4680,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_ccf5cebaef",
+          "nodeId": "node_f335d7722e",
+          "createdAt": 1791077466765,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism with anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail and subtle film grain. The shot opens on the wide first-frame composition, the crystal planet hanging huge in the upper frame with its purple surface webbed in cyan glow, the imperial fleet strung along orbit beneath it, amber running lights already lit. The fleet slides into a ring formation around the planet, and the amber running lights blink in sequence ship by ship. The camera pulls back steadily with large amplitude at slow speed to reveal the full formation, the planet's glow softening as the frame widens, ending on the complete ring of ships, holding still.\n\noverall_soundscape: A deep continuous engine drone fills the mix, punctuated by soft thruster pulses as each hull slides into position, settling into a low sustained hum beneath the final hold.\n\nnon_diegetic_music: A low sustained synth drone at a slow tempo, joined by a single held cello note that swells slightly as the ring closes and fades out under the final hold.",
+            "seconds": 5,
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "9:16 (Portrait Widescreen)",
+            "aspectFrom": "首帧 608x1056"
+          },
+          "inputs": {
+            "node_d7c6f81530": "take_8a7d699bb3",
+            "node_f09dd39297": "take_0ba4591bb1"
+          },
+          "jobId": "job_d185cc0c0c",
+          "promptId": "5f1b290f-c1ef-4f15-8f8f-2c53fd9317c8",
+          "file": "node_f335d7722e/take_ccf5cebaef.mp4",
+          "poster": "node_f335d7722e/take_ccf5cebaef.jpg",
+          "finishedAt": 1791077947675,
+          "probe": {
+            "duration": 5.167,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1080339
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism with anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail and subtle film grain. The shot opens on the wide first-frame composition, the crystal planet hanging huge in the upper frame with its purple surface webbed in cyan glow, the imperial fleet strung along orbit beneath it, amber running lights already lit. The fleet slides into a ring formation around the planet, and the amber running lights blink in sequence ship by ship. The camera pulls back steadily with large amplitude at slow speed to reveal the full formation, the planet's glow softening as the frame widens, ending on the complete ring of ships, holding still.\n\noverall_soundscape: A deep continuous engine drone fills the mix, punctuated by soft thruster pulses as each hull slides into position, settling into a low sustained hum beneath the final hold.\n\nnon_diegetic_music: A low sustained synth drone at a slow tempo, joined by a single held cello note that swells slightly as the ring closes and fades out under the final hold.",
+        "seconds": 5,
+        "workflow": "minimax-h3-i2v-turbo"
+      },
+      "activeTake": "take_ccf5cebaef"
+    },
+    {
+      "id": "node_0948818d7e",
+      "kind": "image",
+      "title": "立下界标·首帧",
+      "x": 5060,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_41b8686acb",
+          "nodeId": "node_0948818d7e",
+          "createdAt": 1791070954229,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "woman in a navy flight suit with amber piping planting a glowing amber beacon on a crystal spire summit, wind pulling at her short black hair, violet horizon and magenta sun low behind her, cyan crystal field below, medium shot, slow pull back from the beacon to her back, 35mm lens, anamorphic 2.39:1, amber beacon glow raking across faceted cyan crystal, magenta rim light on her shoulders, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_77df999a33",
+          "promptId": "2a9e3152-dc4e-4b37-b866-c1201114c53a",
+          "file": "node_0948818d7e/take_41b8686acb.png",
+          "finishedAt": 1791071005535,
+          "probe": {
+            "width": 720,
+            "height": 1280,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1357643
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "woman in a navy flight suit with amber piping planting a glowing amber beacon on a crystal spire summit, wind pulling at her short black hair, violet horizon and magenta sun low behind her, cyan crystal field below, medium shot, slow pull back from the beacon to her back, 35mm lens, anamorphic 2.39:1, amber beacon glow raking across faceted cyan crystal, magenta rim light on her shoulders, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_41b8686acb"
+    },
+    {
+      "id": "node_3a78f869ac",
+      "kind": "video",
+      "title": "立下界标",
+      "x": 5060,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_b58fbe8e32",
+          "nodeId": "node_3a78f869ac",
+          "createdAt": 1791077992674,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism in a vertical 9:16 frame, anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail and subtle film grain. A low-angle medium-wide shot opens on the white-haired woman in dark armor and a magenta-lined, gold-trimmed cape, her boots planted on the blade-like crystals at the apex of a spire, the beacon glowing amber in her raised hand, banded violet clouds and a low pale moon behind her, the field of crystal spires glimmering cyan far below. She drives the beacon down into the crystal at her feet; a deep resonant chime runs through the spire and the crystal pulses amber from within, light climbing its facets in rings. Wind lifts her long white hair and the hem of her cape. She turns and looks out over the horizon. The camera pulls out with large amplitude at slow speed, drawing away from the beacon until she is small against the vast purple plain, and the light shifts toward dusk, the plain dimming to deep navy as the shot settles on her silhouette against the violet sky, the amber beacon and the lit crystals the last points of light in frame.\n\noverall_soundscape: Wind pushes across a wide crystal plain, hissing between the spire blades. The beacon seats into the crystal with a deep resonant chime that rings out over the field, followed by a low continuous hum from the beacon and a faint high ringing from the crystal itself. The cape fabric snaps once in the gust.\n\nnon_diegetic_music: A sustained low synthesizer drone at a slow tempo, joined by sparse bell-like high tones on the beacon impact, swelling gradually and decaying into near silence at the end.",
+            "seconds": 5,
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "9:16 (Portrait Widescreen)",
+            "aspectFrom": "首帧 608x1056"
+          },
+          "inputs": {
+            "node_0948818d7e": "take_41b8686acb",
+            "node_73c8620feb": "take_94b43e695a"
+          },
+          "jobId": "job_393e6ea994",
+          "promptId": "e77c09ee-7d8d-4ac7-b0c5-ce3ff7f33105",
+          "file": "node_3a78f869ac/take_b58fbe8e32.mp4",
+          "poster": "node_3a78f869ac/take_b58fbe8e32.jpg",
+          "finishedAt": 1791078473939,
+          "probe": {
+            "duration": 5.167,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 1077403
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism in a vertical 9:16 frame, anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail and subtle film grain. A low-angle medium-wide shot opens on the white-haired woman in dark armor and a magenta-lined, gold-trimmed cape, her boots planted on the blade-like crystals at the apex of a spire, the beacon glowing amber in her raised hand, banded violet clouds and a low pale moon behind her, the field of crystal spires glimmering cyan far below. She drives the beacon down into the crystal at her feet; a deep resonant chime runs through the spire and the crystal pulses amber from within, light climbing its facets in rings. Wind lifts her long white hair and the hem of her cape. She turns and looks out over the horizon. The camera pulls out with large amplitude at slow speed, drawing away from the beacon until she is small against the vast purple plain, and the light shifts toward dusk, the plain dimming to deep navy as the shot settles on her silhouette against the violet sky, the amber beacon and the lit crystals the last points of light in frame.\n\noverall_soundscape: Wind pushes across a wide crystal plain, hissing between the spire blades. The beacon seats into the crystal with a deep resonant chime that rings out over the field, followed by a low continuous hum from the beacon and a faint high ringing from the crystal itself. The cape fabric snaps once in the gust.\n\nnon_diegetic_music: A sustained low synthesizer drone at a slow tempo, joined by sparse bell-like high tones on the beacon impact, swelling gradually and decaying into near silence at the end.",
+        "seconds": 5,
+        "workflow": "minimax-h3-i2v-turbo"
+      },
+      "activeTake": "take_b58fbe8e32"
+    },
+    {
+      "id": "node_0fbfe1cc76",
+      "kind": "image",
+      "title": "跃迁离去·首帧",
+      "x": 5440,
+      "y": 120,
+      "takes": [
+        {
+          "id": "take_55145dca55",
+          "nodeId": "node_0fbfe1cc76",
+          "createdAt": 1791071006324,
+          "status": "done",
+          "source": "comfy",
+          "kind": "image",
+          "params": {
+            "prompt": "imperial fleet jumping away one by one into glowing wormhole slits, last ship vanishing in a streak of amber light, violet crystal planet in the lower left with a single amber beacon pulse visible on its surface, deep navy space, volumetric nebula haze, extreme wide pull-back shot, slow steady dolly back through open space, 24mm anamorphic 2.39:1, hard amber slit-glow rimming the last hull, dust and haze catching the flare, practical lens flares, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+            "workflow": "z-image-guangyu"
+          },
+          "inputs": {},
+          "jobId": "job_ee2bcfcbe4",
+          "promptId": "8cffca90-44f6-48f3-95a0-6a5884153d91",
+          "file": "node_0fbfe1cc76/take_55145dca55.png",
+          "finishedAt": 1791071054617,
+          "probe": {
+            "width": 720,
+            "height": 1280,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 1303712
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "imperial fleet jumping away one by one into glowing wormhole slits, last ship vanishing in a streak of amber light, violet crystal planet in the lower left with a single amber beacon pulse visible on its surface, deep navy space, volumetric nebula haze, extreme wide pull-back shot, slow steady dolly back through open space, 24mm anamorphic 2.39:1, hard amber slit-glow rimming the last hull, dust and haze catching the flare, practical lens flares, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+        "workflow": "z-image-guangyu"
+      },
+      "activeTake": "take_55145dca55"
+    },
+    {
+      "id": "node_4f03676e19",
+      "kind": "video",
+      "title": "跃迁离去",
+      "x": 5440,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_bd0273db9d",
+          "nodeId": "node_4f03676e19",
+          "createdAt": 1791078505580,
+          "status": "done",
+          "source": "comfy",
+          "kind": "video",
+          "params": {
+            "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism with anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail and subtle film grain. A vertical low-angle composition holds the initial frame as the fleet of small silhouette ships climbs in a column toward the huge amber-lit wormhole aperture high in the frame, the purple crystal planet and its single pulsing beacon sitting low on the left, cyan crystal accents running along the planet's limb. One after another the ships vanish into thin wormhole slits; the camera pulls out at slow speed and the last ship stretches into an amber streak and disappears. The pull-back continues until the crystal planet and its lone pulsing beacon fill the lower frame, the starfield settling to silence, ending on the beacon's steady glow.\n\noverall_soundscape: A deep resonant hum from the wormhole aperture carries a thin engine whine that thins out one ship at a time, each jump leaving a brief subsonic thump. Beneath it, a faint crystalline ring from the planet's beacon pulses evenly. As the camera pulls back, the hum and whine decay until the last seconds hold near-total silence under the beacon's steady tone.\n\nnon_diegetic_music: A sparse low synth drone in a slow, even pulse that thins layer by layer and fades out completely before the shot ends, leaving the final moment unscored.",
+            "seconds": 5,
+            "workflow": "minimax-h3-i2v-turbo",
+            "aspect": "9:16 (Portrait Widescreen)",
+            "aspectFrom": "首帧 608x1056"
+          },
+          "inputs": {
+            "node_0fbfe1cc76": "take_55145dca55",
+            "node_0f5617277d": "take_2c7cfc21e2"
+          },
+          "jobId": "job_2304cda887",
+          "promptId": "a1b4ae04-16af-4b15-92d3-f65d2cc307d6",
+          "file": "node_4f03676e19/take_bd0273db9d.mp4",
+          "poster": "node_4f03676e19/take_bd0273db9d.jpg",
+          "finishedAt": 1791078986465,
+          "probe": {
+            "duration": 5.167,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 906140
+          }
+        }
+      ],
+      "draft": {
+        "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism with anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail and subtle film grain. A vertical low-angle composition holds the initial frame as the fleet of small silhouette ships climbs in a column toward the huge amber-lit wormhole aperture high in the frame, the purple crystal planet and its single pulsing beacon sitting low on the left, cyan crystal accents running along the planet's limb. One after another the ships vanish into thin wormhole slits; the camera pulls out at slow speed and the last ship stretches into an amber streak and disappears. The pull-back continues until the crystal planet and its lone pulsing beacon fill the lower frame, the starfield settling to silence, ending on the beacon's steady glow.\n\noverall_soundscape: A deep resonant hum from the wormhole aperture carries a thin engine whine that thins out one ship at a time, each jump leaving a brief subsonic thump. Beneath it, a faint crystalline ring from the planet's beacon pulses evenly. As the camera pulls back, the hum and whine decay until the last seconds hold near-total silence under the beacon's steady tone.\n\nnon_diegetic_music: A sparse low synth drone in a slow, even pulse that thins layer by layer and fades out completely before the shot ends, leaving the final moment unscored.",
+        "seconds": 5,
+        "workflow": "minimax-h3-i2v-turbo"
+      },
+      "activeTake": "take_bd0273db9d"
+    },
+    {
+      "id": "node_862fa87a1b",
+      "kind": "op",
+      "title": "尾帧·舰队跃出星门",
+      "x": 310,
+      "y": 760,
+      "takes": [
+        {
+          "id": "take_54b3458e41",
+          "nodeId": "node_862fa87a1b",
+          "createdAt": 1791071815865,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "node_5db092f138": "take_dfb7679081"
+          },
+          "op": "lastframe",
+          "file": "node_862fa87a1b/take_54b3458e41.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 608,
+            "height": 1056,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 99904
+          },
+          "finishedAt": 1791071816316
+        }
+      ],
+      "activeTake": "take_54b3458e41"
+    },
+    {
+      "id": "node_31161823e9",
+      "kind": "op",
+      "title": "尾帧·舰桥确认坐标",
+      "x": 690,
+      "y": 760,
+      "takes": [
+        {
+          "id": "take_c607a0af1d",
+          "nodeId": "node_31161823e9",
+          "createdAt": 1791072346847,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "node_dcbb5a1469": "take_e4dcfb7476"
+          },
+          "op": "lastframe",
+          "file": "node_31161823e9/take_c607a0af1d.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 608,
+            "height": 1056,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 103326
+          },
+          "finishedAt": 1791072347260
+        }
+      ],
+      "activeTake": "take_c607a0af1d"
+    },
+    {
+      "id": "node_e0a0f8ffb5",
+      "kind": "op",
+      "title": "尾帧·引擎点火",
+      "x": 1070,
+      "y": 760,
+      "takes": [
+        {
+          "id": "take_55db37f850",
+          "nodeId": "node_e0a0f8ffb5",
+          "createdAt": 1791072861192,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "node_98d7784830": "take_27caeacca1"
+          },
+          "op": "lastframe",
+          "file": "node_e0a0f8ffb5/take_55db37f850.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 608,
+            "height": 1056,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 17314
+          },
+          "finishedAt": 1791072861605
+        }
+      ],
+      "activeTake": "take_55db37f850"
+    },
+    {
+      "id": "node_b4840b252a",
+      "kind": "op",
+      "title": "尾帧·抵达未知星系",
+      "x": 1450,
+      "y": 760,
+      "takes": [
+        {
+          "id": "take_73a6aab37e",
+          "nodeId": "node_b4840b252a",
+          "createdAt": 1791073363647,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "node_dda95d5ba9": "take_6879bae160"
+          },
+          "op": "lastframe",
+          "file": "node_b4840b252a/take_73a6aab37e.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 608,
+            "height": 1056,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 59453
+          },
+          "finishedAt": 1791073364030
+        }
+      ],
+      "activeTake": "take_73a6aab37e"
+    },
+    {
+      "id": "node_705cd28589",
+      "kind": "op",
+      "title": "尾帧·异常信号",
+      "x": 1830,
+      "y": 760,
+      "takes": [
+        {
+          "id": "take_c78c3ee4f9",
+          "nodeId": "node_705cd28589",
+          "createdAt": 1791073891502,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "node_e25b06ae8d": "take_d7e688e4b3"
+          },
+          "op": "lastframe",
+          "file": "node_705cd28589/take_c78c3ee4f9.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 608,
+            "height": 1056,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 68694
+          },
+          "finishedAt": 1791073891924
+        }
+      ],
+      "activeTake": "take_c78c3ee4f9"
+    },
+    {
+      "id": "node_efcd954c37",
+      "kind": "op",
+      "title": "尾帧·登陆艇入大气",
+      "x": 2210,
+      "y": 760,
+      "takes": [
+        {
+          "id": "take_1f0379eb44",
+          "nodeId": "node_efcd954c37",
+          "createdAt": 1791074412617,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "node_f46b99b2c4": "take_1ed21d84ac"
+          },
+          "op": "lastframe",
+          "file": "node_efcd954c37/take_1f0379eb44.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 608,
+            "height": 1056,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 62798
+          },
+          "finishedAt": 1791074413037
+        }
+      ],
+      "activeTake": "take_1f0379eb44"
+    },
+    {
+      "id": "node_79e2c836a0",
+      "kind": "op",
+      "title": "尾帧·踏出舱门",
+      "x": 2590,
+      "y": 760,
+      "takes": [
+        {
+          "id": "take_2a3d9e2634",
+          "nodeId": "node_79e2c836a0",
+          "createdAt": 1791074917569,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "node_987849a817": "take_ee06ca8f74"
+          },
+          "op": "lastframe",
+          "file": "node_79e2c836a0/take_2a3d9e2634.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 608,
+            "height": 1056,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 64544
+          },
+          "finishedAt": 1791074918004
+        }
+      ],
+      "activeTake": "take_2a3d9e2634"
+    },
+    {
+      "id": "node_496b27cc69",
+      "kind": "op",
+      "title": "尾帧·晶体尖塔",
+      "x": 2970,
+      "y": 760,
+      "takes": [
+        {
+          "id": "take_e6bbbf0d22",
+          "nodeId": "node_496b27cc69",
+          "createdAt": 1791075424144,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "node_8dd1e76487": "take_c5c9f13d05"
+          },
+          "op": "lastframe",
+          "file": "node_496b27cc69/take_e6bbbf0d22.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 608,
+            "height": 1056,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 65025
+          },
+          "finishedAt": 1791075424547
+        }
+      ],
+      "activeTake": "take_e6bbbf0d22"
+    },
+    {
+      "id": "node_ac009fca51",
+      "kind": "op",
+      "title": "尾帧·遗迹门开启",
+      "x": 3350,
+      "y": 760,
+      "takes": [
+        {
+          "id": "take_8fb46b2a68",
+          "nodeId": "node_ac009fca51",
+          "createdAt": 1791075935372,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "node_6522b490ce": "take_b809003b5a"
+          },
+          "op": "lastframe",
+          "file": "node_ac009fca51/take_8fb46b2a68.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 608,
+            "height": 1056,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 61481
+          },
+          "finishedAt": 1791075935774
+        }
+      ],
+      "activeTake": "take_8fb46b2a68"
+    },
+    {
+      "id": "node_c9a228dbc8",
+      "kind": "op",
+      "title": "尾帧·守护者苏醒",
+      "x": 3730,
+      "y": 760,
+      "takes": [
+        {
+          "id": "take_57ff95512d",
+          "nodeId": "node_c9a228dbc8",
+          "createdAt": 1791076448889,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "node_faa855707d": "take_18126e1fc7"
+          },
+          "op": "lastframe",
+          "file": "node_c9a228dbc8/take_57ff95512d.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 608,
+            "height": 1056,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 72527
+          },
+          "finishedAt": 1791076449336
+        }
+      ],
+      "activeTake": "take_57ff95512d"
+    },
+    {
+      "id": "node_4fdb513d48",
+      "kind": "op",
+      "title": "尾帧·触碰古器",
+      "x": 4110,
+      "y": 760,
+      "takes": [
+        {
+          "id": "take_a1183ef720",
+          "nodeId": "node_4fdb513d48",
+          "createdAt": 1791076952626,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "node_3a03c836a1": "take_7d11050751"
+          },
+          "op": "lastframe",
+          "file": "node_4fdb513d48/take_a1183ef720.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 608,
+            "height": 1056,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 88401
+          },
+          "finishedAt": 1791076953114
+        }
+      ],
+      "activeTake": "take_a1183ef720"
+    },
+    {
+      "id": "node_f09dd39297",
+      "kind": "op",
+      "title": "尾帧·星图点亮",
+      "x": 4490,
+      "y": 760,
+      "takes": [
+        {
+          "id": "take_0ba4591bb1",
+          "nodeId": "node_f09dd39297",
+          "createdAt": 1791077464742,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "node_f879f4882c": "take_6a4257e1eb"
+          },
+          "op": "lastframe",
+          "file": "node_f09dd39297/take_0ba4591bb1.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 608,
+            "height": 1056,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 135682
+          },
+          "finishedAt": 1791077465169
+        }
+      ],
+      "activeTake": "take_0ba4591bb1"
+    },
+    {
+      "id": "node_73c8620feb",
+      "kind": "op",
+      "title": "尾帧·轨道集结",
+      "x": 4870,
+      "y": 760,
+      "takes": [
+        {
+          "id": "take_94b43e695a",
+          "nodeId": "node_73c8620feb",
+          "createdAt": 1791077990630,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "node_f335d7722e": "take_ccf5cebaef"
+          },
+          "op": "lastframe",
+          "file": "node_73c8620feb/take_94b43e695a.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 608,
+            "height": 1056,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 78573
+          },
+          "finishedAt": 1791077991082
+        }
+      ],
+      "activeTake": "take_94b43e695a"
+    },
+    {
+      "id": "node_0f5617277d",
+      "kind": "op",
+      "title": "尾帧·立下界标",
+      "x": 5250,
+      "y": 760,
+      "takes": [
+        {
+          "id": "take_2c7cfc21e2",
+          "nodeId": "node_0f5617277d",
+          "createdAt": 1791078503549,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "node_3a78f869ac": "take_b58fbe8e32"
+          },
+          "op": "lastframe",
+          "file": "node_0f5617277d/take_2c7cfc21e2.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 608,
+            "height": 1056,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 45301
+          },
+          "finishedAt": 1791078503975
+        }
+      ],
+      "activeTake": "take_2c7cfc21e2"
+    },
+    {
+      "id": "node_198c651f53",
+      "kind": "op",
+      "title": "成片",
+      "x": 5760,
+      "y": 560,
+      "takes": [
+        {
+          "id": "take_cf958f89f3",
+          "nodeId": "node_198c651f53",
+          "createdAt": 1791078986504,
+          "status": "done",
+          "source": "op",
+          "kind": "video",
+          "params": {
+            "transition": "fade",
+            "duration": 0.5,
+            "transitionUsed": 0.5,
+            "joints": 14
+          },
+          "inputs": {
+            "node_5db092f138": "take_dfb7679081",
+            "node_dcbb5a1469": "take_e4dcfb7476",
+            "node_98d7784830": "take_27caeacca1",
+            "node_dda95d5ba9": "take_6879bae160",
+            "node_e25b06ae8d": "take_d7e688e4b3",
+            "node_f46b99b2c4": "take_1ed21d84ac",
+            "node_987849a817": "take_ee06ca8f74",
+            "node_8dd1e76487": "take_c5c9f13d05",
+            "node_6522b490ce": "take_b809003b5a",
+            "node_faa855707d": "take_18126e1fc7",
+            "node_3a03c836a1": "take_7d11050751",
+            "node_f879f4882c": "take_6a4257e1eb",
+            "node_f335d7722e": "take_ccf5cebaef",
+            "node_3a78f869ac": "take_b58fbe8e32",
+            "node_4f03676e19": "take_bd0273db9d"
+          },
+          "op": "xfade",
+          "file": "node_198c651f53/take_cf958f89f3.mp4",
+          "poster": "node_198c651f53/take_cf958f89f3.jpg",
+          "probe": {
+            "duration": 70.76,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 17683859
+          },
+          "finishedAt": 1791078994701
+        },
+        {
+          "id": "take_85524231ab",
+          "nodeId": "node_198c651f53",
+          "createdAt": 1791095698404,
+          "status": "done",
+          "source": "op",
+          "kind": "video",
+          "params": {
+            "transition": "zoomin",
+            "duration": 0.35,
+            "transitionUsed": 0.35,
+            "joints": 14
+          },
+          "inputs": {
+            "node_5db092f138": "take_dfb7679081",
+            "node_dcbb5a1469": "take_e4dcfb7476",
+            "node_98d7784830": "take_27caeacca1",
+            "node_dda95d5ba9": "take_6879bae160",
+            "node_e25b06ae8d": "take_d7e688e4b3",
+            "node_f46b99b2c4": "take_1ed21d84ac",
+            "node_987849a817": "take_ee06ca8f74",
+            "node_8dd1e76487": "take_c5c9f13d05",
+            "node_6522b490ce": "take_b809003b5a",
+            "node_faa855707d": "take_18126e1fc7",
+            "node_3a03c836a1": "take_7d11050751",
+            "node_f879f4882c": "take_6a4257e1eb",
+            "node_f335d7722e": "take_ccf5cebaef",
+            "node_3a78f869ac": "take_b58fbe8e32",
+            "node_4f03676e19": "take_bd0273db9d"
+          },
+          "op": "xfade",
+          "file": "node_198c651f53/take_85524231ab.mp4",
+          "poster": "node_198c651f53/take_85524231ab.jpg",
+          "probe": {
+            "duration": 72.86,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 17828417
+          },
+          "finishedAt": 1791095707313
+        },
+        {
+          "id": "take_ea084d4637",
+          "nodeId": "node_198c651f53",
+          "createdAt": 1791095856215,
+          "status": "done",
+          "source": "op",
+          "kind": "video",
+          "params": {
+            "transition": "smoothleft",
+            "duration": 0.35,
+            "transitionUsed": 0.35,
+            "joints": 14
+          },
+          "inputs": {
+            "node_5db092f138": "take_dfb7679081",
+            "node_dcbb5a1469": "take_e4dcfb7476",
+            "node_98d7784830": "take_27caeacca1",
+            "node_dda95d5ba9": "take_6879bae160",
+            "node_e25b06ae8d": "take_d7e688e4b3",
+            "node_f46b99b2c4": "take_1ed21d84ac",
+            "node_987849a817": "take_ee06ca8f74",
+            "node_8dd1e76487": "take_c5c9f13d05",
+            "node_6522b490ce": "take_b809003b5a",
+            "node_faa855707d": "take_18126e1fc7",
+            "node_3a03c836a1": "take_7d11050751",
+            "node_f879f4882c": "take_6a4257e1eb",
+            "node_f335d7722e": "take_ccf5cebaef",
+            "node_3a78f869ac": "take_b58fbe8e32",
+            "node_4f03676e19": "take_bd0273db9d"
+          },
+          "op": "xfade",
+          "file": "node_198c651f53/take_ea084d4637.mp4",
+          "poster": "node_198c651f53/take_ea084d4637.jpg",
+          "probe": {
+            "duration": 72.86,
+            "width": 608,
+            "height": 1056,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 17544522
+          },
+          "finishedAt": 1791095866648
+        }
+      ],
+      "activeTake": "take_ea084d4637"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_cf8a723b3d",
+      "from": "node_95e36f0e21",
+      "to": "node_5db092f138",
+      "pin": "active",
+      "createdAt": 1791069957004
+    },
+    {
+      "id": "edge_142f2641e8",
+      "from": "node_2f5e5abd33",
+      "to": "node_dcbb5a1469",
+      "pin": "active",
+      "createdAt": 1791069957004
+    },
+    {
+      "id": "edge_d47d539eb1",
+      "from": "node_a6f3f8c0a4",
+      "to": "node_98d7784830",
+      "pin": "active",
+      "createdAt": 1791069957004
+    },
+    {
+      "id": "edge_f2e86a97a0",
+      "from": "node_5c39760c4a",
+      "to": "node_dda95d5ba9",
+      "pin": "active",
+      "createdAt": 1791069957004
+    },
+    {
+      "id": "edge_a85091bf03",
+      "from": "node_0794f31013",
+      "to": "node_e25b06ae8d",
+      "pin": "active",
+      "createdAt": 1791069957004
+    },
+    {
+      "id": "edge_600f930e89",
+      "from": "node_0a4a46b2d7",
+      "to": "node_f46b99b2c4",
+      "pin": "active",
+      "createdAt": 1791069957004
+    },
+    {
+      "id": "edge_0a06635e04",
+      "from": "node_2a8f6c6a0d",
+      "to": "node_987849a817",
+      "pin": "active",
+      "createdAt": 1791069957004
+    },
+    {
+      "id": "edge_3e60231cee",
+      "from": "node_cbc1ca61e5",
+      "to": "node_8dd1e76487",
+      "pin": "active",
+      "createdAt": 1791069957004
+    },
+    {
+      "id": "edge_68f77a6d88",
+      "from": "node_795a9ed2bb",
+      "to": "node_6522b490ce",
+      "pin": "active",
+      "createdAt": 1791069957004
+    },
+    {
+      "id": "edge_04857c4644",
+      "from": "node_ef7511e195",
+      "to": "node_faa855707d",
+      "pin": "active",
+      "createdAt": 1791069957004
+    },
+    {
+      "id": "edge_8def9b1a48",
+      "from": "node_f8e94db911",
+      "to": "node_3a03c836a1",
+      "pin": "active",
+      "createdAt": 1791069957004
+    },
+    {
+      "id": "edge_eeb90767fa",
+      "from": "node_f8423b27d4",
+      "to": "node_f879f4882c",
+      "pin": "active",
+      "createdAt": 1791069957004
+    },
+    {
+      "id": "edge_e28b099518",
+      "from": "node_d7c6f81530",
+      "to": "node_f335d7722e",
+      "pin": "active",
+      "createdAt": 1791069957004
+    },
+    {
+      "id": "edge_3ca5177685",
+      "from": "node_0948818d7e",
+      "to": "node_3a78f869ac",
+      "pin": "active",
+      "createdAt": 1791069957004
+    },
+    {
+      "id": "edge_4010309ab2",
+      "from": "node_0fbfe1cc76",
+      "to": "node_4f03676e19",
+      "pin": "active",
+      "createdAt": 1791069957004
+    },
+    {
+      "id": "e_f28e5007fe",
+      "from": "node_5db092f138",
+      "to": "node_862fa87a1b",
+      "pin": "active",
+      "createdAt": 1791071815852
+    },
+    {
+      "id": "e_57b00140e2",
+      "from": "node_862fa87a1b",
+      "to": "node_dcbb5a1469",
+      "pin": "active",
+      "role": "firstframe",
+      "createdAt": 1791071815852
+    },
+    {
+      "id": "e_3c3a16c4c1",
+      "from": "node_dcbb5a1469",
+      "to": "node_31161823e9",
+      "pin": "active",
+      "createdAt": 1791072346833
+    },
+    {
+      "id": "e_4fbeb9517f",
+      "from": "node_31161823e9",
+      "to": "node_98d7784830",
+      "pin": "active",
+      "role": "firstframe",
+      "createdAt": 1791072346833
+    },
+    {
+      "id": "e_7b334eb6b4",
+      "from": "node_98d7784830",
+      "to": "node_e0a0f8ffb5",
+      "pin": "active",
+      "createdAt": 1791072861175
+    },
+    {
+      "id": "e_3fefbdef05",
+      "from": "node_e0a0f8ffb5",
+      "to": "node_dda95d5ba9",
+      "pin": "active",
+      "role": "firstframe",
+      "createdAt": 1791072861175
+    },
+    {
+      "id": "e_a3ef0cb472",
+      "from": "node_dda95d5ba9",
+      "to": "node_b4840b252a",
+      "pin": "active",
+      "createdAt": 1791073363633
+    },
+    {
+      "id": "e_ea78c46b0e",
+      "from": "node_b4840b252a",
+      "to": "node_e25b06ae8d",
+      "pin": "active",
+      "role": "firstframe",
+      "createdAt": 1791073363633
+    },
+    {
+      "id": "e_2f79ee2ce1",
+      "from": "node_e25b06ae8d",
+      "to": "node_705cd28589",
+      "pin": "active",
+      "createdAt": 1791073891487
+    },
+    {
+      "id": "e_c7821f9cb3",
+      "from": "node_705cd28589",
+      "to": "node_f46b99b2c4",
+      "pin": "active",
+      "role": "firstframe",
+      "createdAt": 1791073891487
+    },
+    {
+      "id": "e_de2d8918a9",
+      "from": "node_f46b99b2c4",
+      "to": "node_efcd954c37",
+      "pin": "active",
+      "createdAt": 1791074412603
+    },
+    {
+      "id": "e_ceb7427ecf",
+      "from": "node_efcd954c37",
+      "to": "node_987849a817",
+      "pin": "active",
+      "role": "firstframe",
+      "createdAt": 1791074412603
+    },
+    {
+      "id": "e_463b4189fb",
+      "from": "node_987849a817",
+      "to": "node_79e2c836a0",
+      "pin": "active",
+      "createdAt": 1791074917556
+    },
+    {
+      "id": "e_95bf0b44a1",
+      "from": "node_79e2c836a0",
+      "to": "node_8dd1e76487",
+      "pin": "active",
+      "role": "firstframe",
+      "createdAt": 1791074917556
+    },
+    {
+      "id": "e_99f8794894",
+      "from": "node_8dd1e76487",
+      "to": "node_496b27cc69",
+      "pin": "active",
+      "createdAt": 1791075424131
+    },
+    {
+      "id": "e_06bb7f0136",
+      "from": "node_496b27cc69",
+      "to": "node_6522b490ce",
+      "pin": "active",
+      "role": "firstframe",
+      "createdAt": 1791075424131
+    },
+    {
+      "id": "e_cbb13cb7f6",
+      "from": "node_6522b490ce",
+      "to": "node_ac009fca51",
+      "pin": "active",
+      "createdAt": 1791075935358
+    },
+    {
+      "id": "e_52c7bcd3e7",
+      "from": "node_ac009fca51",
+      "to": "node_faa855707d",
+      "pin": "active",
+      "role": "firstframe",
+      "createdAt": 1791075935358
+    },
+    {
+      "id": "e_9526d3abcc",
+      "from": "node_faa855707d",
+      "to": "node_c9a228dbc8",
+      "pin": "active",
+      "createdAt": 1791076448874
+    },
+    {
+      "id": "e_d303fb9bec",
+      "from": "node_c9a228dbc8",
+      "to": "node_3a03c836a1",
+      "pin": "active",
+      "role": "firstframe",
+      "createdAt": 1791076448874
+    },
+    {
+      "id": "e_ecd09c4648",
+      "from": "node_3a03c836a1",
+      "to": "node_4fdb513d48",
+      "pin": "active",
+      "createdAt": 1791076952612
+    },
+    {
+      "id": "e_de3aa3f06a",
+      "from": "node_4fdb513d48",
+      "to": "node_f879f4882c",
+      "pin": "active",
+      "role": "firstframe",
+      "createdAt": 1791076952612
+    },
+    {
+      "id": "e_7c2b99aae1",
+      "from": "node_f879f4882c",
+      "to": "node_f09dd39297",
+      "pin": "active",
+      "createdAt": 1791077464727
+    },
+    {
+      "id": "e_f49cfc4c81",
+      "from": "node_f09dd39297",
+      "to": "node_f335d7722e",
+      "pin": "active",
+      "role": "firstframe",
+      "createdAt": 1791077464727
+    },
+    {
+      "id": "e_1cd2db56f2",
+      "from": "node_f335d7722e",
+      "to": "node_73c8620feb",
+      "pin": "active",
+      "createdAt": 1791077990597
+    },
+    {
+      "id": "e_4a4b0de674",
+      "from": "node_73c8620feb",
+      "to": "node_3a78f869ac",
+      "pin": "active",
+      "role": "firstframe",
+      "createdAt": 1791077990597
+    },
+    {
+      "id": "e_7afb8c27ac",
+      "from": "node_3a78f869ac",
+      "to": "node_0f5617277d",
+      "pin": "active",
+      "createdAt": 1791078503535
+    },
+    {
+      "id": "e_d7361b2ce4",
+      "from": "node_0f5617277d",
+      "to": "node_4f03676e19",
+      "pin": "active",
+      "role": "firstframe",
+      "createdAt": 1791078503535
+    },
+    {
+      "id": "e_85f8c8e92c",
+      "from": "node_5db092f138",
+      "to": "node_198c651f53",
+      "pin": "active",
+      "createdAt": 1791078986487
+    },
+    {
+      "id": "e_4ff6d70710",
+      "from": "node_dcbb5a1469",
+      "to": "node_198c651f53",
+      "pin": "active",
+      "createdAt": 1791078986487
+    },
+    {
+      "id": "e_fde11dd001",
+      "from": "node_98d7784830",
+      "to": "node_198c651f53",
+      "pin": "active",
+      "createdAt": 1791078986487
+    },
+    {
+      "id": "e_c3b7c8e5b7",
+      "from": "node_dda95d5ba9",
+      "to": "node_198c651f53",
+      "pin": "active",
+      "createdAt": 1791078986487
+    },
+    {
+      "id": "e_b89c76eef1",
+      "from": "node_e25b06ae8d",
+      "to": "node_198c651f53",
+      "pin": "active",
+      "createdAt": 1791078986487
+    },
+    {
+      "id": "e_f20b55aa0b",
+      "from": "node_f46b99b2c4",
+      "to": "node_198c651f53",
+      "pin": "active",
+      "createdAt": 1791078986487
+    },
+    {
+      "id": "e_85479d73e4",
+      "from": "node_987849a817",
+      "to": "node_198c651f53",
+      "pin": "active",
+      "createdAt": 1791078986488
+    },
+    {
+      "id": "e_4c3255ef83",
+      "from": "node_8dd1e76487",
+      "to": "node_198c651f53",
+      "pin": "active",
+      "createdAt": 1791078986488
+    },
+    {
+      "id": "e_92b0b11655",
+      "from": "node_6522b490ce",
+      "to": "node_198c651f53",
+      "pin": "active",
+      "createdAt": 1791078986488
+    },
+    {
+      "id": "e_fcc70a9247",
+      "from": "node_faa855707d",
+      "to": "node_198c651f53",
+      "pin": "active",
+      "createdAt": 1791078986488
+    },
+    {
+      "id": "e_ad5afc8967",
+      "from": "node_3a03c836a1",
+      "to": "node_198c651f53",
+      "pin": "active",
+      "createdAt": 1791078986488
+    },
+    {
+      "id": "e_485a30bd41",
+      "from": "node_f879f4882c",
+      "to": "node_198c651f53",
+      "pin": "active",
+      "createdAt": 1791078986488
+    },
+    {
+      "id": "e_b26545353c",
+      "from": "node_f335d7722e",
+      "to": "node_198c651f53",
+      "pin": "active",
+      "createdAt": 1791078986488
+    },
+    {
+      "id": "e_43670b9697",
+      "from": "node_3a78f869ac",
+      "to": "node_198c651f53",
+      "pin": "active",
+      "createdAt": 1791078986488
+    },
+    {
+      "id": "e_50696f3221",
+      "from": "node_4f03676e19",
+      "to": "node_198c651f53",
+      "pin": "active",
+      "createdAt": 1791078986488
+    }
+  ],
+  "view": {
+    "x": 0,
+    "y": 0,
+    "zoom": 1
+  },
+  "settings": {
+    "comfyHost": "http://127.0.0.1:8188",
+    "imageHost": "http://127.0.0.1:8888",
+    "workflowImage": "z-image-guangyu",
+    "workflowVideo": "minimax-h3-i2v-turbo",
+    "workflowDir": "D:\\AI\\repos\\Easel\\skills\\shared\\comfy\\workflows",
+    "ffmpeg": "D:\\AI\\ffmpeg-master-latest-win64-gpl-shared\\bin\\ffmpeg.exe",
+    "ffprobe": "D:\\AI\\ffmpeg-master-latest-win64-gpl-shared\\bin\\ffprobe.exe",
+    "releaseImageBeforeVideo": true,
+    "transition": {
+      "type": "smoothleft",
+      "duration": 0.35
+    },
+    "frameSize": "720x1280",
+    "videoSeconds": 5,
+    "videoMegapixels": 0.6
+  },
+  "story": {
+    "title": "远星边界",
+    "logline": "银河帝国远征舰队越过跃迁边界，在一颗晶体星球上发现比自己更古老的帝国遗迹，并把这里钉成新的疆界。",
+    "style": "cinematic sci-fi realism, anamorphic 2.39:1, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain",
+    "beats": [
+      {
+        "id": "beat_6ea0a149d4",
+        "title": "舰队跃出星门",
+        "action": "帝国远征舰队从环形跃迁门中成列穿出，镜头从门环后方缓慢推近。",
+        "image": "vast imperial expedition fleet emerging from a glowing ring-shaped wormhole, twenty navy-grey capital ships in V formation, matte hull plating with faint panel seams, tiny escorts trailing amber engine lines, deep navy space with magenta-teal nebula clouds, wide establishing shot, low angle from behind the wormhole rim, slow push-in, volumetric rim light, anamorphic lens flare, 35mm anamorphic, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+        "video": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism, an anamorphic frame in a deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, IMAX-grade detail and subtle film grain. A colossal circular jump gate dominates the frame, its wormhole throat a swirling vortex of violet and cyan nebula light. The inner ring flares blinding white, then the flare contracts into a thin glowing halo as the capital ships glide forward out of the gate and fan into a V formation, amber engine trails streaking beneath their hulls. The camera pushes in with large amplitude at slow speed past the ring toward the fleet. The engine trails brighten and thin as the ships spread wide, and the shot ends on the flagship silhouetted against the nebula, the camera holding steady.\n\noverall_soundscape: A deep, reverberating low-frequency hum rises from the jump gate ring, breaking into a sharp crackling wash of energy as the ring flares white. Massive hulls glide through with a sustained sub-bass rumble, thruster wash hissing and thinning as the ships spread into formation. The hum decays toward near silence as the camera settles on the flagship.\n\nnon_diegetic_music: A low sustained contrabass string drone enters beneath the gate flare, joined by a slow swelling brass chord that rises in pitch and volume as the fleet fans out. A single deep timpani hit marks the fleet locking formation, then the score thins to a quiet high sustained tone under the final hold.",
+        "seconds": 5,
+        "imageNodeId": "node_95e36f0e21",
+        "videoNodeId": "node_5db092f138"
+      },
+      {
+        "id": "beat_b57d38ef06",
+        "title": "舰桥确认坐标",
+        "action": "舰桥内林远站在全息星图前下达指令，镜头绕她缓慢横移。",
+        "image": "woman in her thirties, short black hair, small scar above left eyebrow, dark navy flight suit with amber piping, standing before a floating holographic galactic map, mid-command, dark navy bridge interior, amber console glow, cyan holo lines, console banks receding into darkness, medium shot, eye-level, camera slowly arcing around her from her right side, shallow depth of field, 50mm spherical lens, amber key light from the console bank, cyan rim light on her hair and shoulder, volumetric haze in the air, matte flight-suit fabric with amber piping catching the console glow, thin volumetric cyan holo lines with faint drifting dust motes, deep navy and amber palette with cyan holo accents, faint practical lens flares, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+        "video": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism, anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain. A medium shot frames from behind the shoulder of Lin Yuan, a young woman with short white hair, glowing cyan optics and a dark segmented cloak with a cyan crystal glowing at her chest, standing before a giant holographic planet rendered as a cyan wireframe globe, banks of amber-lit consoles lining the curved bridge around her. She raises one hand and rotates the holographic map a quarter turn, amber and cyan glyphs rippling across her face. The camera performs an arc shot from left to right with small amplitude at slow speed behind her shoulder. The holographic light pulses brighter, then the camera comes to rest, holding on her steady profile.\n\noverall_soundscape: A low bridge hum runs throughout, layered with the soft whir of the holographic projection and intermittent clicks from the console banks. Her cloak rustles faintly as she lifts her arm, and the hologram gives off a faint crystalline resonance as the map rotates, followed by silence under the final hold.\n\nnon_diegetic_music: A sustained low synthesizer drone at a slow, even pulse, with a sparse high shimmer entering as the holographic light brightens and settling under the final hold.",
+        "seconds": 5,
+        "line": "跃迁完成，坐标确认。",
+        "imageNodeId": "node_2f5e5abd33",
+        "videoNodeId": "node_dcbb5a1469"
+      },
+      {
+        "id": "beat_c802792e18",
+        "title": "引擎点火",
+        "action": "旗舰尾部三台主引擎依次点火，镜头贴住引擎外壳向前推。",
+        "image": "close-up, three massive engine nozzles on a navy-grey capital ship hull, amber plasma igniting inside each nozzle, riveted heat-scarred plating, deep navy void behind, hard rim light from the ignition, low angle, camera hugging the engine hull, slow push-in, 85mm, shallow depth of field, anamorphic 2.39:1, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+        "video": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism, vertical 9:16 framing, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain. The first frame is fully anchored: the flagship's stern engine cluster, three riveted dark-metal nozzles set in the housing against deep space, the hull surface running away toward the bow. The three nozzles ignite in sequence from left to right, each throat brightening in turn, and amber plasma blooms out of the mouths and stretches into long exhaust lines that stream back past the housing. The camera pushes forward along the hull with small amplitude at slow speed, hugging the engine skin, and a practical lens flare sweeps across the frame, blooming off the nozzle rims. The shot ends with the ship accelerating away, the camera holding as the flagship shrinks to a single bright point against the dark.\n\noverall_soundscape: Three deep ignition thuds land one after another, each followed by a swelling roar of plasma. The hull metal groans and resonates under the camera's path, and a low engine drone carries through the shot before it thins out into near silence as the ship pulls away.\n\nnon_diegetic_music: A sustained low synth drone holds beneath the shot, joined by a slow brass swell that rises through a three-note figure timed to the ignitions, then decays to one long tone as the ship recedes.",
+        "seconds": 5,
+        "imageNodeId": "node_a6f3f8c0a4",
+        "videoNodeId": "node_98d7784830"
+      },
+      {
+        "id": "beat_298a0be0b1",
+        "title": "抵达未知星系",
+        "action": "舰队驶入双子星系，镜头从行星暗面后升起，露出被恒星照亮的舰队。",
+        "image": "imperial fleet arriving in a binary star system, two stars, one amber one pale blue, a violet crystal planet in lower frame, capital ships crossing the planet's dark limb, deep navy space, nebula haze, amber starlight raking across hull plating, volumetric god rays through nebula dust, wet-lens highlights on hull edges, wide high-angle shot, slow rising camera from behind the planet's dark limb, 24mm, anamorphic 2.39:1, cinematic sci-fi realism, practical lens flares, IMAX-grade detail, subtle film grain",
+        "video": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism with anamorphic lens character, a deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail and subtle film grain; a vertical frame opens on the dark limb of a planet filling the lower edge against a deep navy starfield. The camera rises slowly with small amplitude from behind the planet's dark limb, and twin suns flare over the horizon and light the fleet's hulls one by one, each hull flaring amber as it catches the light. Ships drift into frame and decelerate, their engine glows trailing long cyan streaks as they settle into formation, and the shot ends with the fleet suspended above the violet crystal planet, holding on the final composition.\n\noverall_soundscape: A deep sub-bass rumble of open space runs under the whole shot, joined by the swelling hum of ship engines as the fleet decelerates and the faint metallic groan of hulls settling into formation. No voices and no impacts are heard.\n\nnon_diegetic_music: A sustained low string drone at a slow tempo, with sparse low-brass swells that rise gradually through the shot and resolve into a single held chord at the end.",
+        "seconds": 5,
+        "imageNodeId": "node_5c39760c4a",
+        "videoNodeId": "node_dda95d5ba9"
+      },
+      {
+        "id": "beat_01ba5ad02b",
+        "title": "异常信号",
+        "action": "舰桥警报亮起，林远盯着跳动的波形，镜头从波形推到她脸上。",
+        "image": "woman with short black hair, small scar above left eyebrow, dark navy flight suit, staring at a holographic signal waveform spiking violently above an amber console, waveform reflection on her face, dark bridge interior, cyan and amber light mix, close-up, waveform in the foreground, very slow push-in, rack focus from waveform to her eyes, 85mm, shallow depth of field, matte fabric texture, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+        "video": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism in a vertical 9:16 frame, anamorphic with a deep navy and amber palette and cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail and subtle film grain; a medium close-up looks past a glowing orange-and-cyan control console in the foreground at a young woman, Lin Yuan, dark-skinned with short tousled white hair threaded with pale bead-like ornaments, luminous pale eyes and a small red mark below one eye, wearing a dark high-collared cloak with gold insignia, her gloved hand resting on the console's keys. The cyan waveform rising above the console spikes and repeats in a rhythmic pulse, and the camera racks focus from the holographic waveform in the foreground to her face while pushing in with small amplitude at slow speed; her eyes narrow and she leans in toward the signal. Amber alarm light washes across the bridge, sweeping over her white hair and the console panels, and the shot ends on her lips parting as she draws a breath.\n\noverall_soundscape: The bridge interior hums with a low reactor drone and the quiet chatter of consoles, overlaid by an electronic signal tone that pulses and quickens with the waveform. A distant alarm chime starts to ring from the far speakers, cloth rustles as she leans over the console, and a faint intake of breath is audible at the end.\n\nnon_diegetic_music: A low sustained synth drone holds under the whole shot, joined by a repeating two-note electronic pulse at a steady tempo whose volume rises slightly toward the end.",
+        "seconds": 5,
+        "imageNodeId": "node_0794f31013",
+        "videoNodeId": "node_e25b06ae8d"
+      },
+      {
+        "id": "beat_0e63d00ca4",
+        "title": "登陆艇入大气",
+        "action": "登陆艇切入紫色大气层，镜头跟着艇身穿过云层俯冲。",
+        "image": "small imperial lander plunging into a violet planet's atmosphere, hull plating glowing orange from friction heat, thick magenta cloud layers streaming past the hull, cyan crystal peaks visible far below through gaps in the cloud deck, aerial tracking shot from behind and above the craft, camera diving with it through the cloud layers, lander held small in frame against the magenta cloud mass, hard rim light from the friction glow along the hull edge, molten orange light spilling across dark ceramic hull plating and heat-scorched leading edges, 35mm lens, anamorphic 2.39:1 framing, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+        "video": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism with anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail and subtle film grain. A vertical 9:16 frame holds on the first-frame image: the dark finned lander with its ring of round portholes dives nose-down through layered magenta-purple cloud banks, its engine exhaust blazing orange-white and dragging a long magenta light streak across the upper-left sky, while faint cyan-lit structures glimmer on the cloud tops far below. As the lander punches through the upper cloud layers, the heat glow along the hull cools from bright orange to dull red and thin vapor streaks past its fins. The camera tracks alongside the hull with small amplitude at slow speed, matching the descent, then tilts down with large amplitude at fast speed to reveal the cloud deck tearing open beneath the ship, ordered clusters of cyan crystal spires rising from the dark surface below. Clouds streak past the lens as the lander banks gently and its nose swings toward a flat landing plateau among the spires, its engine glow settling into a steady ember red.\n\noverall_soundscape: A continuous high-altitude wind roars and hisses around the hull while the lander's engines push a deep steady rumble through the frame. Cloud vapor whips past the microphone in fast streaking whooshes, the rumble drops in pitch as the ship slows its descent, and a faint crystalline resonance hums up from the crystal fields below.\n\nnon_diegetic_music: A low sustained synth drone in the bass register under a slow half-note pulse, joined by a rising two-note brass swell as the cloud deck opens, decaying into a long tail at the end.",
+        "seconds": 5,
+        "imageNodeId": "node_0a4a46b2d7",
+        "videoNodeId": "node_f46b99b2c4"
+      },
+      {
+        "id": "beat_c7e2033da2",
+        "title": "踏出舱门",
+        "action": "林远走下登陆艇舷梯，靴底第一次踩上晶体地表，镜头从她背后低角度跟移。",
+        "image": "woman in her thirties, short black hair, small scar above left eyebrow, dark navy flight suit with amber piping, descending a lander ramp, boot sole making first contact with the cyan crystal ground, faceted crystal plain with glassy fracture planes and sharp specular glints, violet sky, pale magenta sunlight raking low across the ground, crystal spires in background, low angle tracking shot from behind, subject centered on the ramp axis, ramp edge cutting the lower third of frame, 35mm anamorphic lens, shallow focus on the figure, cinematic sci-fi realism, 2.39:1, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain",
+        "video": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism with IMAX-grade detail and subtle film grain, a deep navy and amber palette accented by cyan crystal light, volumetric god rays, practical lens flares and wet-lens highlights; a low-angle vertical shot frames her from behind at ground level — the lone woman's pale hair, black-masked face, dark navy jacket with utility belt, and long dark cape — as she walks down the landing-ramp of the lander onto the crystal plain, shattered crystal spires flanking the path under a purple sky. The camera follows low behind her in a tracking shot with small amplitude at normal speed, holding on her back and the swing of her cape as her boot comes down and lands on the crystal surface; a ring of cyan light ripples out from the contact point across the faceted paving, dust motes drifting through magenta light. The camera continues tracking low behind her as she takes a few more steps, then eases to a halt as she stops and looks up, her head tilting back toward the spires ahead while the cyan ripple fades across the ground at her feet.\n\noverall_soundscape: A low wind sweeps the crystal plain while the lander's idling engines hum behind her. Her boots land with crisp taps on the faceted paving, each step answered by a faint glassy shimmer as the cyan ring of light spreads. The fabric of the long cape rustles with her stride, and a single soft breath is audible as she stops and looks up.\n\nnon_diegetic_music: A sustained low synth drone under a slow single-note string swell, joined by sparse metallic bell tones at a measured tempo, the dynamics thinning toward near-silence as the shot settles.",
+        "seconds": 5,
+        "imageNodeId": "node_2a8f6c6a0d",
+        "videoNodeId": "node_987849a817"
+      },
+      {
+        "id": "beat_44ca504534",
+        "title": "晶体尖塔",
+        "action": "林远抬头，前方成群晶体尖塔由暗转亮依次点亮，镜头缓缓上摇。",
+        "image": "lone figure in a navy flight suit standing small in the foreground, head tipped back, gazing up at the spires, towering cyan crystal spires across a violet plain, nearest spire already lit, distant spires still dark, spires igniting from base to tip with inner cyan light, magenta sky, volumetric haze, wide low-angle shot, near ground-level camera, figure placed lower third and off-center, slow tilt up, 24mm, cyan rim light from the ignited crystal along the figure's shoulders, faceted crystal surfaces with sharp edges and faint internal fractures, deep navy, violet and cyan palette, anamorphic 2.39:1, practical lens flare, wet-lens highlights, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+        "video": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism with anamorphic lens character in a vertical 9:16 frame, deep violet atmosphere and cyan crystal accents, volumetric haze, practical lens flares, wet-lens highlights on the crystal facets, IMAX-grade detail and subtle film grain. A low-angle composition looks up past the small, cloaked figure of Lin Yuan, seen from behind at the bottom of frame, toward a cluster of towering crystal spires rising into a violet sky. The camera tilts up with small amplitude at slow speed from the figure to the spires as internal cyan light climbs each crystal from base to tip in a wave outward, the haze brightening around the plain, ending on the tallest spire glowing against the violet sky.\n\noverall_soundscape: Wind drags low across the crystal plain while the air carries a faint crystalline hum that swells into a clear resonant ring each time a spire ignites, the pitch rising as the wave of light travels outward. Cloak fabric rustles faintly, and the hum settles into a steady high shimmer by the end.\n\nnon_diegetic_music: A sustained low synth drone at a slow tempo, joined by a rising string pad and sparse high bell tones that enter as the spires ignite, dynamics swelling gradually toward the final frame.",
+        "seconds": 5,
+        "imageNodeId": "node_cbc1ca61e5",
+        "videoNodeId": "node_8dd1e76487"
+      },
+      {
+        "id": "beat_7e7a20bb85",
+        "title": "遗迹门开启",
+        "action": "尖塔底部一道巨型金属门裂开，林远举灯向门内的黑暗走去。",
+        "image": "colossal ancient metal gate set into a crystal spire base, weathered dark alloy with fine surface pitting, vertical seam splitting open, cyan light bleeding out through the gap, volumetric haze in the beam, woman in a navy flight suit with amber piping, holding a handheld lamp, practical lamp glow, backlit silhouette against the cyan glow, fine dust drifting through the light, medium-wide shot, 35mm, eye-level slight low angle, static frame, deep navy and amber palette with cyan crystal accents, cinematic sci-fi realism, anamorphic 2.39:1, IMAX-grade detail, subtle film grain",
+        "video": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism, vertical 9:16 framing, anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain. The opening composition matches the first frame: at the base of a towering riveted metal gate set between colossal ribbed crystal pillars, a traveler with short pale hair and a dark coat with amber lining stands small on a flight of cracked stone steps, holding a lantern raised toward the dark seam of the doors, glowing embers scattered across the debris-strewn ground around her boots. The gate's central seam splits with a thin vertical filament of cyan light that widens as the two metal halves grind apart; cyan light spills out and grows, washing up the steps and pushing the long shadows back. She lifts the lantern higher and steps forward into the opening. The camera tracks forward a few steps behind her at low height, pushing in with small amplitude at slow speed as the light grows around her silhouette. The shot ends as she crosses the threshold and the interior of the spire opens up into vast darkness lit only by the widening cyan glow.\n\noverall_soundscape: A deep metallic groan builds as the gate halves grind apart over a low resonant hum of cyan energy, small stones trickling down the cracked steps and embers crackling on the rubble. The traveler's boots scuff across stone, and her footsteps gain a hollow echo the moment she passes the threshold.\n\nnon_diegetic_music: A sustained low string drone at slow tempo, joined by a sparse rising two-note motif on muted brass that swells in volume as the gate opens and fades down at the end.",
+        "seconds": 5,
+        "imageNodeId": "node_795a9ed2bb",
+        "videoNodeId": "node_6522b490ce"
+      },
+      {
+        "id": "beat_c175c54aeb",
+        "title": "守护者苏醒",
+        "action": "门内巨大机械守护者逐节抬头，林远停步，镜头从她背后缓缓推近。",
+        "image": "towering ancient mechanical sentinel inside a vast crystal hall, segmented alloy body unfolding and lifting its head, cyan light igniting along its joints, a small human figure in a navy flight suit standing still below, dust and volumetric god rays, wide low angle from behind the standing figure, slow push in, 24mm anamorphic lens, brushed alloy plating and faceted crystal wall surfaces, deep navy and amber palette with cyan crystal accents, practical lens flares, wet-lens highlights, cinematic sci-fi realism, IMAX-grade detail, subtle film grain, 2.39:1",
+        "video": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism, 9:16 vertical framing with anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain. A low-angle wide shot inside the vast vertical hall of the crystal ruins frames a lone woman in dark clothing standing small and still on the debris-strewn floor, seen from behind, while the colossal armored sentinel towers above her, its plating cut by amber light and cyan crystal seams. The sentinel's segments unfold upward one by one, cyan light ignites along its joints, and dust sprays from its shoulders. The camera pushes in at slow speed past the woman's shoulder toward the sentinel's face, ending on its single glowing eye locking downward.\n\noverall_soundscape: A deep cavernous room tone fills the crystal hall, layered with the heavy grinding of armor segments unfolding one after another and the resonant clank of metal settling into position. Fine dust and rubble patter onto the floor, a rising electrical hum builds as cyan light ignites along the joints, and the take closes on a long, low metallic resonance inside the hall.\n\nnon_diegetic_music: A sustained low synthesizer drone holds beneath sparse, slow percussive hits that land on each unfolding segment, its volume rising steadily toward the end of the take.",
+        "seconds": 5,
+        "imageNodeId": "node_ef7511e195",
+        "videoNodeId": "node_faa855707d"
+      },
+      {
+        "id": "beat_314593f9a5",
+        "title": "触碰古器",
+        "action": "林远摘下手套，把手掌按上祭坛中央的金属面板。",
+        "image": "close-up, bare human hand, palm flat, fingers spread, pressing onto an ornate metal panel at the center of an ancient altar, cyan glyph channels lighting up under the fingers, engraved metal surface, micro-scratches and worn tarnish, fine dust on the metal, unlit darkness falling off beyond the panel edge, amber lamp glow from offscreen left, cyan emission rimming the fingers, shallow depth of field, 85mm, f/2, anamorphic 2.39:1, cinematic sci-fi realism, deep navy and amber palette with cyan accents, faint volumetric haze in the lamp glow, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain",
+        "video": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism in a vertical 9:16 frame, IMAX-grade detail with subtle film grain, wet-lens highlights and a practical lens flare off the flame, deep navy shadow against amber candlelight with cyan crystal accents and volumetric god rays. A medium close-up at a slightly low angle holds on an ancient dark metal altar panel carved with a circular medallion, a small candlestick with a live flame burning at the left edge of the frame. The young woman with short white hair, wearing a dark ornate robe patterned with amber-gold motifs and her forearm bare, presses her bare palm down onto the center of the metal panel. Cyan glyph channels ignite under her fingers and spread outward from beneath her hand across the altar surface, fine lines branching and connecting, while fine dust lifts off the stone into the air and drifts through the light. The camera pushes in with small amplitude, tightening as the channels run to the outer grooves of the panel, and ends on the glyphs fully lit, their cyan glow climbing across the carved metal while the amber flame light stays warm on the left.\n\noverall_soundscape: A deep, low room tone hums through the ancient chamber with a faint crystalline resonance far in the background. The bare palm lands on the metal panel with a soft, dull slap, fabric rustles as her arm settles, and a rising electronic hum swells as the glyph channels ignite while dust drifts and settles around the altar.\n\nnon_diegetic_music: N/A",
+        "seconds": 5,
+        "imageNodeId": "node_f8e94db911",
+        "videoNodeId": "node_3a03c836a1"
+      },
+      {
+        "id": "beat_467ae30bbc",
+        "title": "星图点亮",
+        "action": "整座大厅亮起，古老帝国的全息星图在头顶展开，镜头缓缓上摇。",
+        "image": "vast crystal hall interior, faceted crystal ceiling blooming into a giant holographic galactic map, thousands of cyan star points, amber trade route lines branching across the projection, a woman in a navy flight suit standing at the center of the floor looking up, volumetric haze drifting through the hall, deep navy and amber palette with cyan crystal accents, volumetric god rays cutting through the projection, practical lens flares, wet-lens highlights on the crystal facets, slow wide tilt-up shot, 24mm, anamorphic 2.39:1, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+        "video": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism, anamorphic glass, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain, framed in a 9:16 vertical composition. A low-angle wide shot opens on the vast interior of the ancient crystal hall: Lin Yuan, a female explorer in a pale ice-blue cloak, stands small at the center of the frame with her back to the camera on the wet reflective stone floor, a towering arched gateway ahead of her and rows of warm amber lanterns lining the columns on both sides. The hall flares bright as the holographic star map expands overhead; cyan star points ignite in sequence across the dome and amber routes draw themselves between them, one after another. The camera tilts up with large amplitude at slow speed from her toward the glowing chart, the amber energy column and the crystal ceiling filling the upper frame, ending with the complete ancient empire chart filling the frame, and the shot holds on the finished map as the last amber routes settle into place.\n\noverall_soundscape: A deep sub-bass hall hum runs under the whole shot, joined by crystalline chimes that ring one after another as each star point ignites overhead, a soft rustle of cloak fabric, and a faint high-frequency shimmer that swells while the amber routes connect and settles into a steady hall tone on the final hold.\n\nnon_diegetic_music: A sustained low synthesizer drone at slow tempo, layered with sparse rising string harmonics that swell gradually in step with the igniting star points and hold on a single quiet chord at the end.",
+        "seconds": 5,
+        "line": "这不是遗迹……这是一个帝国的起点。",
+        "imageNodeId": "node_f8423b27d4",
+        "videoNodeId": "node_f879f4882c"
+      },
+      {
+        "id": "beat_85bf9e4180",
+        "title": "轨道集结",
+        "action": "轨道上帝国舰队重新编队围绕晶体行星，镜头拉远露出整支舰队。",
+        "image": "imperial fleet re-forming in orbit around a violet crystal planet, capital ships sliding into a ring formation, amber running lights blinking in sequence, deep navy space, faint nebula, ultra-wide pull-back shot from directly above the fleet, 35mm, high vantage showing the full fleet spread, cinematic sci-fi realism, anamorphic 2.39:1, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail, subtle film grain",
+        "video": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism with anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail and subtle film grain. The shot opens on the wide first-frame composition, the crystal planet hanging huge in the upper frame with its purple surface webbed in cyan glow, the imperial fleet strung along orbit beneath it, amber running lights already lit. The fleet slides into a ring formation around the planet, and the amber running lights blink in sequence ship by ship. The camera pulls back steadily with large amplitude at slow speed to reveal the full formation, the planet's glow softening as the frame widens, ending on the complete ring of ships, holding still.\n\noverall_soundscape: A deep continuous engine drone fills the mix, punctuated by soft thruster pulses as each hull slides into position, settling into a low sustained hum beneath the final hold.\n\nnon_diegetic_music: A low sustained synth drone at a slow tempo, joined by a single held cello note that swells slightly as the ring closes and fades out under the final hold.",
+        "seconds": 5,
+        "imageNodeId": "node_d7c6f81530",
+        "videoNodeId": "node_f335d7722e"
+      },
+      {
+        "id": "beat_90f9ba1773",
+        "title": "立下界标",
+        "action": "林远在尖塔顶端插下信标，转身望向紫色地平线，镜头从信标拉到她背影。",
+        "image": "woman in a navy flight suit with amber piping planting a glowing amber beacon on a crystal spire summit, wind pulling at her short black hair, violet horizon and magenta sun low behind her, cyan crystal field below, medium shot, slow pull back from the beacon to her back, 35mm lens, anamorphic 2.39:1, amber beacon glow raking across faceted cyan crystal, magenta rim light on her shoulders, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+        "video": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism in a vertical 9:16 frame, anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail and subtle film grain. A low-angle medium-wide shot opens on the white-haired woman in dark armor and a magenta-lined, gold-trimmed cape, her boots planted on the blade-like crystals at the apex of a spire, the beacon glowing amber in her raised hand, banded violet clouds and a low pale moon behind her, the field of crystal spires glimmering cyan far below. She drives the beacon down into the crystal at her feet; a deep resonant chime runs through the spire and the crystal pulses amber from within, light climbing its facets in rings. Wind lifts her long white hair and the hem of her cape. She turns and looks out over the horizon. The camera pulls out with large amplitude at slow speed, drawing away from the beacon until she is small against the vast purple plain, and the light shifts toward dusk, the plain dimming to deep navy as the shot settles on her silhouette against the violet sky, the amber beacon and the lit crystals the last points of light in frame.\n\noverall_soundscape: Wind pushes across a wide crystal plain, hissing between the spire blades. The beacon seats into the crystal with a deep resonant chime that rings out over the field, followed by a low continuous hum from the beacon and a faint high ringing from the crystal itself. The cape fabric snaps once in the gust.\n\nnon_diegetic_music: A sustained low synthesizer drone at a slow tempo, joined by sparse bell-like high tones on the beacon impact, swelling gradually and decaying into near silence at the end.",
+        "seconds": 5,
+        "line": "记录它。这里是新的边界。",
+        "imageNodeId": "node_0948818d7e",
+        "videoNodeId": "node_3a78f869ac"
+      },
+      {
+        "id": "beat_dc6f485d78",
+        "title": "跃迁离去",
+        "action": "舰队依次跳入跃迁裂隙，晶体行星上信标仍亮，镜头缓缓拉远收尾。",
+        "image": "imperial fleet jumping away one by one into glowing wormhole slits, last ship vanishing in a streak of amber light, violet crystal planet in the lower left with a single amber beacon pulse visible on its surface, deep navy space, volumetric nebula haze, extreme wide pull-back shot, slow steady dolly back through open space, 24mm anamorphic 2.39:1, hard amber slit-glow rimming the last hull, dust and haze catching the flare, practical lens flares, cinematic sci-fi realism, IMAX-grade detail, subtle film grain",
+        "video": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Cinematic sci-fi realism with anamorphic lens character, deep navy and amber palette with cyan crystal accents, volumetric god rays, practical lens flares, wet-lens highlights, IMAX-grade detail and subtle film grain. A vertical low-angle composition holds the initial frame as the fleet of small silhouette ships climbs in a column toward the huge amber-lit wormhole aperture high in the frame, the purple crystal planet and its single pulsing beacon sitting low on the left, cyan crystal accents running along the planet's limb. One after another the ships vanish into thin wormhole slits; the camera pulls out at slow speed and the last ship stretches into an amber streak and disappears. The pull-back continues until the crystal planet and its lone pulsing beacon fill the lower frame, the starfield settling to silence, ending on the beacon's steady glow.\n\noverall_soundscape: A deep resonant hum from the wormhole aperture carries a thin engine whine that thins out one ship at a time, each jump leaving a brief subsonic thump. Beneath it, a faint crystalline ring from the planet's beacon pulses evenly. As the camera pulls back, the hum and whine decay until the last seconds hold near-total silence under the beacon's steady tone.\n\nnon_diegetic_music: A sparse low synth drone in a slow, even pulse that thins layer by layer and fades out completely before the shot ends, leaving the final moment unscored.",
+        "seconds": 5,
+        "imageNodeId": "node_0fbfe1cc76",
+        "videoNodeId": "node_4f03676e19"
+      }
+    ],
+    "source": "ai",
+    "updatedAt": 1791078503487
+  }
+}

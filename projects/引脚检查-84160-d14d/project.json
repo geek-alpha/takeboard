@@ -1,0 +1,173 @@
+{
+  "id": "引脚检查-84160-d14d",
+  "name": "引脚检查-84160",
+  "rev": 16,
+  "createdAt": 1791062684213,
+  "updatedAt": 1791062687364,
+  "nodes": [
+    {
+      "id": "n_771be7a138",
+      "kind": "video",
+      "title": "素材A",
+      "x": 0,
+      "y": 0,
+      "takes": [
+        {
+          "id": "take_b25bedcb89",
+          "nodeId": "n_771be7a138",
+          "createdAt": 1791062684522,
+          "finishedAt": 1791062684522,
+          "status": "done",
+          "source": "import",
+          "kind": "video",
+          "file": "n_771be7a138/take_b25bedcb89.mp4",
+          "poster": "n_771be7a138/take_b25bedcb89.jpg",
+          "probe": {
+            "duration": 2.333,
+            "width": 864,
+            "height": 480,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 294512
+          },
+          "params": {},
+          "inputs": {},
+          "label": "take_c45999a49a.mp4"
+        },
+        {
+          "id": "take_2b688c4255",
+          "nodeId": "n_771be7a138",
+          "createdAt": 1791062684794,
+          "finishedAt": 1791062684794,
+          "status": "done",
+          "source": "import",
+          "kind": "video",
+          "file": "n_771be7a138/take_2b688c4255.mp4",
+          "poster": "n_771be7a138/take_2b688c4255.jpg",
+          "probe": {
+            "duration": 2.333,
+            "width": 864,
+            "height": 480,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 294512
+          },
+          "params": {},
+          "inputs": {},
+          "label": "take_c45999a49a.mp4"
+        }
+      ],
+      "activeTake": "take_b25bedcb89"
+    },
+    {
+      "id": "n_a5492955a9",
+      "kind": "op",
+      "title": "拼接",
+      "x": 420,
+      "y": 0,
+      "takes": [
+        {
+          "id": "take_bcd13e6b56",
+          "nodeId": "n_a5492955a9",
+          "createdAt": 1791062684838,
+          "status": "done",
+          "source": "op",
+          "kind": "video",
+          "params": {},
+          "inputs": {
+            "n_771be7a138": "take_2b688c4255"
+          },
+          "op": "concat",
+          "file": "n_a5492955a9/take_bcd13e6b56.mp4",
+          "poster": "n_a5492955a9/take_bcd13e6b56.jpg",
+          "probe": {
+            "duration": 2.374,
+            "width": 864,
+            "height": 480,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 308726
+          },
+          "finishedAt": 1791062685464
+        },
+        {
+          "id": "take_ed92530902",
+          "nodeId": "n_a5492955a9",
+          "createdAt": 1791062686085,
+          "status": "done",
+          "source": "op",
+          "kind": "video",
+          "params": {},
+          "inputs": {
+            "n_771be7a138": "take_b25bedcb89"
+          },
+          "op": "concat",
+          "file": "n_a5492955a9/take_ed92530902.mp4",
+          "poster": "n_a5492955a9/take_ed92530902.jpg",
+          "probe": {
+            "duration": 2.374,
+            "width": 864,
+            "height": 480,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 308726
+          },
+          "finishedAt": 1791062686691
+        },
+        {
+          "id": "take_0ea6a4ca7f",
+          "nodeId": "n_a5492955a9",
+          "createdAt": 1791062686748,
+          "status": "done",
+          "source": "op",
+          "kind": "video",
+          "params": {},
+          "inputs": {
+            "n_771be7a138": "take_2b688c4255"
+          },
+          "op": "concat",
+          "file": "n_a5492955a9/take_0ea6a4ca7f.mp4",
+          "poster": "n_a5492955a9/take_0ea6a4ca7f.jpg",
+          "probe": {
+            "duration": 2.374,
+            "width": 864,
+            "height": 480,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 308726
+          },
+          "finishedAt": 1791062687364
+        }
+      ],
+      "activeTake": "take_0ea6a4ca7f"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_bb31a42fd3",
+      "from": "n_771be7a138",
+      "to": "n_a5492955a9",
+      "pin": "take_2b688c4255",
+      "createdAt": 1791062684821
+    }
+  ],
+  "view": {
+    "x": 0,
+    "y": 0,
+    "zoom": 1
+  },
+  "settings": {
+    "comfyHost": "http://127.0.0.1:8188",
+    "imageHost": "http://127.0.0.1:8888",
+    "workflowImage": "z-image-guangyu",
+    "workflowVideo": "minimax-h3-i2v",
+    "workflowDir": "D:\\AI\\repos\\Easel\\skills\\shared\\comfy\\workflows",
+    "ffmpeg": "D:\\AI\\ffmpeg-master-latest-win64-gpl-shared\\bin\\ffmpeg.exe",
+    "ffprobe": "D:\\AI\\ffmpeg-master-latest-win64-gpl-shared\\bin\\ffprobe.exe",
+    "releaseImageBeforeVideo": true,
+    "transition": {
+      "type": "fade",
+      "duration": 0.5
+    }
+  }
+}

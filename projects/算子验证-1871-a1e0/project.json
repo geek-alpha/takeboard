@@ -1,0 +1,412 @@
+{
+  "id": "算子验证-1871-a1e0",
+  "name": "算子验证-1871",
+  "rev": 31,
+  "createdAt": 1791023281880,
+  "updatedAt": 1791023286492,
+  "nodes": [
+    {
+      "id": "n_ab3baff7a2",
+      "kind": "video",
+      "title": "镜头A",
+      "x": 0,
+      "y": 0,
+      "takes": [
+        {
+          "id": "take_37d6c57179",
+          "nodeId": "n_ab3baff7a2",
+          "createdAt": 1791023282345,
+          "finishedAt": 1791023282345,
+          "status": "done",
+          "source": "import",
+          "kind": "video",
+          "file": "n_ab3baff7a2/take_37d6c57179.mp4",
+          "poster": "n_ab3baff7a2/take_37d6c57179.jpg",
+          "probe": {
+            "duration": 3,
+            "width": 320,
+            "height": 240,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 45104
+          },
+          "params": {},
+          "inputs": {},
+          "label": "clip.mp4"
+        }
+      ],
+      "activeTake": "take_37d6c57179"
+    },
+    {
+      "id": "n_16ba2e2bdf",
+      "kind": "video",
+      "title": "镜头B",
+      "x": 0,
+      "y": 0,
+      "takes": [
+        {
+          "id": "take_c404579f21",
+          "nodeId": "n_16ba2e2bdf",
+          "createdAt": 1791023282662,
+          "finishedAt": 1791023282662,
+          "status": "done",
+          "source": "import",
+          "kind": "video",
+          "file": "n_16ba2e2bdf/take_c404579f21.mp4",
+          "poster": "n_16ba2e2bdf/take_c404579f21.jpg",
+          "probe": {
+            "duration": 3,
+            "width": 320,
+            "height": 240,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 45104
+          },
+          "params": {},
+          "inputs": {},
+          "label": "clip.mp4"
+        }
+      ],
+      "activeTake": "take_c404579f21"
+    },
+    {
+      "id": "n_752fdb0e16",
+      "kind": "audio",
+      "title": "BGM",
+      "x": 0,
+      "y": 0,
+      "takes": [
+        {
+          "id": "take_2c616c07e3",
+          "nodeId": "n_752fdb0e16",
+          "createdAt": 1791023282827,
+          "finishedAt": 1791023282827,
+          "status": "done",
+          "source": "import",
+          "kind": "audio",
+          "file": "n_752fdb0e16/take_2c616c07e3.m4a",
+          "probe": {
+            "duration": 1,
+            "hasAudio": true,
+            "bytes": 10027
+          },
+          "params": {},
+          "inputs": {},
+          "label": "bgm.m4a"
+        }
+      ],
+      "activeTake": "take_2c616c07e3"
+    },
+    {
+      "id": "n_d6a8e94560",
+      "kind": "op",
+      "title": "尾帧",
+      "x": 0,
+      "y": 0,
+      "takes": [
+        {
+          "id": "take_8f7cb5e14b",
+          "nodeId": "n_d6a8e94560",
+          "createdAt": 1791023282887,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "n_ab3baff7a2": "take_37d6c57179"
+          },
+          "op": "lastframe",
+          "file": "n_d6a8e94560/take_8f7cb5e14b.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 320,
+            "height": 240,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 9332
+          },
+          "finishedAt": 1791023283287
+        }
+      ],
+      "activeTake": "take_8f7cb5e14b"
+    },
+    {
+      "id": "n_da46fa6b90",
+      "kind": "op",
+      "title": "字幕",
+      "x": 0,
+      "y": 0,
+      "takes": [
+        {
+          "id": "take_a120ce0d2c",
+          "nodeId": "n_da46fa6b90",
+          "createdAt": 1791023283373,
+          "status": "done",
+          "source": "op",
+          "kind": "video",
+          "params": {
+            "text": "风从山口灌下来，他抬手压住斗篷。\n再往前就是断崖。",
+            "fontSize": 20,
+            "srtFile": "n_da46fa6b90/take_a120ce0d2c.srt",
+            "cues": 2
+          },
+          "inputs": {
+            "n_ab3baff7a2": "take_37d6c57179"
+          },
+          "op": "subtitle",
+          "file": "n_da46fa6b90/take_a120ce0d2c.mp4",
+          "poster": "n_da46fa6b90/take_a120ce0d2c.jpg",
+          "probe": {
+            "duration": 3,
+            "width": 320,
+            "height": 240,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 52780
+          },
+          "finishedAt": 1791023283934
+        }
+      ],
+      "activeTake": "take_a120ce0d2c"
+    },
+    {
+      "id": "n_d270f8f244",
+      "kind": "op",
+      "title": "配音",
+      "x": 0,
+      "y": 0,
+      "takes": [
+        {
+          "id": "take_4e621d9cc9",
+          "nodeId": "n_d270f8f244",
+          "createdAt": 1791023284030,
+          "status": "done",
+          "source": "op",
+          "kind": "video",
+          "params": {
+            "volume": 0.3,
+            "loop": true,
+            "keepOriginal": true
+          },
+          "inputs": {
+            "n_ab3baff7a2": "take_37d6c57179",
+            "n_752fdb0e16": "take_2c616c07e3"
+          },
+          "op": "muxaudio",
+          "file": "n_d270f8f244/take_4e621d9cc9.mp4",
+          "poster": "n_d270f8f244/take_4e621d9cc9.jpg",
+          "probe": {
+            "duration": 3,
+            "width": 320,
+            "height": 240,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 69047
+          },
+          "finishedAt": 1791023284682
+        }
+      ],
+      "activeTake": "take_4e621d9cc9"
+    },
+    {
+      "id": "node_f2967a0cb7",
+      "kind": "op",
+      "title": "成片",
+      "x": 320,
+      "y": 0,
+      "takes": [
+        {
+          "id": "take_9460fe5bfb",
+          "nodeId": "node_f2967a0cb7",
+          "createdAt": 1791023284724,
+          "status": "done",
+          "source": "op",
+          "kind": "video",
+          "params": {
+            "transition": "fade",
+            "duration": 0.5,
+            "transitionUsed": 0.5,
+            "joints": 1
+          },
+          "inputs": {
+            "n_ab3baff7a2": "take_37d6c57179",
+            "n_16ba2e2bdf": "take_c404579f21"
+          },
+          "op": "xfade",
+          "file": "node_f2967a0cb7/take_9460fe5bfb.mp4",
+          "poster": "node_f2967a0cb7/take_9460fe5bfb.jpg",
+          "probe": {
+            "duration": 5.537,
+            "width": 320,
+            "height": 240,
+            "fps": 24,
+            "hasAudio": true,
+            "bytes": 172432
+          },
+          "finishedAt": 1791023285687
+        }
+      ],
+      "activeTake": "take_9460fe5bfb"
+    },
+    {
+      "id": "node_9c805216c3",
+      "kind": "op",
+      "title": "尾帧·镜头A",
+      "x": 0,
+      "y": 200,
+      "takes": [
+        {
+          "id": "take_af1a087dc8",
+          "nodeId": "node_9c805216c3",
+          "createdAt": 1791023285735,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {},
+          "inputs": {
+            "n_ab3baff7a2": "take_37d6c57179"
+          },
+          "op": "lastframe",
+          "file": "node_9c805216c3/take_af1a087dc8.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 320,
+            "height": 240,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 9332
+          },
+          "finishedAt": 1791023286091
+        }
+      ],
+      "activeTake": "take_af1a087dc8"
+    },
+    {
+      "id": "n_f546511111",
+      "kind": "op",
+      "title": "别的图",
+      "x": 0,
+      "y": 0,
+      "takes": [
+        {
+          "id": "take_33a4d25ff2",
+          "nodeId": "n_f546511111",
+          "createdAt": 1791023286175,
+          "status": "done",
+          "source": "op",
+          "kind": "image",
+          "params": {
+            "at": 0.5
+          },
+          "inputs": {
+            "n_ab3baff7a2": "take_37d6c57179"
+          },
+          "op": "poster",
+          "file": "n_f546511111/take_33a4d25ff2.jpg",
+          "probe": {
+            "duration": 0.04,
+            "width": 320,
+            "height": 240,
+            "fps": 25,
+            "hasAudio": false,
+            "bytes": 9380
+          },
+          "finishedAt": 1791023286462
+        }
+      ],
+      "activeTake": "take_33a4d25ff2"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_2cbaf7bc74",
+      "from": "n_ab3baff7a2",
+      "to": "n_d6a8e94560",
+      "pin": "active",
+      "createdAt": 1791023282869
+    },
+    {
+      "id": "e_2e89165382",
+      "from": "n_ab3baff7a2",
+      "to": "n_da46fa6b90",
+      "pin": "active",
+      "createdAt": 1791023283346
+    },
+    {
+      "id": "e_017f494950",
+      "from": "n_ab3baff7a2",
+      "to": "n_d270f8f244",
+      "pin": "active",
+      "createdAt": 1791023283989
+    },
+    {
+      "id": "e_2d22977749",
+      "from": "n_752fdb0e16",
+      "to": "n_d270f8f244",
+      "pin": "active",
+      "createdAt": 1791023284005
+    },
+    {
+      "id": "e_614fbebd0e",
+      "from": "n_ab3baff7a2",
+      "to": "node_f2967a0cb7",
+      "pin": "active",
+      "createdAt": 1791023284709
+    },
+    {
+      "id": "e_1182c06881",
+      "from": "n_16ba2e2bdf",
+      "to": "node_f2967a0cb7",
+      "pin": "active",
+      "createdAt": 1791023284709
+    },
+    {
+      "id": "e_d8168511f7",
+      "from": "n_ab3baff7a2",
+      "to": "node_9c805216c3",
+      "pin": "active",
+      "createdAt": 1791023285721
+    },
+    {
+      "id": "e_5ace98a971",
+      "from": "node_9c805216c3",
+      "to": "n_16ba2e2bdf",
+      "pin": "active",
+      "role": "firstframe",
+      "createdAt": 1791023285721
+    },
+    {
+      "id": "e_fd635b37b8",
+      "from": "n_ab3baff7a2",
+      "to": "n_f546511111",
+      "pin": "active",
+      "createdAt": 1791023286153
+    },
+    {
+      "id": "e_44c49e7744",
+      "from": "n_f546511111",
+      "to": "n_16ba2e2bdf",
+      "pin": "active",
+      "createdAt": 1791023286492
+    }
+  ],
+  "view": {
+    "x": 0,
+    "y": 0,
+    "zoom": 1
+  },
+  "settings": {
+    "comfyHost": "http://127.0.0.1:8188",
+    "imageHost": "http://127.0.0.1:8888",
+    "workflowImage": "z-image-guangyu",
+    "workflowVideo": "minimax-h3-i2v",
+    "workflowDir": "D:\\AI\\repos\\Easel\\skills\\shared\\comfy\\workflows",
+    "ffmpeg": "D:\\AI\\ffmpeg-master-latest-win64-gpl-shared\\bin\\ffmpeg.exe",
+    "ffprobe": "D:\\AI\\ffmpeg-master-latest-win64-gpl-shared\\bin\\ffprobe.exe",
+    "releaseImageBeforeVideo": true,
+    "transition": {
+      "type": "fade",
+      "duration": 0.5
+    }
+  }
+}

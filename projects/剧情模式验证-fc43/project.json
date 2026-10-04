@@ -1,0 +1,124 @@
+{
+  "id": "剧情模式验证-fc43",
+  "name": "剧情模式验证",
+  "rev": 10,
+  "createdAt": 1791028107399,
+  "updatedAt": 1791031825345,
+  "nodes": [
+    {
+      "id": "node_b1b77b4bd1",
+      "kind": "image",
+      "title": "天台·首帧",
+      "x": 120,
+      "y": 120,
+      "takes": [],
+      "draft": {
+        "prompt": "wet rooftop, neon reflections, faceless figure in a grey coat, low angle",
+        "workflow": "z-image-guangyu"
+      }
+    },
+    {
+      "id": "node_e7cc60252a",
+      "kind": "video",
+      "title": "天台",
+      "x": 120,
+      "y": 560,
+      "takes": [],
+      "draft": {
+        "prompt": "she turns slowly toward the city light, coat flapping",
+        "seconds": 6,
+        "workflow": "minimax-h3-i2v"
+      }
+    },
+    {
+      "id": "node_d5496a8fb8",
+      "kind": "image",
+      "title": "信·首帧",
+      "x": 500,
+      "y": 120,
+      "takes": [],
+      "draft": {
+        "prompt": "close-up of a soaked envelope on wet concrete",
+        "workflow": "z-image-guangyu"
+      }
+    },
+    {
+      "id": "node_9e48b534bb",
+      "kind": "video",
+      "title": "信",
+      "x": 500,
+      "y": 560,
+      "takes": [],
+      "draft": {
+        "prompt": "camera pushes in as the envelope corner lifts",
+        "seconds": 4.5,
+        "workflow": "minimax-h3-i2v"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_29d4afa857",
+      "from": "node_b1b77b4bd1",
+      "to": "node_e7cc60252a",
+      "pin": "active",
+      "createdAt": 1791028107448
+    },
+    {
+      "id": "edge_5b8a47098b",
+      "from": "node_d5496a8fb8",
+      "to": "node_9e48b534bb",
+      "pin": "active",
+      "createdAt": 1791028107448
+    }
+  ],
+  "view": {
+    "x": 0,
+    "y": 0,
+    "zoom": 1
+  },
+  "settings": {
+    "comfyHost": "http://127.0.0.1:8188",
+    "imageHost": "http://127.0.0.1:8888",
+    "workflowImage": "z-image-guangyu",
+    "workflowVideo": "minimax-h3-i2v",
+    "workflowDir": "D:\\AI\\repos\\Easel\\skills\\shared\\comfy\\workflows",
+    "ffmpeg": "D:\\AI\\ffmpeg-master-latest-win64-gpl-shared\\bin\\ffmpeg.exe",
+    "ffprobe": "D:\\AI\\ffmpeg-master-latest-win64-gpl-shared\\bin\\ffprobe.exe",
+    "releaseImageBeforeVideo": true,
+    "transition": {
+      "type": "fade",
+      "duration": 0.5
+    }
+  },
+  "story": {
+    "title": "雨夜信",
+    "logline": "一个没脸的人在雨夜天台等一封信",
+    "style": "cinematic, cold neon",
+    "beats": [
+      {
+        "id": "beat_9e0e9e6794",
+        "title": "天台",
+        "action": "",
+        "image": "wet rooftop, neon reflections, faceless figure in a grey coat, low angle",
+        "video": "integrated_multimodal_description: [Shot 1] Cinematic, live-action, cold neon. A medium-wide shot frames a woman in a coat from behind on a rain-soaked rooftop at night, her back to the camera and her face never revealed, a low parapet and wet concrete in the foreground and the cold neon skyline of the city glowing beyond her. Rain falls steadily through the neon glare, the wind pulls at the loose fabric of her coat, and the camera pushes in with small amplitude at slow speed while she turns slowly toward the city light, the coat flapping hard in a gust as her silhouette holds against the glowing skyline.\n\noverall_soundscape: Steady rain patters on the rooftop concrete and drips from the parapet, with wind gusting across the open roof and the distant hum of city traffic below. The thick fabric of her coat snaps and rustles as it flaps in the wind, and the scuff of her boots pivoting on the wet concrete is audible.\n\nnon_diegetic_music: A sustained low synthesizer drone holds under a slow, sparse pulse, joined midway by a single reverberant piano note and fading out gradually as the shot ends.",
+        "seconds": 6,
+        "imageNodeId": "node_b1b77b4bd1",
+        "videoNodeId": "node_e7cc60252a"
+      },
+      {
+        "id": "beat_a645f47940",
+        "title": "信封",
+        "action": "",
+        "image": "close-up of a soaked envelope on wet concrete",
+        "video": "integrated_multimodal_description: [Shot 1] Cinematic, live-action, cold neon. A tight close-up frames the corner of a sealed paper envelope lying on rain-slicked rooftop concrete at night, beads of water clinging to its surface while cyan-magenta neon reflections slide across the wet concrete, a dark city skyline held in soft focus behind it. The camera pushes in with small amplitude at slow speed toward the envelope as a low wind lifts its corner off the concrete, the paper flexing and trembling while rain streaks steadily through the frame and hisses softly on the concrete.\n\noverall_soundscape: Steady rain drums on concrete and metal, water drips from a nearby railing, and a low wind pushes across the rooftop. A distant traffic hum sits underneath, and the damp paper of the envelope crackles faintly as its corner lifts.\n\nnon_diegetic_music: A sparse low synthesizer drone holds one sustained note under a slow, even pulse, joined near the end by a soft high harmonic at low volume.",
+        "seconds": 4.5,
+        "line": "这是最后一封了",
+        "imageNodeId": "node_d5496a8fb8",
+        "videoNodeId": "node_9e48b534bb"
+      }
+    ],
+    "source": "manual",
+    "updatedAt": 1791031825345
+  }
+}
